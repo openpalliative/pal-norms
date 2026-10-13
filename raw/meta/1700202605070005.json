@@ -1,0 +1,26 @@
+{
+ "eoNumber": "1700202605070005",
+ "number": "27-ЗРТ",
+ "documentDate": "2026-05-05T00:00:00",
+ "publishDateShort": "2026-05-07T00:00:00",
+ "name": "О внесении изменений в Закон Республики Тыва «О праздничных днях Республики Тыва»",
+ "complexName": "Закон Республики Тыва от 05.05.2026 № 27-ЗРТ\n \"О внесении изменений в Закон Республики Тыва \"О праздничных днях Республики Тыва\"",
+ "pagesCount": 2,
+ "pdfFileLength": 147112,
+ "signatoryAuthorities": [
+  {
+   "isMain": true,
+   "weight": 65970,
+   "name": "Республика Тыва",
+   "id": "aa808089-40a4-4aac-be1b-03b145f4b83b"
+  }
+ ],
+ "signatoryAuthorityId": "aa808089-40a4-4aac-be1b-03b145f4b83b",
+ "documentType": {
+  "weight": 56,
+  "name": "Закон",
+  "id": "8910e61f-371d-490c-a1b8-aa7b8a5a48be"
+ },
+ "jdRegNumber": null,
+ "jdRegDate": null
+}

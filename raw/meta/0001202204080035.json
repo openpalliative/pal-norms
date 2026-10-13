@@ -1,0 +1,26 @@
+{
+ "eoNumber": "0001202204080035",
+ "number": "588",
+ "documentDate": "2022-04-05T00:00:00",
+ "publishDateShort": "2022-04-08T00:00:00",
+ "name": "О признании лица инвалидом",
+ "complexName": "Постановление Правительства Российской Федерации от 05.04.2022 № 588\n \"О признании лица инвалидом\"",
+ "pagesCount": 44,
+ "pdfFileLength": 2824996,
+ "signatoryAuthorities": [
+  {
+   "isMain": true,
+   "weight": 93000,
+   "name": "Правительство Российской Федерации",
+   "id": "8005d8c9-4b6d-48d3-861a-2a37e69fccb3"
+  }
+ ],
+ "signatoryAuthorityId": "8005d8c9-4b6d-48d3-861a-2a37e69fccb3",
+ "documentType": {
+  "weight": 95,
+  "name": "Постановление",
+  "id": "fd5a8766-f6fd-4ac2-8fd9-66f414d314ac"
+ },
+ "jdRegNumber": null,
+ "jdRegDate": null
+}

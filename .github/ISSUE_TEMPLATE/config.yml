@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Человеку плохо прямо сейчас
+    url: https://openpalliative.github.io/now/
+    about: Здесь не служба помощи и никто не дежурит. Звоните 112 или 103. На этой странице номера экстренных служб
+  - name: Уязвимость на сайте
+    url: https://github.com/openpalliative/pal-norms/security/advisories/new
+    about: Сообщите закрыто, не в открытом issue. Подробности в SECURITY.md

@@ -1,0 +1,120 @@
+{% extends "op/base.html.j2" %}
+{% set draft = "both" %}
+{% set noindex = true %}
+{% import "op/macros.html.j2" as op with context %}
+{% import "partials/pn.html.j2" as pnm with context %}
+{% macro row(r) -%}
+<li class="pn-ind__row" id="{{ r.id }}">
+  <blockquote data-verbatim>{{ r.text }}</blockquote>
+  {% if not r.verified %}<p class="pn-ind__unv">{{ pnm.unv() }} <span>не сверено со сканом</span></p>{% endif %}
+</li>
+{%- endmacro %}
+{% macro cite_rows(rows) -%}
+{% set first = rows[0] %}
+{% set a = site.pn.acts_by_id.get(first.act_id) %}
+{% set points = rows | map(attribute="point") | unique | list %}
+{% set nums = [] %}{% for p in points %}{% if p.startswith("п. ") and p.endswith(" Положения") %}{% set _ = nums.append(p[3:-10]) %}{% endif %}{% endfor %}
+{% if points | length > 1 and nums | length == points | length %}{% set points = ["пп. " ~ (nums | join(", ")) ~ " Положения"] %}{% endif %}
+{% set pages = rows | map(attribute="page") | select | unique | list %}
+<p class="op-cite pn-ind__cite">
+  <span class="op-cite__title">{% if a %}<a href="{{ url('acts/' ~ a.id ~ '/') }}">{{ a.short_title }}</a>, {% endif %}{{ points | join(", ") }}{% if pages %}, {{ "страница" if pages | length == 1 else "страницы" }} {{ pages | join(", ") }} скана{% endif %}.</span>
+  {% if a and a.eoNumber %}<a class="pn-cite__pub" href="{{ a.url or ('http://publication.pravo.gov.ru/document/' ~ a.eoNumber) }}" title="Номер публикации {{ a.eoNumber }}">Официальная публикация</a>{% endif %}{% set vd = rows | selectattr("verified") | map(attribute="verified_at") | select | list | max %}{% if vd %}{{ "," if a and a.eoNumber }} сверено со сканом {{ vd | ru_date }}{% endif %}
+  {% if a and a.eoNumber %}<span class="op-cite__eo">Номер публикации {{ a.eoNumber }}</span>{% endif %}
+</p>
+{%- endmacro %}
+{% macro block(rows, cls="") -%}
+{% if rows %}
+<ul class="pn-ind__list {{ cls }}">{% for r in rows %}{{ row(r) }}{% endfor %}</ul>
+{{ cite_rows(rows) }}
+{% endif %}
+{%- endmacro %}
+{% block title %}Показания к паллиативной помощи{% endblock %}
+{% block description %}Дословный текст приказа о показаниях к паллиативной медицинской помощи взрослым и детям. Решение принимает врачебная комиссия{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{ url('assets/css/pn-ind.css') }}"><link rel="stylesheet" href="{{ url('assets/css/pn-links.css') }}"><link rel="stylesheet" href="{{ url('assets/css/pn-print.css') }}" media="print">{% endblock %}
+{% block main %}
+{% set ind = site.pn.indications %}
+<div class="op-wrap op-page pn-ind">
+  {{ op.crumbs([("openpalliative", hub('')), (site.title, url('')), ("Показания", "")]) }}
+  <h1>Показания к паллиативной помощи</h1>
+  {% if site.pn.indications_stub %}
+  <p class="op-lead">Страница ждёт проверки медиком и юристом в РФ. Дословный текст есть в наборе данных и в официальной публикации</p>
+  <ul class="pn-links">
+    <li><a class="pn-links__row" href="{{ url('data/v1/indications.json') }}"><span class="pn-links__icon">{{ pnm.ic("code-xml") }}</span><span class="pn-links__text"><span class="pn-links__title">Набор данных с показаниями</span><span class="pn-links__hint">Файл JSON с текстом каждого пункта и ссылкой на страницу скана</span></span></a></li>
+    {% for aid in (ind.adults.scope + ind.children.scope) | map(attribute="act_id") | unique %}
+    {% set a = site.pn.acts_by_id.get(aid) %}
+    {% if a %}<li><a class="pn-links__row" href="{{ url('acts/' ~ a.id ~ '/') }}"><span class="pn-links__icon">{{ pnm.ic("scale") }}</span><span class="pn-links__text"><span class="pn-links__title">{{ a.short_title }}</span><span class="pn-links__hint">Статус документа и ссылка на официальную публикацию</span></span></a></li>{% endif %}
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="op-lead">Дословный текст приказа. Решение принимает врачебная комиссия. Этот текст помогает говорить с врачом</p>
+  {% if ind.adults.count + ind.children.count == 0 %}
+  {{ pnm.status("info", "Текста показаний пока нет в данных") }}
+  {% else %}
+  {{ op.toc([{"id": "adults", "title": "Взрослым"}, {"id": "children", "title": "Детям"}, {"id": "decision", "title": "Кто решает"}, {"id": "next", "title": "Что дальше"}]) }}
+  {% if ind.adults.rule %}
+  <section class="pn-ind__main" aria-labelledby="pn-main-rule">
+    <h2 id="pn-main-rule">Главное правило</h2>
+    <div class="pn-ind__rule">{{ block(ind.adults.rule) }}</div>
+    <p class="pn-ind__note">{{ pnm.ic("info") }}<span>Это дословный текст, а не вывод о конкретном человеке. Решение о паллиативной помощи принимает врачебная комиссия</span></p>
+  </section>
+  {% endif %}
+
+  <section id="adults" aria-labelledby="pn-adults">
+    <h2 id="pn-adults">Взрослым</h2>
+    {% if ind.adults.scope %}<h3>Кому оказывается помощь</h3>{{ block(ind.adults.scope) }}{% endif %}
+    {% if ind.adults.general %}<h3>Общие показания</h3>{{ block(ind.adults.general) }}{% endif %}
+    {% if ind.adults.groups %}
+    <h3>Показания по группам заболеваний</h3>
+    <pn-indications class="pn-ind__groups">
+      <div class="op-field pn-ind__filter" hidden>
+        <label class="op-field__label" for="pn-group">Показать одну группу</label>
+        <p class="op-field__hint" id="pn-group-hint">Выбор только скрывает остальные группы на этом экране и нигде не сохраняется</p>
+        <select class="op-input" id="pn-group" aria-describedby="pn-group-hint">
+          <option value="">Все группы</option>
+          {% for g in ind.adults.groups %}<option value="{{ g.id }}">{{ site.pn.labels.ind_short.get(g.id, g.title) }}</option>{% endfor %}
+        </select>
+      </div>
+      {% for g in ind.adults.groups %}
+      <details class="pn-ind__group" data-group="{{ g.id }}" open>
+        <summary><span class="pn-ind__gname">{{ site.pn.labels.ind_short.get(g.id, g.title) }}</span>{{ pnm.ic("chevron-down", "pn-ind__chev") }}</summary>
+        <div class="pn-ind__gbody">
+          {% if g.id in site.pn.labels.ind_short %}<p class="pn-ind__gtitle"><span class="op-visually-hidden">Название пункта в приказе: </span><span data-verbatim>{{ g.title }}</span></p>{% endif %}
+          {{ block(g.rows) }}
+        </div>
+      </details>
+      {% endfor %}
+    </pn-indications>
+    {% endif %}
+  </section>
+
+  <section id="children" aria-labelledby="pn-children">
+    <h2 id="pn-children">Детям</h2>
+    {% if ind.children.scope %}{{ block(ind.children.scope) }}{% else %}{{ op.unverified("Текста для детей пока нет в данных") }}{% endif %}
+    {% if ind.children.general %}<h3>Общие показания</h3>{{ block(ind.children.general) }}{% endif %}
+  </section>
+
+  <section id="decision" aria-labelledby="pn-decision">
+    <h2 id="pn-decision">Кто решает</h2>
+    {% if ind.adults.decision or ind.children.decision %}
+    {{ block(ind.adults.decision + ind.children.decision) }}
+    {% else %}{{ op.unverified("Текста о том, кто выдаёт заключение, пока нет в данных") }}{% endif %}
+  </section>
+  {% endif %}
+
+  <section id="next" class="op-no-print" aria-labelledby="pn-next">
+    <h2 id="pn-next">Что дальше</h2>
+    <ul class="pn-links">
+      <li><a class="pn-links__row" href="{{ xurl('obrashchenie-kit', 'scenarios/vk-refused/') }}"><span class="pn-links__icon">{{ pnm.ic("file-text") }}</span><span class="pn-links__text"><span class="pn-links__title">Врачебную комиссию не созывают</span><span class="pn-links__hint">Как попросить комиссию письменно. Заявления и жалобы</span></span>{{ pnm.ic("chevron-right", "pn-links__chev") }}</a></li>
+      <li><a class="pn-links__row" href="{{ xurl('home-care-kit', 'conclusion/') }}"><span class="pn-links__icon">{{ pnm.ic("printer") }}</span><span class="pn-links__text"><span class="pn-links__title">Распечатать лист для разговора с врачом</span><span class="pn-links__hint">Нужный пункт приказа на одном листе. Листы для дома</span></span>{{ pnm.ic("chevron-right", "pn-links__chev") }}</a></li>
+    </ul>
+  </section>
+  <div class="pn-printrow">{{ op.print_btn() }}</div>
+  {{ pnm.back() }}
+  {{ op.sheet_footer(site.pn.data_date, site.pn.sheet_until, "openpalliative.github.io" ~ site.base ~ (page_out | replace("index.html", "")), "both") }}
+  {% endif %}
+</div>
+{% endblock %}
+{% block scripts %}
+<script type="module" src="{{ url('assets/js/pn-page.js') }}"></script>
+{% if not site.pn.indications_stub %}<script type="module" src="{{ url('assets/js/pn-indications.js') }}"></script>{% endif %}
+{% endblock %}

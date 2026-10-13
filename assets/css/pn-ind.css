@@ -1,0 +1,133 @@
+.pn-ind__main {
+  margin: 8px 0 40px;
+  padding: 20px 24px;
+  max-width: 48em;
+  background: var(--op-highlight);
+  border-left: 6px solid var(--op-honey);
+  border-radius: 0 var(--op-radius) var(--op-radius) 0;
+}
+
+.pn-ind__main h2 {
+  margin-top: 0;
+}
+
+.pn-ind__rule .pn-ind__row blockquote {
+  font-size: calc(var(--op-size-body) * 1.1);
+  font-weight: 500;
+}
+
+.pn-ind__note {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin: 12px 0 0;
+  font-weight: 600;
+}
+
+.pn-ind__note .op-icon {
+  margin-top: 0.2em;
+  flex: none;
+}
+
+.pn-ind__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 8px;
+  max-width: 44em;
+}
+
+.pn-ind__row {
+  margin: 0 0 10px;
+  max-width: none;
+}
+
+.pn-ind__row blockquote {
+  margin: 0;
+  padding: 2px 0 2px 18px;
+  border-left: 3px solid var(--op-honey);
+}
+
+.pn-ind__unv {
+  margin: 4px 0 0 21px;
+  font-size: var(--op-size-small);
+  color: var(--op-muted);
+}
+
+.pn-ind__cite {
+  margin: 0 0 24px;
+  padding-left: 21px;
+}
+
+.pn-ind__filter {
+  margin: 8px 0 20px;
+  max-width: 28em;
+}
+
+.pn-ind__group {
+  margin: 0 0 12px;
+  max-width: 48em;
+  background: var(--op-surface);
+  border: 1px solid var(--op-border);
+  border-radius: var(--op-radius);
+}
+
+.pn-ind__group > summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 56px;
+  padding: 12px 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pn-ind__group[open] > summary {
+  border-bottom: 1px solid var(--op-sunken);
+}
+
+.pn-ind__group > summary::-webkit-details-marker {
+  display: none;
+}
+
+.pn-ind__group > summary > span[data-verbatim] {
+  flex: 1;
+}
+
+.pn-ind__chev {
+  color: var(--op-muted);
+  transition: transform 0.15s;
+}
+
+.pn-ind__group[open] .pn-ind__chev {
+  transform: rotate(180deg);
+}
+
+.pn-ind__gbody {
+  padding: 16px 18px 4px;
+}
+
+.pn-ind .op-toc {
+  margin-bottom: 32px;
+}
+
+@media (max-width: 599px) {
+  .pn-ind__main {
+    padding: 16px;
+  }
+}
+
+.pn-i--printer {
+  mask-image: url("../../ui/icons/printer.svg");
+}
+
+.pn-ind__gname {
+  flex: 1;
+}
+
+.pn-ind__gtitle {
+  margin: 0 0 14px;
+  padding: 2px 0 2px 18px;
+  border-left: 3px solid var(--op-border);
+  color: var(--op-muted);
+  font-size: var(--op-size-small);
+}

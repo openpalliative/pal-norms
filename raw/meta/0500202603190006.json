@@ -1,0 +1,26 @@
+{
+ "eoNumber": "0500202603190006",
+ "number": "47",
+ "documentDate": "2026-03-13T00:00:00",
+ "publishDateShort": "2026-03-19T00:00:00",
+ "name": "О мусульманском празднике Ураза-байрам",
+ "complexName": "Постановление Правительства Республики Дагестан от 13.03.2026 № 47\n \"О мусульманском празднике Ураза-байрам\"",
+ "pagesCount": 1,
+ "pdfFileLength": 35220,
+ "signatoryAuthorities": [
+  {
+   "isMain": true,
+   "weight": 78970,
+   "name": "Правительство Республики Дагестан",
+   "id": "d94c46ee-f068-403c-b856-41f247ce5e25"
+  }
+ ],
+ "signatoryAuthorityId": "d94c46ee-f068-403c-b856-41f247ce5e25",
+ "documentType": {
+  "weight": 95,
+  "name": "Постановление",
+  "id": "fd5a8766-f6fd-4ac2-8fd9-66f414d314ac"
+ },
+ "jdRegNumber": null,
+ "jdRegDate": null
+}

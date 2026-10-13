@@ -1,0 +1,47 @@
+{% extends "op/base.html.j2" %}
+{% import "op/macros.html.j2" as op with context %}
+{% import "partials/pn.html.j2" as pnm with context %}
+{% block title %}{{ site.title }}{% endblock %}
+{% block description %}{{ site.tagline }}{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{ url('assets/css/pn-home.css') }}"><link rel="stylesheet" href="{{ url('assets/css/pn-links.css') }}"><link rel="stylesheet" href="{{ url('assets/css/pn-print.css') }}" media="print">{% endblock %}
+{% block main %}
+<div class="op-wrap op-page pn-home">
+  <h1>{{ site.title }}</h1>
+  <p class="op-lead">{{ site.tagline }}</p>
+  <h2 class="op-visually-hidden">С чего начать</h2>
+  <ul class="op-cards op-cards--2 pn-home__main">
+    {% for c in site.pn.home.main %}
+    <li>
+      {% call op.card(c.title, href=url(c.path), icon_name=c.icon, cls="pn-entry") %}<p>{{ c.summary }}</p>{% endcall %}
+    </li>
+    {% endfor %}
+  </ul>
+  <section class="pn-home__orgs" aria-labelledby="pn-orgs">
+    <h2 id="pn-orgs">Для НКО и координаторов</h2>
+    <ul class="pn-links">
+      {% for c in site.pn.home.orgs %}
+      <li>
+        <a class="pn-links__row" href="{{ url(c.path) }}">
+          <span class="pn-links__icon">{{ pnm.ic(c.icon) }}</span>
+          <span class="pn-links__text"><span class="pn-links__title">{{ c.title }}</span><span class="pn-links__hint">{{ c.summary }}</span></span>
+          {{ pnm.ic("chevron-right", "pn-links__chev") }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <section class="pn-home__about" aria-labelledby="pn-about">
+    <h2 id="pn-about">Откуда эти данные</h2>
+    {{ pnm.sources() }}
+    <ul class="pn-facts">
+      <li><strong>{{ site.pn.counts.acts }}</strong> {{ site.pn.counts.acts | plural("документ", "документа", "документов", false) }}, из них сверено {{ site.pn.counts.acts_verified }}</li>
+      <li><strong>{{ site.pn.counts.rules }}</strong> {{ site.pn.counts.rules | plural("правило", "правила", "правил", false) }} сроков</li>
+    </ul>
+    {{ pnm.data_line() }}
+  </section>
+  {{ pnm.back() }}
+</div>
+{% endblock %}
+{% block scripts %}
+<script type="module" src="{{ url('assets/js/pn-page.js') }}"></script>
+{% endblock %}

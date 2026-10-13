@@ -1,0 +1,26 @@
+{
+ "eoNumber": "0001202507310062",
+ "number": "315-ФЗ",
+ "documentDate": "2025-07-31T00:00:00",
+ "publishDateShort": "2025-07-31T00:00:00",
+ "name": "\"О внесении изменений в статью 225 части первой Гражданского кодекса Российской Федерации\"",
+ "complexName": "Федеральный закон от 31.07.2025 № 315-ФЗ\n \"О внесении изменений в статью 225 части первой Гражданского кодекса Российской Федерации\"",
+ "pagesCount": 3,
+ "pdfFileLength": 112036,
+ "signatoryAuthorities": [
+  {
+   "isMain": true,
+   "weight": 95000,
+   "name": "Президент Российской Федерации",
+   "id": "225698f1-cfbc-4e42-9caa-32f9f7403211"
+  }
+ ],
+ "signatoryAuthorityId": "225698f1-cfbc-4e42-9caa-32f9f7403211",
+ "documentType": {
+  "weight": 97,
+  "name": "Федеральный закон",
+  "id": "82a8bf1c-3bc7-47ed-827f-7affd43a7f27"
+ },
+ "jdRegNumber": null,
+ "jdRegDate": null
+}

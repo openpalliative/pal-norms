@@ -1,0 +1,104 @@
+{
+  "format": "openpalliative-dataset/1",
+  "dataset": "escalation",
+  "repo": "pal-norms",
+  "schema_version": "1.0.0",
+  "version": "2026.10.11",
+  "generated_at": "2026-10-11T12:00:00Z",
+  "data_date": "2026-10-11",
+  "stale_after_days": 90,
+  "license": "CC-BY-4.0",
+  "source": [
+    {
+      "id": "demo-source",
+      "title": "Пример источника для разработки сайта, не настоящий документ"
+    }
+  ],
+  "content_sha256": "51b846c5b1ecc4c438e6156d4f14fd56e7f2ce6b77d04ffd1141f35d58ce9b69",
+  "counts": {
+    "items": 3,
+    "unverified": 3,
+    "excluded": 0
+  },
+  "items": [
+    {
+      "id": "demo-no-answer",
+      "verified": false,
+      "verified_at": null,
+      "source_ref": "demo-source",
+      "order": 1,
+      "trigger": "no_answer_after_due",
+      "title": "Пример: ответа нет после срока",
+      "what": "Пример: жалоба на нарушение срока ответа",
+      "addressee_kind": "prosecutor",
+      "parallel": false,
+      "norm_ids": [
+        "demo-law"
+      ],
+      "quote_ids": [
+        "demo-law-p12"
+      ],
+      "rule_ids": [
+        "demo-answer"
+      ],
+      "ok_doc": null,
+      "legal_review": {
+        "status": "none",
+        "role": null,
+        "reviewed_at": null,
+        "expires_at": null,
+        "ref": null
+      }
+    },
+    {
+      "id": "demo-redirected",
+      "verified": false,
+      "verified_at": null,
+      "source_ref": "demo-source",
+      "order": 2,
+      "trigger": "redirected_to_accused",
+      "title": "Пример: жалобу переслали тем, на кого вы жаловались",
+      "what": "Пример: повторная жалоба с просьбой не пересылать",
+      "addressee_kind": "rzn_central",
+      "parallel": false,
+      "norm_ids": [
+        "demo-law"
+      ],
+      "quote_ids": [],
+      "rule_ids": [],
+      "ok_doc": null,
+      "legal_review": {
+        "status": "none",
+        "role": null,
+        "reviewed_at": null,
+        "expires_at": null,
+        "ref": null
+      }
+    },
+    {
+      "id": "demo-threat",
+      "verified": false,
+      "verified_at": null,
+      "source_ref": "demo-source",
+      "order": 3,
+      "trigger": "threat_to_life",
+      "title": "Пример: есть угроза жизни",
+      "what": "Пример: подать сразу в несколько мест",
+      "addressee_kind": "prosecutor",
+      "parallel": true,
+      "norm_ids": [
+        "demo-law"
+      ],
+      "quote_ids": [],
+      "rule_ids": [],
+      "ok_doc": null,
+      "legal_review": {
+        "status": "none",
+        "role": null,
+        "reviewed_at": null,
+        "expires_at": null,
+        "ref": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+ "eoNumber": "3200202604130001",
+ "number": "40",
+ "documentDate": "2026-04-08T00:00:00",
+ "publishDateShort": "2026-04-13T00:00:00",
+ "name": "Об объявлении нерабочим праздничным днем на территории Брянской области 21 апреля 2026 года",
+ "complexName": "Указ Губернатора Брянской области от 08.04.2026 № 40\n \"Об объявлении нерабочим праздничным днем на территории Брянской области 21 апреля 2026 года\"",
+ "pagesCount": 1,
+ "pdfFileLength": 27018,
+ "signatoryAuthorities": [
+  {
+   "isMain": true,
+   "weight": 47990,
+   "name": "Губернатор Брянской области",
+   "id": "1425d69c-7e16-4cc0-bfc2-788dcf2d90b4"
+  }
+ ],
+ "signatoryAuthorityId": "1425d69c-7e16-4cc0-bfc2-788dcf2d90b4",
+ "documentType": {
+  "weight": 96,
+  "name": "Указ",
+  "id": "0790e34b-784b-4372-884e-3282622a24bd"
+ },
+ "jdRegNumber": null,
+ "jdRegDate": null
+}

@@ -1,0 +1,30 @@
+quotes:
+- id: 1583-r-p1
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-1583-r
+  act_id: 1583-r
+  point: п. 1 распоряжения
+  anchor: p-1
+  page: 1
+  text: 1. Утвердить прилагаемый план мероприятий ("дорожную карту") "Повышение доступности и качества оказания медицинской помощи, включая паллиативную медицинскую помощь, с применением наркотических и психотропных лекарственных препаратов до 2030 года" (далее - дорожная карта).
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 0
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 1583-r-p1.png
+    crops:
+    - 1583-r-p1.png
+    notes:
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 1583-r-p1.png
+      notes: проход c (450 dpi, psm 3) совпал со словами цитаты

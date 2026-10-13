@@ -1,0 +1,26 @@
+{
+ "eoNumber": "0001202404060004",
+ "number": "70-ФЗ",
+ "documentDate": "2024-04-06T00:00:00",
+ "publishDateShort": "2024-04-06T00:00:00",
+ "name": "\"О внесении изменения в Трудовой кодекс Российской Федерации\"",
+ "complexName": "Федеральный закон от 06.04.2024 № 70-ФЗ\n \"О внесении изменения в Трудовой кодекс Российской Федерации\"",
+ "pagesCount": 2,
+ "pdfFileLength": 59320,
+ "signatoryAuthorities": [
+  {
+   "isMain": true,
+   "weight": 95000,
+   "name": "Президент Российской Федерации",
+   "id": "225698f1-cfbc-4e42-9caa-32f9f7403211"
+  }
+ ],
+ "signatoryAuthorityId": "225698f1-cfbc-4e42-9caa-32f9f7403211",
+ "documentType": {
+  "weight": 97,
+  "name": "Федеральный закон",
+  "id": "82a8bf1c-3bc7-47ed-827f-7affd43a7f27"
+ },
+ "jdRegNumber": null,
+ "jdRegDate": null
+}

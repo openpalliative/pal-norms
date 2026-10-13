@@ -1,0 +1,26 @@
+{
+ "eoNumber": "0001202511100019",
+ "number": "3122-р",
+ "documentDate": "2025-11-01T00:00:00",
+ "publishDateShort": "2025-11-10T00:00:00",
+ "name": null,
+ "complexName": "Распоряжение Правительства Российской Федерации от 01.11.2025 № 3122-р",
+ "pagesCount": 2,
+ "pdfFileLength": 259354,
+ "signatoryAuthorities": [
+  {
+   "isMain": true,
+   "weight": 93000,
+   "name": "Правительство Российской Федерации",
+   "id": "8005d8c9-4b6d-48d3-861a-2a37e69fccb3"
+  }
+ ],
+ "signatoryAuthorityId": "8005d8c9-4b6d-48d3-861a-2a37e69fccb3",
+ "documentType": {
+  "weight": 94,
+  "name": "Распоряжение",
+  "id": "7ff5b3b5-3757-44f1-bb76-3766cabe3593"
+ },
+ "jdRegNumber": null,
+ "jdRegDate": null
+}

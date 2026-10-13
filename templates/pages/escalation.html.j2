@@ -1,0 +1,67 @@
+{% extends "op/base.html.j2" %}
+{% set draft = "legal" %}
+{% import "op/macros.html.j2" as op with context %}
+{% import "partials/pn.html.j2" as pnm with context %}
+{% block title %}Если не ответили или ответили не по существу{% endblock %}
+{% block description %}Что можно сделать дальше, если срок ответа прошёл, жалобу переслали или ответ не по существу, и на какую норму опереться{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{ url('assets/css/pn-misc.css') }}"><link rel="stylesheet" href="{{ url('assets/css/pn-print.css') }}" media="print">{% endblock %}
+{% block main %}
+<div class="op-wrap op-page pn-escalation">
+  {{ op.crumbs([("openpalliative", hub('')), (site.title, url('')), ("Если не ответили", "")]) }}
+  <h1>Если не ответили или ответили не по существу</h1>
+  <p class="op-lead">Что можно сделать дальше и на какую норму опереться. Шаги можно делать по очереди или, если есть угроза жизни, одновременно</p>
+  {% if site.pn.escalation %}
+  <ol class="pn-ladder">
+    {% for e in site.pn.escalation %}
+    {% set link = site.pn.esc_links.get(e.trigger) %}
+    <li class="pn-ladder__step" id="{{ e.id }}">
+      <article class="op-card pn-step">
+        <span class="pn-step__num" aria-hidden="true">{{ loop.index }}</span>
+        <div class="op-card__body">
+          <h2 class="pn-step__title"><span class="op-visually-hidden">Шаг {{ loop.index }}. </span>{{ e.title }}</h2>
+          <p class="pn-step__what">{{ e.what }}</p>
+          <dl class="pn-step__dl">
+            <dt>Куда</dt><dd>{{ site.pn.labels.addressee_kind[e.addressee_kind] }}</dd>
+          </dl>
+          {% if e.parallel %}<p class="pn-badge-line">{{ pnm.ic("info") }}<span>Можно одновременно с другими шагами</span></p>{% endif %}
+          {% if not e.verified %}{{ pnm.status("unverified", "Основание этого шага ещё не сверено с официальной публикацией") }}{% endif %}
+          {{ pnm.legal(e.legal_review) }}
+          <div class="op-actions pn-step__actions">
+            {% if e.ok_doc %}
+            {{ op.btn("Собрать документ", href=xurl('obrashchenie-kit', 'docs/' ~ e.ok_doc ~ '/'), kind="primary", icon_name="file-text") }}
+            {% elif link %}
+            {{ op.btn(link.label, href=xurl(link.repo, link.path), kind="primary", icon_name="file-text") }}
+            {% endif %}
+            {% for rid in e.rule_ids %}{% set rv = site.pn.rules_by_id.get(rid) %}{% if rv %}
+            {{ op.btn("Посчитать срок", href=url('deadlines/' ~ rid ~ '/'), kind="secondary", icon_name="calendar-clock") }}
+            {% endif %}{% endfor %}
+          </div>
+          {% if e.quote_ids or e.norm_ids %}
+          <details class="pn-basis">
+            <summary>Основание{{ pnm.ic("chevron-down", "pn-basis__chev") }}</summary>
+            <p class="pn-basis__norms">{% for nid in e.norm_ids %}{{ pnm.norm_link(nid) }}{% if not loop.last %}, {% endif %}{% endfor %}</p>
+            {{ pnm.quotes(e.quote_ids) }}
+          </details>
+          {% endif %}
+        </div>
+      </article>
+    </li>
+    {% endfor %}
+  </ol>
+  {% else %}
+  {{ pnm.status("info", "Шагов пока нет в данных") }}
+  {% endif %}
+  <section class="pn-region" aria-labelledby="pn-region-title">
+    <h2 id="pn-region-title">Куда именно писать в вашем регионе</h2>
+    <p>Здесь нет адресов и телефонов конкретных учреждений. Их собирает отдельный раздел</p>
+    <p><a href="{{ xurl('pal-directory', '') }}">Номера и адреса вашего региона</a></p>
+  </section>
+  <div class="pn-printrow">{{ op.print_btn() }}</div>
+  {{ pnm.related("escalation") }}
+  {{ pnm.back() }}
+  {{ op.sheet_footer(site.pn.data_date, site.pn.sheet_until, "openpalliative.github.io" ~ site.base ~ (page_out | replace("index.html", "")), "legal") }}
+</div>
+{% endblock %}
+{% block scripts %}
+<script type="module" src="{{ url('assets/js/pn-page.js') }}"></script>
+{% endblock %}

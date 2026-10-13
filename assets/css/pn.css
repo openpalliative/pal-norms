@@ -1,0 +1,245 @@
+.pn-i {
+  display: inline-block;
+  width: 1.15em;
+  height: 1.15em;
+  flex: none;
+  vertical-align: -0.2em;
+  background-color: currentColor;
+  mask-position: center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  forced-color-adjust: none;
+}
+
+.pn-i--arrow-left {
+  mask-image: url("../../ui/icons/arrow-left.svg");
+}
+
+.pn-i--calendar-days {
+  mask-image: url("../../ui/icons/calendar-days.svg");
+}
+
+.pn-i--circle-alert {
+  mask-image: url("../../ui/icons/circle-alert.svg");
+}
+
+.pn-i--circle-check {
+  mask-image: url("../../ui/icons/circle-check.svg");
+}
+
+.pn-i--circle-help {
+  mask-image: url("../../ui/icons/circle-help.svg");
+}
+
+.pn-i--clock {
+  mask-image: url("../../ui/icons/clock.svg");
+}
+
+.pn-i--external-link {
+  mask-image: url("../../ui/icons/external-link.svg");
+}
+
+.pn-i--history {
+  mask-image: url("../../ui/icons/history.svg");
+}
+
+.pn-i--info {
+  mask-image: url("../../ui/icons/info.svg");
+}
+
+.pn-i--triangle-alert {
+  mask-image: url("../../ui/icons/triangle-alert.svg");
+}
+
+.pn-back {
+  display: block;
+  margin: 32px 0 0;
+}
+
+.pn-back__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  font-weight: 600;
+}
+
+.pn-ext {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 6px;
+}
+
+.pn-ext__label::after {
+  content: "";
+  display: inline-block;
+  width: 0.85em;
+  height: 0.85em;
+  margin-left: 0.3em;
+  vertical-align: -0.05em;
+  background: currentColor;
+  mask: url("../../ui/icons/external-link.svg") center / contain no-repeat;
+  forced-color-adjust: none;
+}
+
+.pn-ext__note {
+  font-size: var(--op-size-small);
+  color: var(--op-muted);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.pn-quote blockquote {
+  white-space: pre-line;
+}
+
+.pn-quote .op-status {
+  margin-top: 10px;
+}
+
+.pn-cite .op-cite__title a {
+  font-weight: 600;
+}
+
+.pn-legal {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin: 0 0 16px;
+  color: var(--op-muted);
+  font-size: var(--op-size-small);
+  max-width: 40em;
+}
+
+.pn-legal .op-icon {
+  margin-top: 0.2em;
+}
+
+.pn-legal--ok .op-icon {
+  color: var(--op-success);
+}
+
+.pn-note {
+  display: block;
+  color: var(--op-muted);
+  font-size: var(--op-size-small);
+}
+
+.pn-plain {
+  padding-left: 1.2em;
+  max-width: 44em;
+}
+
+.pn-nojs {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin: 0 0 24px;
+  padding: 12px 16px;
+  border: 1px dashed var(--op-border);
+  border-radius: 8px;
+  color: var(--op-muted);
+  max-width: 40em;
+}
+
+.pn-nojs .op-icon {
+  margin-top: 0.2em;
+}
+
+.pn-res__quotes,
+.pn-basis {
+  margin: 16px 0;
+  border-top: 1px solid var(--op-sunken);
+  padding-top: 4px;
+}
+
+.pn-res__quotes > summary,
+.pn-basis > summary {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--op-link);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.pn-basis__chev {
+  margin-left: 8px;
+  color: var(--op-muted);
+  transition: transform 0.15s;
+}
+
+.pn-basis[open] .pn-basis__chev {
+  transform: rotate(180deg);
+}
+
+.pn-i--chevron-down {
+  mask-image: url("../../ui/icons/chevron-down.svg");
+}
+
+.pn-res__quotes > summary::-webkit-details-marker,
+.pn-basis > summary::-webkit-details-marker {
+  display: none;
+}
+
+.pn-res__quotes[open] > summary,
+.pn-basis[open] > summary {
+  margin-bottom: 8px;
+}
+
+.pn-related {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--op-border);
+  max-width: 48em;
+}
+
+.pn-related h2 {
+  margin-top: 0;
+  font-size: var(--op-size-h3);
+}
+
+.pn-related__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pn-related__list li {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 12px;
+}
+
+.pn-related__list a {
+  font-weight: 600;
+  min-height: 32px;
+}
+
+.pn-related__tool {
+  color: var(--op-muted);
+  font-size: var(--op-size-small);
+}
+
+.pn-printrow {
+  margin: 32px 0 16px;
+}
+
+.pn-dataline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 24px;
+}
+
+.pn-dataline .op-data-date {
+  margin: 0 0 4px;
+}
+
+
+.pn-cite__pub {
+  white-space: nowrap;
+}

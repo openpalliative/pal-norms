@@ -1,0 +1,295 @@
+{
+  "format": "openpalliative-dataset/1",
+  "dataset": "indications",
+  "repo": "pal-norms",
+  "schema_version": "1.0.0",
+  "version": "2026.10.11",
+  "generated_at": "2026-10-11T12:00:00Z",
+  "data_date": "2026-10-11",
+  "stale_after_days": 90,
+  "license": "CC-BY-4.0",
+  "source": [
+    {
+      "id": "demo-source",
+      "title": "Пример источника для разработки сайта, не настоящий документ"
+    }
+  ],
+  "content_sha256": "de4d2c8d855a9e046da4b582f268095fbf67a7463d828cd77e12f8421946d31e",
+  "counts": {
+    "items": 9,
+    "unverified": 0,
+    "excluded": 0
+  },
+  "items": [
+    {
+      "id": "demo-a-scope-1",
+      "verified": true,
+      "verified_at": "2026-10-11",
+      "source_ref": "demo-source",
+      "point": "п. 4",
+      "anchor": "p-4",
+      "page": 10,
+      "text": "Пример: помощь оказывается взрослым с неизлечимыми заболеваниями.",
+      "text_source": "official_pdf",
+      "ocr": {
+        "passes": 2,
+        "diff_lines": 0,
+        "dpi": [
+          300,
+          400
+        ]
+      },
+      "scan_checked": {
+        "at": "2026-10-11",
+        "method": "visual-crop",
+        "crop": "raw/crops/demo-a-scope-1.png"
+      },
+      "audience": "adults",
+      "section": "scope",
+      "group_id": null,
+      "group_title": null,
+      "order": 1,
+      "act_id": "demo-polozhenie"
+    },
+    {
+      "id": "demo-a-gen-1",
+      "verified": true,
+      "verified_at": "2026-10-11",
+      "source_ref": "demo-source",
+      "point": "прил. 1, п. 1",
+      "anchor": "p-a1-1",
+      "page": 10,
+      "text": "Пример: первое общее показание.",
+      "text_source": "official_pdf",
+      "ocr": {
+        "passes": 2,
+        "diff_lines": 0,
+        "dpi": [
+          300,
+          400
+        ]
+      },
+      "scan_checked": {
+        "at": "2026-10-11",
+        "method": "visual-crop",
+        "crop": "raw/crops/demo-a-gen-1.png"
+      },
+      "audience": "adults",
+      "section": "general",
+      "group_id": null,
+      "group_title": null,
+      "order": 2,
+      "act_id": "demo-polozhenie"
+    },
+    {
+      "id": "demo-a-gen-2",
+      "verified": true,
+      "verified_at": "2026-10-11",
+      "source_ref": "demo-source",
+      "point": "прил. 1, п. 1",
+      "anchor": "p-a1-1",
+      "page": 10,
+      "text": "Пример: второе общее показание.",
+      "text_source": "official_pdf",
+      "ocr": {
+        "passes": 2,
+        "diff_lines": 0,
+        "dpi": [
+          300,
+          400
+        ]
+      },
+      "scan_checked": {
+        "at": "2026-10-11",
+        "method": "visual-crop",
+        "crop": "raw/crops/demo-a-gen-2.png"
+      },
+      "audience": "adults",
+      "section": "general",
+      "group_id": null,
+      "group_title": null,
+      "order": 3,
+      "act_id": "demo-polozhenie"
+    },
+    {
+      "id": "demo-a-rule",
+      "verified": true,
+      "verified_at": "2026-10-11",
+      "source_ref": "demo-source",
+      "point": "прил. 1, п. 2",
+      "anchor": "p-a1-2",
+      "page": 10,
+      "text": "Пример: при 2 и более общих показаниях оцениваются показания по группам.",
+      "text_source": "official_pdf",
+      "ocr": {
+        "passes": 2,
+        "diff_lines": 0,
+        "dpi": [
+          300,
+          400
+        ]
+      },
+      "scan_checked": {
+        "at": "2026-10-11",
+        "method": "visual-crop",
+        "crop": "raw/crops/demo-a-rule.png"
+      },
+      "audience": "adults",
+      "section": "rule",
+      "group_id": null,
+      "group_title": null,
+      "order": 4,
+      "act_id": "demo-polozhenie"
+    },
+    {
+      "id": "demo-a-g1-1",
+      "verified": true,
+      "verified_at": "2026-10-11",
+      "source_ref": "demo-source",
+      "point": "прил. 1, п. 3",
+      "anchor": "p-a1-3",
+      "page": 10,
+      "text": "Пример: первая строка группы.",
+      "text_source": "official_pdf",
+      "ocr": {
+        "passes": 2,
+        "diff_lines": 0,
+        "dpi": [
+          300,
+          400
+        ]
+      },
+      "scan_checked": {
+        "at": "2026-10-11",
+        "method": "visual-crop",
+        "crop": "raw/crops/demo-a-g1-1.png"
+      },
+      "audience": "adults",
+      "section": "group",
+      "group_id": "demo-group-1",
+      "group_title": "Пример: первая группа заболеваний",
+      "order": 5,
+      "act_id": "demo-polozhenie"
+    },
+    {
+      "id": "demo-a-g2-1",
+      "verified": true,
+      "verified_at": "2026-10-11",
+      "source_ref": "demo-source",
+      "point": "прил. 1, п. 4",
+      "anchor": "p-a1-4",
+      "page": 10,
+      "text": "Пример: строка второй группы.",
+      "text_source": "official_pdf",
+      "ocr": {
+        "passes": 2,
+        "diff_lines": 0,
+        "dpi": [
+          300,
+          400
+        ]
+      },
+      "scan_checked": {
+        "at": "2026-10-11",
+        "method": "visual-crop",
+        "crop": "raw/crops/demo-a-g2-1.png"
+      },
+      "audience": "adults",
+      "section": "group",
+      "group_id": "demo-group-2",
+      "group_title": "Пример: вторая группа заболеваний",
+      "order": 6,
+      "act_id": "demo-polozhenie"
+    },
+    {
+      "id": "demo-a-dec",
+      "verified": true,
+      "verified_at": "2026-10-11",
+      "source_ref": "demo-source",
+      "point": "п. 13",
+      "anchor": "p-13",
+      "page": 10,
+      "text": "Пример: решение принимает врачебная комиссия.",
+      "text_source": "official_pdf",
+      "ocr": {
+        "passes": 2,
+        "diff_lines": 0,
+        "dpi": [
+          300,
+          400
+        ]
+      },
+      "scan_checked": {
+        "at": "2026-10-11",
+        "method": "visual-crop",
+        "crop": "raw/crops/demo-a-dec.png"
+      },
+      "audience": "adults",
+      "section": "decision",
+      "group_id": null,
+      "group_title": null,
+      "order": 7,
+      "act_id": "demo-polozhenie"
+    },
+    {
+      "id": "demo-c-scope-1",
+      "verified": true,
+      "verified_at": "2026-10-11",
+      "source_ref": "demo-source",
+      "point": "п. 5",
+      "anchor": "p-5",
+      "page": 10,
+      "text": "Пример: помощь оказывается детям по медицинским показаниям, в том числе:",
+      "text_source": "official_pdf",
+      "ocr": {
+        "passes": 2,
+        "diff_lines": 0,
+        "dpi": [
+          300,
+          400
+        ]
+      },
+      "scan_checked": {
+        "at": "2026-10-11",
+        "method": "visual-crop",
+        "crop": "raw/crops/demo-c-scope-1.png"
+      },
+      "audience": "children",
+      "section": "scope",
+      "group_id": null,
+      "group_title": null,
+      "order": 1,
+      "act_id": "demo-polozhenie"
+    },
+    {
+      "id": "demo-c-scope-2",
+      "verified": true,
+      "verified_at": "2026-10-11",
+      "source_ref": "demo-source",
+      "point": "п. 5",
+      "anchor": "p-5",
+      "page": 10,
+      "text": "Пример: строка перечня для детей.",
+      "text_source": "official_pdf",
+      "ocr": {
+        "passes": 2,
+        "diff_lines": 0,
+        "dpi": [
+          300,
+          400
+        ]
+      },
+      "scan_checked": {
+        "at": "2026-10-11",
+        "method": "visual-crop",
+        "crop": "raw/crops/demo-c-scope-2.png"
+      },
+      "audience": "children",
+      "section": "scope",
+      "group_id": null,
+      "group_title": null,
+      "order": 2,
+      "act_id": "demo-polozhenie"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+ "eoNumber": "5300202604210014",
+ "number": "116-пг",
+ "documentDate": "2026-04-17T00:00:00",
+ "publishDateShort": "2026-04-21T00:00:00",
+ "name": "Об установлении нерабочих дней\n",
+ "complexName": "Постановление Губернатора Новгородской области от 17.04.2026 № 116-пг\n \"Об установлении нерабочих дней\"",
+ "pagesCount": 2,
+ "pdfFileLength": 83679,
+ "signatoryAuthorities": [
+  {
+   "isMain": true,
+   "weight": 34980,
+   "name": "Губернатор Новгородской области",
+   "id": "605f0e14-2f83-4217-95b1-5afec5c17f51"
+  }
+ ],
+ "signatoryAuthorityId": "605f0e14-2f83-4217-95b1-5afec5c17f51",
+ "documentType": {
+  "weight": 95,
+  "name": "Постановление",
+  "id": "fd5a8766-f6fd-4ac2-8fd9-66f414d314ac"
+ },
+ "jdRegNumber": null,
+ "jdRegDate": null
+}

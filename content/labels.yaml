@@ -1,0 +1,102 @@
+act_kind:
+  federal_law: Федеральный закон
+  code: Кодекс
+  government_decree: Постановление Правительства
+  government_order: Распоряжение Правительства
+  ministry_order: Приказ министерства
+  joint_order: Совместный приказ министерств
+
+act_status:
+  in_force: { icon: circle-check, word: Действует, filter: in_force }
+  repealed: { icon: history, word: Утратил силу, filter: repealed }
+  not_yet_in_force: { icon: clock, word: Ещё не вступил, filter: in_force }
+  draft: { icon: circle-help, word: Проект, filter: other }
+  unknown: { icon: circle-help, word: Статус не проверен, filter: other }
+
+topics:
+  - { id: palliative, title: Паллиативная помощь }
+  - { id: appeals, title: Обращения и жалобы }
+  - { id: devices, title: Изделия и питание }
+  - { id: nutrition, title: Изделия и питание }
+  - { id: vk, title: Врачебная комиссия и документы }
+  - { id: records, title: Врачебная комиссия и документы }
+  - { id: pain-relief, title: Обезболивание }
+  - { id: mse, title: МСЭ и инвалидность }
+  - { id: social, title: Социальная помощь }
+  - { id: family, title: Доверенность и наследство }
+  - { id: calendar, title: Календарь }
+  - { id: agencies, title: Ведомства }
+
+units:
+  calendar_days: [календарный день, календарных дня, календарных дней]
+  working_days: [рабочий день, рабочих дня, рабочих дней]
+  within_24h: [сутки, суток, суток]
+
+rule_groups:
+  - { id: appeals, title: Обращения и жалобы, topics: [appeals, agencies] }
+  - { id: care, title: Помощь на дому и выписка, topics: [palliative] }
+  - { id: records, title: Медицинские документы и врачебная комиссия, topics: [records, vk] }
+  - { id: devices, title: Медицинские изделия, topics: [devices] }
+  - { id: transition, title: Ребёнку скоро 18, events: [turns-18] }
+  - { id: pharmacy, title: Лекарства и рецепты, topics: [pain-relief] }
+  - { id: mse, title: Инвалидность и МСЭ, topics: [mse, social] }
+  - { id: other, title: Другие сроки, topics: [] }
+
+addressee_kind:
+  prosecutor: Прокуратура района или города
+  rzn_territorial: Территориальный орган Росздравнадзора
+  rzn_central: Центральный аппарат Росздравнадзора
+  health_authority: Орган управления здравоохранением региона
+  head_of_organization: Руководитель организации
+
+change_kind:
+  new_act: Новый документ
+  amendment: Изменения
+  repeal: Утратил силу
+  transfer_decree: Календарь на следующий год
+  sunset_soon: Скоро истекает срок действия
+  in_force: Вступил в силу
+
+datasets:
+  acts: Документы, их статус, чем заменены и на что ссылаются
+  quotes: Дословные цитаты из официальных публикаций с номером страницы скана
+  deadline-rules: Правила сроков с числом, единицей и событием, от которого считать
+  calendar: Праздники и переносы выходных по годам
+  escalation: Ступени «куда обращаться дальше» с основанием
+  indications: Показания к паллиативной помощи дословно
+  lint-rules: Правила проверки памяток на ссылки на отменённые документы
+  changes: Принятые записи ленты изменений
+  entrypoints: Входы для главной страницы openpalliative
+
+weekdays: [понедельник, вторник, среда, четверг, пятница, суббота, воскресенье]
+weekdays_from: [понедельника, вторника, среды, четверга, пятницы, субботы, воскресенья]
+weekdays_to: [понедельник, вторник, среду, четверг, пятницу, субботу, воскресенье]
+months: [январь, февраль, март, апрель, май, июнь, июль, август, сентябрь, октябрь, ноябрь, декабрь]
+
+req_kind:
+  federal_law: Федеральный закон
+  code: Федеральный закон
+  government_decree: Постановление
+  government_order: Распоряжение
+  ministry_order: Приказ
+  joint_order: Приказ
+
+req_authority:
+  Минздрав России: Минздрава России
+  Минтруд России: Минтруда России
+  Минздравсоцразвития России: Минздравсоцразвития России
+  Минздрав России и Минтруд России: Минздрава России и Минтруда России
+  Правительство Российской Федерации: Правительства Российской Федерации
+  Президент Российской Федерации: ""
+
+ind_short:
+  a1-p3: Онкологические заболевания
+  a1-p4: Деменция, в том числе болезнь Альцгеймера
+  a1-p5: Последствия инсульта
+  a1-p6: Болезни сердца и сосудов
+  a1-p7: Болезни органов дыхания
+  a1-p8: Почечная недостаточность
+  a1-p9: Болезни печени
+  a1-p10: Болезни нервной системы, в том числе БАС
+  a1-p11: Инфекции в терминальной стадии
+

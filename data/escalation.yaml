@@ -1,0 +1,105 @@
+steps:
+- id: esc-no-answer
+  verified: false
+  verified_at:
+  source_ref: ips-59-fz
+  order: 1
+  trigger: no_answer_after_due
+  title: Прошёл срок, а ответа нет
+  what: Подайте жалобу на нарушение срока. Укажите, куда и когда вы писали и что ответа нет. Приложите копию обращения и подтверждение отправки или регистрации
+  addressee_kind: prosecutor
+  parallel: false
+  norm_ids:
+  - 59-fz
+  - 80-fz
+  quote_ids:
+  - 59-fz-s12-1
+  - 59-fz-s12-2
+  - koap-5-59
+  rule_ids:
+  - 59fz-answer
+  ok_doc:
+  legal_review:
+    status: none
+    role:
+    reviewed_at:
+    expires_at:
+    ref:
+  interpretation: true
+  interpretation_note: Цитаты подтверждают срок ответа, но не называют прокуратуру. Что жалобу на нарушение срока рассматривает прокуратура, это вывод проекта, юрист в РФ его не проверял
+  addressee_quote_ids: []
+- id: esc-redirected
+  verified: false
+  verified_at:
+  source_ref: ips-59-fz
+  order: 2
+  trigger: redirected_to_accused
+  title: Жалобу переслали тем, на кого вы жаловались
+  what: Закон запрещает направлять жалобу тому, чьё решение или действие обжалуется. Напишите в вышестоящий орган и приложите ответ, который получили
+  addressee_kind: health_authority
+  parallel: false
+  norm_ids:
+  - 59-fz
+  quote_ids:
+  - 59-fz-s8-6
+  rule_ids: []
+  ok_doc:
+  legal_review:
+    status: none
+    role:
+    reviewed_at:
+    expires_at:
+    ref:
+  interpretation: true
+  interpretation_note: Цитата запрещает пересылать жалобу тем, на кого жалуются, но не называет вышестоящий орган. Адресат выведен проектом
+  addressee_quote_ids: []
+- id: esc-not-on-merits
+  verified: false
+  verified_at:
+  source_ref: ips-59-fz
+  order: 3
+  trigger: answer_not_on_merits
+  title: Ответили, но не по существу
+  what: Ответ должен быть письменным и по существу поставленных вопросов. Напишите повторно и перечислите вопросы, на которые не ответили. Если речь о качестве медицинской помощи, копию можно направить в Росздравнадзор
+  addressee_kind: rzn_territorial
+  parallel: false
+  norm_ids:
+  - 59-fz
+  quote_ids:
+  - 59-fz-s10-1
+  rule_ids: []
+  ok_doc:
+  legal_review:
+    status: none
+    role:
+    reviewed_at:
+    expires_at:
+    ref:
+  interpretation: true
+  interpretation_note: Цитата требует ответа по существу, но не называет территориальный орган Росздравнадзора. Адресат выведен проектом
+  addressee_quote_ids: []
+- id: esc-threat-to-life
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  order: 4
+  trigger: threat_to_life
+  title: Есть угроза жизни
+  what: Не ждите ответа на письмо, звоните 103 или 112. Скорая помощь везёт человека с показаниями к паллиативной помощи в стационар. Жалобу о том, что случилось, подавайте параллельно, это можно сделать позже
+  addressee_kind: health_authority
+  parallel: true
+  norm_ids:
+  - 208n-243n
+  quote_ids:
+  - 208n-243n-p22
+  rule_ids: []
+  ok_doc:
+  legal_review:
+    status: none
+    role:
+    reviewed_at:
+    expires_at:
+    ref:
+  interpretation: true
+  interpretation_note: Цитата говорит о скорой помощи и стационаре. Куда подавать жалобу параллельно, выведено проектом
+  addressee_quote_ids: []

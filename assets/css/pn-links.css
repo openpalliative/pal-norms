@@ -1,0 +1,112 @@
+.pn-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px;
+  border-top: 1px solid var(--op-border);
+  max-width: 48em;
+}
+
+.pn-links > li {
+  margin: 0;
+  max-width: none;
+  border-bottom: 1px solid var(--op-border);
+}
+
+.pn-links__row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 64px;
+  padding: 12px 4px;
+  color: var(--op-text);
+  text-decoration: none;
+}
+
+.pn-links__row:hover {
+  color: var(--op-text);
+  background: var(--op-surface);
+}
+
+.pn-links__row:hover .pn-links__title {
+  text-decoration-thickness: 3px;
+}
+
+.pn-links__icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  flex: none;
+  border-radius: 8px;
+  background: var(--op-tile);
+  border: 1px solid var(--op-sunken);
+  color: var(--op-primary);
+}
+
+.pn-links__icon .op-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.pn-links__text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.pn-links__title {
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  text-decoration-color: var(--op-border);
+}
+
+.pn-links__hint {
+  color: var(--op-muted);
+  font-size: var(--op-size-small);
+  line-height: 1.4;
+  margin-top: 2px;
+}
+
+.pn-links__chev {
+  color: var(--op-muted);
+  flex: none;
+}
+
+.pn-i--chevron-right {
+  mask-image: url("../../ui/icons/chevron-right.svg");
+}
+
+.pn-i--book-open {
+  mask-image: url("../../ui/icons/book-open.svg");
+}
+
+.pn-i--code-xml {
+  mask-image: url("../../ui/icons/code-xml.svg");
+}
+
+.pn-i--file-check {
+  mask-image: url("../../ui/icons/file-check.svg");
+}
+
+.pn-i--file-text {
+  mask-image: url("../../ui/icons/file-text.svg");
+}
+
+.pn-i--scale {
+  mask-image: url("../../ui/icons/scale.svg");
+}
+
+.pn-i--printer {
+  mask-image: url("../../ui/icons/printer.svg");
+}
+
+.pn-i--calendar-days {
+  mask-image: url("../../ui/icons/calendar-days.svg");
+}
+
+.pn-i--history {
+  mask-image: url("../../ui/icons/history.svg");
+}

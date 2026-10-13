@@ -1,0 +1,335 @@
+.pn-year .op-draft-wrap,
+.pn-year h1 {
+  margin-bottom: 3mm;
+}
+
+.pn-year__grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3mm;
+  margin: 0 0 4mm;
+}
+
+.pn-month {
+  padding: 2mm 3mm;
+}
+
+.pn-month__title {
+  font-size: 11pt;
+  margin-bottom: 1mm;
+}
+
+.pn-month__list li {
+  margin-bottom: 1mm;
+}
+
+.pn-year h2 {
+  margin-top: 4mm;
+}
+
+.pn-year__quotes {
+  font-size: 9.5pt;
+}
+
+.has-result .pn-print-skip,
+.pn-calc__form,
+.pn-res__actions,
+.pn-res__share,
+.pn-res__more,
+.pn-res__next {
+  display: none !important;
+}
+
+.pn-result {
+  margin: 0;
+}
+
+.pn-res {
+  border: 1pt solid black;
+  border-top: 3pt solid black;
+  padding: 3mm 5mm;
+  max-width: none;
+}
+
+.pn-res__title {
+  font-size: 12pt;
+  margin-bottom: 3mm;
+}
+
+.pn-res__date {
+  font-size: 20pt;
+}
+
+.pn-res {
+  font-size: 10.5pt;
+}
+
+.pn-res .op-status {
+  margin: 0 0 2mm;
+  padding: 1.5mm 3mm;
+}
+
+.pn-res .op-status > .op-icon {
+  width: 12pt;
+  height: 12pt;
+}
+
+.pn-res__h {
+  margin: 3mm 0 1mm;
+  font-size: 11pt;
+}
+
+.pn-res__steps {
+  margin-bottom: 2mm;
+  font-size: 10pt;
+}
+
+.pn-res .pn-legal {
+  margin-bottom: 2mm;
+  font-size: 10pt;
+}
+
+.pn-res .op-quote {
+  margin-bottom: 2mm;
+}
+
+.pn-res .op-quote blockquote {
+  font-size: 10.5pt;
+}
+
+.pn-extlinks .pn-ext__note,
+.pn-filter {
+  display: none !important;
+}
+
+.pn-act-status {
+  border-color: black;
+}
+
+.pn-ind__filter {
+  display: none !important;
+}
+
+.pn-ind__group,
+.pn-month,
+.pn-next__item,
+.pn-term,
+.pn-statusbox,
+.pn-finding {
+  border: 1pt solid black !important;
+  background: white !important;
+  break-inside: avoid;
+}
+
+.pn-ind__main {
+  background: white;
+  border-left: 3pt solid black;
+}
+
+.pn-ind__row blockquote,
+.pn-quote blockquote {
+  border-left: 2pt solid black;
+}
+
+.pn-ladder__step::before {
+  display: none;
+}
+
+.pn-back {
+  display: none !important;
+}
+
+.pn-nojs {
+  display: none !important;
+}
+
+.pn-res__quotes,
+.pn-basis {
+  border-top: 0;
+}
+
+.pn-res__quotes > summary,
+.pn-basis > summary {
+  min-height: 0;
+  text-decoration: none;
+  color: black;
+}
+
+.pn-related {
+  display: none !important;
+}
+
+.pn-ext__note {
+  display: none;
+}
+
+.pn-res--unv .pn-quote .op-status {
+  display: none;
+}
+
+.pn-res .op-quote blockquote {
+  font-size: 9.5pt;
+  padding-left: 3mm;
+}
+
+.pn-res .op-cite {
+  font-size: 8.5pt;
+}
+
+.pn-res__steps,
+.pn-res .pn-legal,
+.pn-res__alt {
+  font-size: 9.5pt;
+}
+
+.pn-res .op-status p {
+  font-size: 9.5pt;
+}
+
+.pn-res__quotes > summary {
+  font-size: 10pt;
+}
+
+.pn-res {
+  line-height: 1.3;
+}
+
+.pn-res .op-cite__links {
+  display: none;
+}
+
+.pn-res__date {
+  margin-bottom: 2mm;
+}
+
+.pn-res__ext {
+  font-size: 9.5pt;
+}
+
+.pn-res .op-sheet-footer {
+  margin-top: 3mm;
+}
+
+.pn-res .op-quote figcaption {
+  padding-left: 3mm;
+}
+
+.pn-res li + li {
+  margin-top: 0;
+}
+
+.pn-res .op-quote blockquote {
+  font-size: 9pt;
+  margin-bottom: 1mm;
+}
+
+.pn-res .op-status {
+  max-width: none;
+}
+
+.pn-ind__chev,
+.pn-basis__chev {
+  display: none;
+}
+
+.pn-calc__h {
+  display: none !important;
+}
+
+.pn-ladder__step,
+.pn-step {
+  break-inside: auto;
+}
+
+.pn-step__title,
+.pn-step h2,
+.pn-step h3 {
+  break-after: avoid;
+}
+
+.pn-rule {
+  font-size: 10pt;
+}
+
+.pn-rule h1 {
+  font-size: 16pt;
+  margin: 0 0 2mm;
+}
+
+.pn-rule h2 {
+  font-size: 12pt;
+  margin: 4mm 0 1.5mm;
+}
+
+.pn-rule .pn-term {
+  padding: 2mm 4mm;
+  margin-bottom: 1mm;
+}
+
+.pn-rule .pn-term__value {
+  font-size: 15pt;
+}
+
+.pn-rule .op-dl {
+  row-gap: 1mm;
+}
+
+.pn-rule .op-status {
+  margin: 1.5mm 0;
+  padding: 1mm 3mm;
+}
+
+.pn-rule .op-quote blockquote {
+  font-size: 10pt;
+  line-height: 1.35;
+}
+
+.pn-rule .pn-quote .op-status {
+  display: none !important;
+}
+
+.pn-rule .pn-term,
+.pn-rule .op-quote,
+.pn-rule .op-quote blockquote,
+.pn-rule .op-cite {
+  max-width: none;
+}
+
+.pn-rule .op-status {
+  max-width: none;
+}
+
+.pn-rule .op-quote {
+  margin: 0 0 2mm;
+}
+
+.pn-rule .op-cite,
+.pn-rule .pn-term__dl {
+  font-size: 9.5pt;
+}
+
+.pn-escalation .pn-quote .op-status {
+  display: none !important;
+}
+
+.pn-escalation .op-card,
+.pn-escalation .op-status,
+.pn-escalation .op-quote blockquote {
+  max-width: none;
+}
+
+.pn-ind__group {
+  break-inside: auto;
+}
+
+.pn-ind__group > summary {
+  break-after: avoid;
+}
+
+.pn-actpage .op-quote {
+  break-inside: auto;
+}
+
+.pn-actpage h2,
+.pn-actpage .op-section__lead {
+  break-after: avoid;
+}

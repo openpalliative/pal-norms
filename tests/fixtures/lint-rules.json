@@ -1,0 +1,86 @@
+{
+  "format": "openpalliative-dataset/1",
+  "dataset": "lint-rules",
+  "repo": "pal-norms",
+  "schema_version": "1.0.0",
+  "version": "2026.10.11",
+  "generated_at": "2026-10-11T12:00:00Z",
+  "data_date": "2026-10-11",
+  "stale_after_days": 90,
+  "license": "CC-BY-4.0",
+  "source": [
+    {
+      "id": "demo-source",
+      "title": "Пример источника для разработки сайта, не настоящий документ"
+    }
+  ],
+  "content_sha256": "81d673405b92a3267eee102dd7596fa4a0a9ddb77338478eb54a44cdb88cd2ad",
+  "counts": {
+    "items": 3,
+    "unverified": 1,
+    "excluded": 0
+  },
+  "items": [
+    {
+      "id": "demo-repealed",
+      "verified": true,
+      "verified_at": "2026-10-11",
+      "source_ref": "demo-source",
+      "kind": "repealed_act",
+      "patterns": [
+        "(?<![0-9A-Za-zА-Яа-яЁё])111\\s*-?\\s*н\\s*/\\s*111\\s*-?\\s*н(?![0-9A-Za-zА-Яа-яЁё])"
+      ],
+      "flags": "i",
+      "context": null,
+      "act_id": "demo-old",
+      "suggest_act_id": "demo-polozhenie",
+      "message": "Упомянут пример акта, который утратил силу 01.09.2025",
+      "severity": "error",
+      "quote_ids": [
+        "demo-polozhenie-p2"
+      ],
+      "since": "2025-09-01"
+    },
+    {
+      "id": "demo-agency",
+      "verified": false,
+      "verified_at": null,
+      "source_ref": "demo-source",
+      "kind": "agency",
+      "patterns": [
+        "(?<![0-9A-Za-zА-Яа-яЁё])ПФР(?![0-9A-Za-zА-Яа-яЁё])"
+      ],
+      "flags": "",
+      "context": null,
+      "act_id": null,
+      "suggest_act_id": null,
+      "message": "Пример: упомянуто ведомство, которого больше нет",
+      "severity": "warning",
+      "quote_ids": [],
+      "since": "2023-01-01"
+    },
+    {
+      "id": "demo-30-working",
+      "verified": true,
+      "verified_at": "2026-10-11",
+      "source_ref": "demo-source",
+      "kind": "deadline_mismatch",
+      "patterns": [
+        "30\\s+рабочих"
+      ],
+      "flags": "i",
+      "context": {
+        "pattern": "18\\s*лет|восемнадцат|совершеннолет",
+        "window": 200
+      },
+      "act_id": null,
+      "suggest_act_id": "demo-polozhenie",
+      "message": "Рядом говорится о переходе в 18 лет и сроке 30 рабочих дней. В примере положения срок другой",
+      "severity": "warning",
+      "quote_ids": [
+        "demo-polozhenie-p23"
+      ],
+      "since": null
+    }
+  ]
+}

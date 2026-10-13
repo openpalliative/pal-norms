@@ -1,0 +1,823 @@
+{
+ "checked_at": "2026-10-13T07:06:31Z",
+ "last_ok_at": "2026-10-13T07:06:31Z",
+ "consecutive_failures": 0,
+ "seen": {
+  "0001201111220007": {
+   "pagesCount": 213,
+   "pdfFileLength": 7257635,
+   "publishDateShort": "2011-11-22"
+  },
+  "0001201111240003": {
+   "pagesCount": 14,
+   "pdfFileLength": 486781,
+   "publishDateShort": "2011-11-24"
+  },
+  "0001201112010002": {
+   "pagesCount": 9,
+   "pdfFileLength": 294277,
+   "publishDateShort": "2011-12-01"
+  },
+  "0001201112060008": {
+   "pagesCount": 2,
+   "pdfFileLength": 49238,
+   "publishDateShort": "2011-12-06"
+  },
+  "0001201204240009": {
+   "pagesCount": 4,
+   "pdfFileLength": 151597,
+   "publishDateShort": "2012-04-24"
+  },
+  "0001201207300044": {
+   "pagesCount": 4,
+   "pdfFileLength": 155677,
+   "publishDateShort": "2012-07-30"
+  },
+  "0001201212040008": {
+   "pagesCount": 3,
+   "pdfFileLength": 110700,
+   "publishDateShort": "2012-12-04"
+  },
+  "0001201212040014": {
+   "pagesCount": 5,
+   "pdfFileLength": 217916,
+   "publishDateShort": "2012-12-04"
+  },
+  "0001201305080015": {
+   "pagesCount": 3,
+   "pdfFileLength": 119658,
+   "publishDateShort": "2013-05-08"
+  },
+  "0001201305080028": {
+   "pagesCount": 40,
+   "pdfFileLength": 1856429,
+   "publishDateShort": "2013-05-08"
+  },
+  "0001201307230025": {
+   "pagesCount": 4,
+   "pdfFileLength": 123489,
+   "publishDateShort": "2013-07-23"
+  },
+  "0001201312300060": {
+   "pagesCount": 52,
+   "pdfFileLength": 2483407,
+   "publishDateShort": "2013-12-30"
+  },
+  "0001201404020038": {
+   "pagesCount": 5,
+   "pdfFileLength": 236772,
+   "publishDateShort": "2014-04-02"
+  },
+  "0001201404020047": {
+   "pagesCount": 13,
+   "pdfFileLength": 610498,
+   "publishDateShort": "2014-04-02"
+  },
+  "0001201411250019": {
+   "pagesCount": 52,
+   "pdfFileLength": 2474313,
+   "publishDateShort": "2014-11-25"
+  },
+  "0001201412020017": {
+   "pagesCount": 18,
+   "pdfFileLength": 853613,
+   "publishDateShort": "2014-12-02"
+  },
+  "0001201412230022": {
+   "pagesCount": 13,
+   "pdfFileLength": 573921,
+   "publishDateShort": "2014-12-23"
+  },
+  "0001201412310014": {
+   "pagesCount": 2,
+   "pdfFileLength": 65601,
+   "publishDateShort": "2014-12-31"
+  },
+  "0001201505020007": {
+   "pagesCount": 6,
+   "pdfFileLength": 254086,
+   "publishDateShort": "2015-05-02"
+  },
+  "0001201505120026": {
+   "pagesCount": 38,
+   "pdfFileLength": 2129553,
+   "publishDateShort": "2015-05-12"
+  },
+  "0001201505150003": {
+   "pagesCount": 28,
+   "pdfFileLength": 1440919,
+   "publishDateShort": "2015-05-15"
+  },
+  "0001201507130020": {
+   "pagesCount": 2,
+   "pdfFileLength": 50486,
+   "publishDateShort": "2015-07-13"
+  },
+  "0001201603090041": {
+   "pagesCount": 2,
+   "pdfFileLength": 37316,
+   "publishDateShort": "2016-03-09"
+  },
+  "0001201607030017": {
+   "pagesCount": 4,
+   "pdfFileLength": 140601,
+   "publishDateShort": "2016-07-03"
+  },
+  "0001201607040124": {
+   "pagesCount": 11,
+   "pdfFileLength": 487249,
+   "publishDateShort": "2016-07-04"
+  },
+  "0001201607040137": {
+   "pagesCount": 4,
+   "pdfFileLength": 168043,
+   "publishDateShort": "2016-07-04"
+  },
+  "0001201706180006": {
+   "pagesCount": 4,
+   "pdfFileLength": 157974,
+   "publishDateShort": "2017-06-18"
+  },
+  "0001201707010013": {
+   "pagesCount": 3,
+   "pdfFileLength": 123487,
+   "publishDateShort": "2017-07-01"
+  },
+  "0001201707300032": {
+   "pagesCount": 20,
+   "pdfFileLength": 930597,
+   "publishDateShort": "2017-07-30"
+  },
+  "0001201707300036": {
+   "pagesCount": 2,
+   "pdfFileLength": 68601,
+   "publishDateShort": "2017-07-30"
+  },
+  "0001201712290066": {
+   "pagesCount": 2,
+   "pdfFileLength": 75603,
+   "publishDateShort": "2017-12-29"
+  },
+  "0001201808030104": {
+   "pagesCount": 3,
+   "pdfFileLength": 123567,
+   "publishDateShort": "2018-08-03"
+  },
+  "0001201808200006": {
+   "pagesCount": 8,
+   "pdfFileLength": 403059,
+   "publishDateShort": "2018-08-20"
+  },
+  "0001201809030030": {
+   "pagesCount": 5,
+   "pdfFileLength": 241327,
+   "publishDateShort": "2018-09-03"
+  },
+  "0001201810030023": {
+   "pagesCount": 2,
+   "pdfFileLength": 78962,
+   "publishDateShort": "2018-10-03"
+  },
+  "0001201810110013": {
+   "pagesCount": 2,
+   "pdfFileLength": 48817,
+   "publishDateShort": "2018-10-11"
+  },
+  "0001201812250098": {
+   "pagesCount": 15,
+   "pdfFileLength": 659488,
+   "publishDateShort": "2018-12-25"
+  },
+  "0001201812280021": {
+   "pagesCount": 3,
+   "pdfFileLength": 100581,
+   "publishDateShort": "2018-12-28"
+  },
+  "0001201903060012": {
+   "pagesCount": 5,
+   "pdfFileLength": 197407,
+   "publishDateShort": "2019-03-06"
+  },
+  "0001201906270031": {
+   "pagesCount": 108,
+   "pdfFileLength": 6675895,
+   "publishDateShort": "2019-06-27"
+  },
+  "0001201907010015": {
+   "pagesCount": 19,
+   "pdfFileLength": 657604,
+   "publishDateShort": "2019-07-01"
+  },
+  "0001201908020054": {
+   "pagesCount": 3,
+   "pdfFileLength": 126976,
+   "publishDateShort": "2019-08-02"
+  },
+  "0001201908020074": {
+   "pagesCount": 2,
+   "pdfFileLength": 69789,
+   "publishDateShort": "2019-08-02"
+  },
+  "0001201909250013": {
+   "pagesCount": 7,
+   "pdfFileLength": 354909,
+   "publishDateShort": "2019-09-25"
+  },
+  "0001201911120039": {
+   "pagesCount": 3,
+   "pdfFileLength": 95780,
+   "publishDateShort": "2019-11-12"
+  },
+  "0001201912020029": {
+   "pagesCount": 6,
+   "pdfFileLength": 254917,
+   "publishDateShort": "2019-12-02"
+  },
+  "0001201912020051": {
+   "pagesCount": 2,
+   "pdfFileLength": 56612,
+   "publishDateShort": "2019-12-02"
+  },
+  "0001201912160070": {
+   "pagesCount": 16,
+   "pdfFileLength": 838495,
+   "publishDateShort": "2019-12-16"
+  },
+  "0001202004240036": {
+   "pagesCount": 2,
+   "pdfFileLength": 69624,
+   "publishDateShort": "2020-04-24"
+  },
+  "0001202005250035": {
+   "pagesCount": 7,
+   "pdfFileLength": 299000,
+   "publishDateShort": "2020-05-25"
+  },
+  "0001202007130037": {
+   "pagesCount": 7,
+   "pdfFileLength": 370659,
+   "publishDateShort": "2020-07-13"
+  },
+  "0001202007310005": {
+   "pagesCount": 4,
+   "pdfFileLength": 180082,
+   "publishDateShort": "2020-07-31"
+  },
+  "0001202007310010": {
+   "pagesCount": 2,
+   "pdfFileLength": 55659,
+   "publishDateShort": "2020-07-31"
+  },
+  "0001202009240027": {
+   "pagesCount": 7,
+   "pdfFileLength": 454194,
+   "publishDateShort": "2020-09-24"
+  },
+  "0001202011090012": {
+   "pagesCount": 3,
+   "pdfFileLength": 97577,
+   "publishDateShort": "2020-11-09"
+  },
+  "0001202012040022": {
+   "pagesCount": 2,
+   "pdfFileLength": 85759,
+   "publishDateShort": "2020-12-04"
+  },
+  "0001202012080047": {
+   "pagesCount": 19,
+   "pdfFileLength": 1070749,
+   "publishDateShort": "2020-12-08"
+  },
+  "0001202012290122": {
+   "pagesCount": 6,
+   "pdfFileLength": 311774,
+   "publishDateShort": "2020-12-29"
+  },
+  "0001202102240017": {
+   "pagesCount": 4,
+   "pdfFileLength": 161562,
+   "publishDateShort": "2021-02-24"
+  },
+  "0001202104300085": {
+   "pagesCount": 9,
+   "pdfFileLength": 438752,
+   "publishDateShort": "2021-04-30"
+  },
+  "0001202106280038": {
+   "pagesCount": 10,
+   "pdfFileLength": 465212,
+   "publishDateShort": "2021-06-28"
+  },
+  "0001202107020011": {
+   "pagesCount": 5,
+   "pdfFileLength": 218109,
+   "publishDateShort": "2021-07-02"
+  },
+  "0001202107020023": {
+   "pagesCount": 94,
+   "pdfFileLength": 5031993,
+   "publishDateShort": "2021-07-02"
+  },
+  "0001202111190011": {
+   "pagesCount": 3,
+   "pdfFileLength": 141529,
+   "publishDateShort": "2021-11-19"
+  },
+  "0001202111220001": {
+   "pagesCount": 18,
+   "pdfFileLength": 981008,
+   "publishDateShort": "2021-11-22"
+  },
+  "0001202111300115": {
+   "pagesCount": 43,
+   "pdfFileLength": 2870086,
+   "publishDateShort": "2021-11-30"
+  },
+  "0001202111300143": {
+   "pagesCount": 17,
+   "pdfFileLength": 1152132,
+   "publishDateShort": "2021-11-30"
+  },
+  "0001202204080035": {
+   "pagesCount": 44,
+   "pdfFileLength": 2824996,
+   "publishDateShort": "2022-04-08"
+  },
+  "0001202206110002": {
+   "pagesCount": 7,
+   "pdfFileLength": 312101,
+   "publishDateShort": "2022-06-11"
+  },
+  "0001202206280047": {
+   "pagesCount": 2,
+   "pdfFileLength": 60053,
+   "publishDateShort": "2022-06-28"
+  },
+  "0001202207140010": {
+   "pagesCount": 5,
+   "pdfFileLength": 181329,
+   "publishDateShort": "2022-07-14"
+  },
+  "0001202207140012": {
+   "pagesCount": 44,
+   "pdfFileLength": 2293802,
+   "publishDateShort": "2022-07-14"
+  },
+  "0001202207140052": {
+   "pagesCount": 3,
+   "pdfFileLength": 109027,
+   "publishDateShort": "2022-07-14"
+  },
+  "0001202207140123": {
+   "pagesCount": 3,
+   "pdfFileLength": 113265,
+   "publishDateShort": "2022-07-14"
+  },
+  "0001202210070004": {
+   "pagesCount": 9,
+   "pdfFileLength": 408100,
+   "publishDateShort": "2022-10-07"
+  },
+  "0001202211040021": {
+   "pagesCount": 2,
+   "pdfFileLength": 47285,
+   "publishDateShort": "2022-11-04"
+  },
+  "0001202211040027": {
+   "pagesCount": 5,
+   "pdfFileLength": 212655,
+   "publishDateShort": "2022-11-04"
+  },
+  "0001202307240009": {
+   "pagesCount": 4,
+   "pdfFileLength": 167376,
+   "publishDateShort": "2023-07-24"
+  },
+  "0001202308180053": {
+   "pagesCount": 1,
+   "pdfFileLength": 130309,
+   "publishDateShort": "2023-08-18"
+  },
+  "0001202309210008": {
+   "pagesCount": 15,
+   "pdfFileLength": 3567390,
+   "publishDateShort": "2023-09-21"
+  },
+  "0001202311170037": {
+   "pagesCount": 1,
+   "pdfFileLength": 191810,
+   "publishDateShort": "2023-11-17"
+  },
+  "0001202312110027": {
+   "pagesCount": 21,
+   "pdfFileLength": 3455876,
+   "publishDateShort": "2023-12-11"
+  },
+  "0001202312140006": {
+   "pagesCount": 9,
+   "pdfFileLength": 670720,
+   "publishDateShort": "2023-12-14"
+  },
+  "0001202312250033": {
+   "pagesCount": 3,
+   "pdfFileLength": 93040,
+   "publishDateShort": "2023-12-25"
+  },
+  "0001202402140005": {
+   "pagesCount": 2,
+   "pdfFileLength": 69364,
+   "publishDateShort": "2024-02-14"
+  },
+  "0001202404060004": {
+   "pagesCount": 2,
+   "pdfFileLength": 59320,
+   "publishDateShort": "2024-04-06"
+  },
+  "0001202406070030": {
+   "pagesCount": 5,
+   "pdfFileLength": 1000437,
+   "publishDateShort": "2024-06-07"
+  },
+  "0001202408080067": {
+   "pagesCount": 5,
+   "pdfFileLength": 232829,
+   "publishDateShort": "2024-08-08"
+  },
+  "0001202408080096": {
+   "pagesCount": 8,
+   "pdfFileLength": 375562,
+   "publishDateShort": "2024-08-08"
+  },
+  "0001202409190039": {
+   "pagesCount": 2,
+   "pdfFileLength": 242835,
+   "publishDateShort": "2024-09-19"
+  },
+  "0001202410040023": {
+   "pagesCount": 1,
+   "pdfFileLength": 129645,
+   "publishDateShort": "2024-10-04"
+  },
+  "0001202411090013": {
+   "pagesCount": 3,
+   "pdfFileLength": 123639,
+   "publishDateShort": "2024-11-09"
+  },
+  "0001202412130023": {
+   "pagesCount": 7,
+   "pdfFileLength": 297390,
+   "publishDateShort": "2024-12-13"
+  },
+  "0001202412260024": {
+   "pagesCount": 26,
+   "pdfFileLength": 1350751,
+   "publishDateShort": "2024-12-26"
+  },
+  "0001202501270007": {
+   "pagesCount": 2,
+   "pdfFileLength": 211751,
+   "publishDateShort": "2025-01-27"
+  },
+  "0001202504100006": {
+   "pagesCount": 17,
+   "pdfFileLength": 1076174,
+   "publishDateShort": "2025-04-10"
+  },
+  "0001202505160009": {
+   "pagesCount": 9,
+   "pdfFileLength": 650577,
+   "publishDateShort": "2025-05-16"
+  },
+  "0001202505290031": {
+   "pagesCount": 196,
+   "pdfFileLength": 8843571,
+   "publishDateShort": "2025-05-29"
+  },
+  "0001202506070020": {
+   "pagesCount": 7,
+   "pdfFileLength": 344739,
+   "publishDateShort": "2025-06-07"
+  },
+  "0001202506070023": {
+   "pagesCount": 2,
+   "pdfFileLength": 63125,
+   "publishDateShort": "2025-06-07"
+  },
+  "0001202507310053": {
+   "pagesCount": 3,
+   "pdfFileLength": 116270,
+   "publishDateShort": "2025-07-31"
+  },
+  "0001202508130021": {
+   "pagesCount": 16,
+   "pdfFileLength": 613870,
+   "publishDateShort": "2025-08-13"
+  },
+  "0001202509240023": {
+   "pagesCount": 1,
+   "pdfFileLength": 115527,
+   "publishDateShort": "2025-09-24"
+  },
+  "0001202511100019": {
+   "pagesCount": 2,
+   "pdfFileLength": 259354,
+   "publishDateShort": "2025-11-10"
+  },
+  "0001202512280022": {
+   "pagesCount": 6,
+   "pdfFileLength": 293415,
+   "publishDateShort": "2025-12-28"
+  },
+  "0001202512290020": {
+   "pagesCount": 7,
+   "pdfFileLength": 318045,
+   "publishDateShort": "2025-12-29"
+  },
+  "0001202512300036": {
+   "pagesCount": 872,
+   "pdfFileLength": 135989454,
+   "publishDateShort": "2025-12-30"
+  },
+  "0001202604090026": {
+   "pagesCount": 3,
+   "pdfFileLength": 98777,
+   "publishDateShort": "2026-04-09"
+  },
+  "0001202604140027": {
+   "pagesCount": 10,
+   "pdfFileLength": 524496,
+   "publishDateShort": "2026-04-14"
+  },
+  "0001202605250023": {
+   "pagesCount": 8,
+   "pdfFileLength": 394674,
+   "publishDateShort": "2026-05-25"
+  },
+  "0001202606260118": {
+   "pagesCount": 16,
+   "pdfFileLength": 2850570,
+   "publishDateShort": "2026-06-26"
+  },
+  "0001202607070008": {
+   "pagesCount": 79,
+   "pdfFileLength": 3753936,
+   "publishDateShort": "2026-07-07"
+  },
+  "0001202607260006": {
+   "pagesCount": 6,
+   "pdfFileLength": 275520,
+   "publishDateShort": "2026-07-26"
+  },
+  "0001202609180037": {
+   "pagesCount": 1,
+   "pdfFileLength": 121949,
+   "publishDateShort": "2026-09-18"
+  }
+ },
+ "queries": {
+  "act:100n": {
+   "total": 27,
+   "last_eo": "0001202608310016"
+  },
+  "act:1093n": {
+   "total": 6,
+   "last_eo": "0001202111300143"
+  },
+  "act:1094n": {
+   "total": 3,
+   "last_eo": "0001202111300115"
+  },
+  "act:1195n": {
+   "total": 2,
+   "last_eo": "0001202203180031"
+  },
+  "act:1583-r": {
+   "total": 11,
+   "last_eo": "0001202606260118"
+  },
+  "act:18-fz": {
+   "total": 15,
+   "last_eo": "0001202602110013"
+  },
+  "act:180n": {
+   "total": 16,
+   "last_eo": "0001202609160014"
+  },
+  "act:187n": {
+   "total": 26,
+   "last_eo": "0001202604300007"
+  },
+  "act:193n": {
+   "total": 25,
+   "last_eo": "0001202608280040"
+  },
+  "act:208n-243n": {
+   "total": 20,
+   "last_eo": "0001202505290031"
+  },
+  "act:236-fz": {
+   "total": 15,
+   "last_eo": "0001202607040025"
+  },
+  "act:242-fz-2017": {
+   "total": 15,
+   "last_eo": "0001202607260002"
+  },
+  "act:2562-r-2024": {
+   "total": 12,
+   "last_eo": "0001202609180042"
+  },
+  "act:271-fz-2020": {
+   "total": 15,
+   "last_eo": "0001202607260030"
+  },
+  "act:3122-r-2025": {
+   "total": 5,
+   "last_eo": "0001202511100019"
+  },
+  "act:315-fz-2021": {
+   "total": 16,
+   "last_eo": "0001202608040021"
+  },
+  "act:323-fz": {
+   "total": 16,
+   "last_eo": "0001202608040066"
+  },
+  "act:345n-372n": {
+   "total": 9,
+   "last_eo": "0001202609100011"
+  },
+  "act:348n": {
+   "total": 14,
+   "last_eo": "0001202609140012"
+  },
+  "act:35-fz": {
+   "total": 15,
+   "last_eo": "0001202602200056"
+  },
+  "act:3551-r-2023": {
+   "total": 4,
+   "last_eo": "0001202412050026"
+  },
+  "act:357-fz-2014": {
+   "total": 14,
+   "last_eo": "0001202509290025"
+  },
+  "act:398n": {
+   "total": 14,
+   "last_eo": "0001202610060026"
+  },
+  "act:424n": {
+   "total": 6,
+   "last_eo": "0001202607070008"
+  },
+  "act:442-fz": {
+   "total": 13,
+   "last_eo": "0001202511280105"
+  },
+  "act:489-fz": {
+   "total": 11,
+   "last_eo": "0001202512150054"
+  },
+  "act:505n": {
+   "total": 7,
+   "last_eo": "0001202606260061"
+  },
+  "act:60-fz-2016": {
+   "total": 15,
+   "last_eo": "0001202603230006"
+  },
+  "act:692n": {
+   "total": 10,
+   "last_eo": "0001202604140027"
+  },
+  "act:76-r-2025": {
+   "total": 9,
+   "last_eo": "0001202601270042"
+  },
+  "act:789n": {
+   "total": 7,
+   "last_eo": "0001202312120052"
+  },
+  "act:792n": {
+   "total": 4,
+   "last_eo": "0001202312140006"
+  },
+  "act:80-fz": {
+   "total": 15,
+   "last_eo": "0001202604090007"
+  },
+  "act:gk-1174": {
+   "total": 15,
+   "last_eo": "0001202610120005"
+  },
+  "act:gk-185": {
+   "total": 15,
+   "last_eo": "0001202604090033"
+  },
+  "act:gk-185-1": {
+   "total": 15,
+   "last_eo": "0001202604090033"
+  },
+  "act:gk-188": {
+   "total": 15,
+   "last_eo": "0001202604090033"
+  },
+  "act:pp-1187": {
+   "total": 23,
+   "last_eo": "0001202609180037"
+  },
+  "act:pp-1314": {
+   "total": 25,
+   "last_eo": "0001202610080016"
+  },
+  "act:pp-1335": {
+   "total": 23,
+   "last_eo": "0001202610120044"
+  },
+  "act:pp-1466": {
+   "total": 22,
+   "last_eo": "0001202606150024"
+  },
+  "act:pp-2188": {
+   "total": 13,
+   "last_eo": "0001202608180022"
+  },
+  "act:pp-588": {
+   "total": 28,
+   "last_eo": "0001202605230026"
+  },
+  "noeo:2347-r": {
+   "total": 1,
+   "last_eo": "0001202309210008"
+  },
+  "noeo:388n": {
+   "total": 0,
+   "last_eo": ""
+  },
+  "noeo:59-fz": {
+   "total": 6,
+   "last_eo": "0001202412280052"
+  },
+  "noeo:pp-240": {
+   "total": 0,
+   "last_eo": ""
+  },
+  "noeo:tk-rf": {
+   "total": 69,
+   "last_eo": "0001202607260006"
+  },
+  "topic:federal_authorities:паллиативная": {
+   "total": 0,
+   "last_eo": ""
+  },
+  "topic:federal_authorities:паллиативной": {
+   "total": 14,
+   "last_eo": "0001202508130021"
+  },
+  "topic:federal_authorities:паллиативную": {
+   "total": 1,
+   "last_eo": "0001202201130004"
+  },
+  "topic:federal_authorities:паллиативных": {
+   "total": 0,
+   "last_eo": ""
+  },
+  "topic:government:паллиативная": {
+   "total": 0,
+   "last_eo": ""
+  },
+  "topic:government:паллиативной": {
+   "total": 1,
+   "last_eo": "0001201803020032"
+  },
+  "topic:government:паллиативную": {
+   "total": 0,
+   "last_eo": ""
+  },
+  "topic:government:паллиативных": {
+   "total": 0,
+   "last_eo": ""
+  },
+  "topic:president:паллиативная": {
+   "total": 0,
+   "last_eo": ""
+  },
+  "topic:president:паллиативной": {
+   "total": 1,
+   "last_eo": "0001201903060012"
+  },
+  "topic:president:паллиативную": {
+   "total": 0,
+   "last_eo": ""
+  },
+  "topic:president:паллиативных": {
+   "total": 0,
+   "last_eo": ""
+  },
+  "transfers": {
+   "total": 14,
+   "last_eo": "0001202609180037"
+  }
+ }
+}

@@ -1,0 +1,2472 @@
+indications:
+- id: adults-p4-0
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: scope
+  group_id:
+  group_title:
+  order: 1
+  act_id: 208n-243n
+  point: п. 4 Положения
+  anchor: p-4
+  page: 3
+  text: '4. Паллиативная медицинская помощь оказывается взрослым с неизлечимыми прогрессирующими заболеваниями или состояниями при наличии медицинских показаний, перечень которых предусмотрен приложением № 1 к Положению об организации оказания паллиативной медицинской помощи, включая порядок взаимодействия медицинских организаций, организаций социального обслуживания и общественных объединений, иных некоммерческих организаций, осуществляющих свою деятельность в сфере охраны здоровья, утвержденному настоящим приказом (далее – Положение), в том числе:'
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 9
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-p4.png
+    crops:
+    - 208n-243n-p4.png
+    - 208n-243n-p4-2.png
+    notes: тире короткое (U+2013), сверено по вырезке и увеличению 600 dpi 11.10.2026
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-p4.png
+      notes: строка дословно входит в цитату 208n-243n-p4, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-p4-1
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: scope
+  group_id:
+  group_title:
+  order: 2
+  act_id: 208n-243n
+  point: п. 4 Положения
+  anchor: p-4
+  page: 3
+  text: различные формы злокачественных новообразований;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 9
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-p4.png
+    crops:
+    - 208n-243n-p4.png
+    - 208n-243n-p4-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-p4.png
+      notes: строка дословно входит в цитату 208n-243n-p4, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-p4-2
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: scope
+  group_id:
+  group_title:
+  order: 3
+  act_id: 208n-243n
+  point: п. 4 Положения
+  anchor: p-4
+  page: 3
+  text: органная недостаточность в стадии декомпенсации при невозможности достичь ремиссии заболевания или стабилизации состояния пациента;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 9
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-p4.png
+    crops:
+    - 208n-243n-p4.png
+    - 208n-243n-p4-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-p4.png
+      notes: строка дословно входит в цитату 208n-243n-p4, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-p4-3
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: scope
+  group_id:
+  group_title:
+  order: 4
+  act_id: 208n-243n
+  point: п. 4 Положения
+  anchor: p-4
+  page: 3
+  text: хронические прогрессирующие заболевания в терминальной стадии развития;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 9
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-p4.png
+    crops:
+    - 208n-243n-p4.png
+    - 208n-243n-p4-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-p4.png
+      notes: строка дословно входит в цитату 208n-243n-p4, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-p4-4
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: scope
+  group_id:
+  group_title:
+  order: 5
+  act_id: 208n-243n
+  point: п. 4 Положения
+  anchor: p-4
+  page: 3
+  text: тяжелые необратимые последствия нарушений мозгового кровообращения, необходимость проведения симптоматического лечения и обеспечения ухода при оказании медицинской помощи;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 9
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-p4.png
+    crops:
+    - 208n-243n-p4.png
+    - 208n-243n-p4-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-p4.png
+      notes: строка дословно входит в цитату 208n-243n-p4, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-p4-5
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: scope
+  group_id:
+  group_title:
+  order: 6
+  act_id: 208n-243n
+  point: п. 4 Положения
+  anchor: p-4
+  page: 3
+  text: тяжелые необратимые последствия травм, необходимость проведения симптоматического лечения и обеспечения ухода при оказании медицинской помощи;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 9
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-p4.png
+    crops:
+    - 208n-243n-p4.png
+    - 208n-243n-p4-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-p4.png
+      notes: строка дословно входит в цитату 208n-243n-p4, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-p4-6
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: scope
+  group_id:
+  group_title:
+  order: 7
+  act_id: 208n-243n
+  point: п. 4 Положения
+  anchor: p-4
+  page: 4
+  text: дегенеративные заболевания нервной системы на поздних стадиях развития заболевания;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 9
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-p4.png
+    crops:
+    - 208n-243n-p4.png
+    - 208n-243n-p4-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-p4.png
+      notes: строка дословно входит в цитату 208n-243n-p4, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-p4-7
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: scope
+  group_id:
+  group_title:
+  order: 8
+  act_id: 208n-243n
+  point: п. 4 Положения
+  anchor: p-4
+  page: 4
+  text: различные формы деменции, в том числе с болезнью Альцгеймера, в терминальной стадии заболевания;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 9
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-p4.png
+    crops:
+    - 208n-243n-p4.png
+    - 208n-243n-p4-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-p4.png
+      notes: строка дословно входит в цитату 208n-243n-p4, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-p4-8
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: scope
+  group_id:
+  group_title:
+  order: 9
+  act_id: 208n-243n
+  point: п. 4 Положения
+  anchor: p-4
+  page: 4
+  text: социально значимые инфекционные заболевания в терминальной стадии развития, необходимость проведения симптоматического лечения и обеспечения ухода при оказании медицинской помощи.
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 9
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-p4.png
+    crops:
+    - 208n-243n-p4.png
+    - 208n-243n-p4-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-p4.png
+      notes: строка дословно входит в цитату 208n-243n-p4, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p2-0
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: rule
+  group_id:
+  group_title:
+  order: 10
+  act_id: 208n-243n
+  point: прил. 1, п. 2
+  anchor: p-a1-2
+  page: 10
+  text: 2. При выявлении у пациента 2 и более общих медицинских показаний к оказанию паллиативной медицинской помощи взрослым оцениваются медицинские показания к оказанию паллиативной медицинской помощи взрослым по группам заболеваний или состояний.
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 0
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p2.png
+    crops:
+    - 208n-243n-a1-p2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p2.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p2, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p1-0
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: general
+  group_id:
+  group_title:
+  order: 11
+  act_id: 208n-243n
+  point: прил. 1, п. 1
+  anchor: p-a1-1
+  page: 10
+  text: '1. Общие медицинские показания к оказанию паллиативной медицинской помощи взрослым (перечень нижеприведенных медицинских показаний к оказанию паллиативной медицинской помощи не является исчерпывающим):'
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 0
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p1.png
+    crops:
+    - 208n-243n-a1-p1.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p1.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p1, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p1-1
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: general
+  group_id:
+  group_title:
+  order: 12
+  act_id: 208n-243n
+  point: прил. 1, п. 1
+  anchor: p-a1-1
+  page: 10
+  text: ухудшение общего состояния, физической и (или) когнитивной функции на фоне прогрессирования неизлечимого заболевания и неблагоприятный прогноз развития заболевания, несмотря на оптимально проводимое специализированное лечение;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 0
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p1.png
+    crops:
+    - 208n-243n-a1-p1.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p1.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p1, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p1-2
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: general
+  group_id:
+  group_title:
+  order: 13
+  act_id: 208n-243n
+  point: прил. 1, п. 1
+  anchor: p-a1-1
+  page: 10
+  text: снижение функциональной активности пациента, определенной с использованием унифицированных систем оценки функциональной активности;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 0
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p1.png
+    crops:
+    - 208n-243n-a1-p1.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p1.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p1, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p1-3
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: general
+  group_id:
+  group_title:
+  order: 14
+  act_id: 208n-243n
+  point: прил. 1, п. 1
+  anchor: p-a1-1
+  page: 10
+  text: потеря массы тела более чем на 10% за последние 6 месяцев.
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 0
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p1.png
+    crops:
+    - 208n-243n-a1-p1.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p1.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p1, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p3-0
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p3
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при различных формах злокачественных новообразований
+  order: 15
+  act_id: 208n-243n
+  point: прил. 1, п. 3
+  anchor: p-a1-3
+  page: 10
+  text: наличие метастатических поражений при незначительном ответе на специализированную терапию или наличии медицинских противопоказаний к ее проведению;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 0
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p3.png
+    crops:
+    - 208n-243n-a1-p3.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p3.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p3, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p3-1
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p3
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при различных формах злокачественных новообразований
+  order: 16
+  act_id: 208n-243n
+  point: прил. 1, п. 3
+  anchor: p-a1-3
+  page: 10
+  text: наличие метастатических поражений центральной нервной системы, печени, легких;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 0
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p3.png
+    crops:
+    - 208n-243n-a1-p3.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p3.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p3, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p3-2
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p3
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при различных формах злокачественных новообразований
+  order: 17
+  act_id: 208n-243n
+  point: прил. 1, п. 3
+  anchor: p-a1-3
+  page: 10
+  text: наличие боли и других тяжелых проявлений заболевания.
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 0
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p3.png
+    crops:
+    - 208n-243n-a1-p3.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p3.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p3, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p4-0
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p4
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при различных формах деменции, в том числе болезни Альцгеймера
+  order: 18
+  act_id: 208n-243n
+  point: прил. 1, п. 4
+  anchor: p-a1-4
+  page: 10
+  text: утрата способности к 2 и более видам повседневной деятельности за последние 6 месяцев на фоне специализированной терапии;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 12
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p4.png
+    crops:
+    - 208n-243n-a1-p4.png
+    - 208n-243n-a1-p4-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p4.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p4, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p4-1
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p4
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при различных формах деменции, в том числе болезни Альцгеймера
+  order: 19
+  act_id: 208n-243n
+  point: прил. 1, п. 4
+  anchor: p-a1-4
+  page: 11
+  text: прогрессирующее нарушение глотания;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 12
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p4.png
+    crops:
+    - 208n-243n-a1-p4.png
+    - 208n-243n-a1-p4-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p4.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p4, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p4-2
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p4
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при различных формах деменции, в том числе болезни Альцгеймера
+  order: 20
+  act_id: 208n-243n
+  point: прил. 1, п. 4
+  anchor: p-a1-4
+  page: 11
+  text: нарушение функции тазовых органов;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 12
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p4.png
+    crops:
+    - 208n-243n-a1-p4.png
+    - 208n-243n-a1-p4-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p4.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p4, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p4-3
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p4
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при различных формах деменции, в том числе болезни Альцгеймера
+  order: 21
+  act_id: 208n-243n
+  point: прил. 1, п. 4
+  anchor: p-a1-4
+  page: 11
+  text: расстройства речевой деятельности, препятствующие речевому общению и социальному взаимодействию;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 12
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p4.png
+    crops:
+    - 208n-243n-a1-p4.png
+    - 208n-243n-a1-p4-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p4.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p4, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p4-4
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p4
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при различных формах деменции, в том числе болезни Альцгеймера
+  order: 22
+  act_id: 208n-243n
+  point: прил. 1, п. 4
+  anchor: p-a1-4
+  page: 11
+  text: высокий риск падения и (или) эпизоды падения в прошлом;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 12
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p4.png
+    crops:
+    - 208n-243n-a1-p4.png
+    - 208n-243n-a1-p4-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p4.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p4, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p4-5
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p4
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при различных формах деменции, в том числе болезни Альцгеймера
+  order: 23
+  act_id: 208n-243n
+  point: прил. 1, п. 4
+  anchor: p-a1-4
+  page: 11
+  text: наличие хронических ран и контрактур.
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 12
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p4.png
+    crops:
+    - 208n-243n-a1-p4.png
+    - 208n-243n-a1-p4-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p4.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p4, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p5-0
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p5
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при тяжелых необратимых последствиях нарушений мозгового кровообращения
+  order: 24
+  act_id: 208n-243n
+  point: прил. 1, п. 5
+  anchor: p-a1-5
+  page: 11
+  text: персистирующая кома различной степени или состояние минимального сознания, когнитивные нарушения;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 0
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p5.png
+    crops:
+    - 208n-243n-a1-p5.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p5.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p5, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p5-1
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p5
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при тяжелых необратимых последствиях нарушений мозгового кровообращения
+  order: 25
+  act_id: 208n-243n
+  point: прил. 1, п. 5
+  anchor: p-a1-5
+  page: 11
+  text: прогрессирующее нарушение глотания;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 0
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p5.png
+    crops:
+    - 208n-243n-a1-p5.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p5.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p5, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p5-2
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p5
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при тяжелых необратимых последствиях нарушений мозгового кровообращения
+  order: 26
+  act_id: 208n-243n
+  point: прил. 1, п. 5
+  anchor: p-a1-5
+  page: 11
+  text: нарушение функции тазовых органов;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 0
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p5.png
+    crops:
+    - 208n-243n-a1-p5.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p5.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p5, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p5-3
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p5
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при тяжелых необратимых последствиях нарушений мозгового кровообращения
+  order: 27
+  act_id: 208n-243n
+  point: прил. 1, п. 5
+  anchor: p-a1-5
+  page: 11
+  text: расстройства речевой деятельности, препятствующие полноценному речевому общению и социальному взаимодействию;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 0
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p5.png
+    crops:
+    - 208n-243n-a1-p5.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p5.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p5, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p5-4
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p5
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при тяжелых необратимых последствиях нарушений мозгового кровообращения
+  order: 28
+  act_id: 208n-243n
+  point: прил. 1, п. 5
+  anchor: p-a1-5
+  page: 11
+  text: наличие хронических ран и контрактур;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 0
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p5.png
+    crops:
+    - 208n-243n-a1-p5.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p5.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p5, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p5-5
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p5
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при тяжелых необратимых последствиях нарушений мозгового кровообращения
+  order: 29
+  act_id: 208n-243n
+  point: прил. 1, п. 5
+  anchor: p-a1-5
+  page: 11
+  text: парезы и параличи со значительной потерей функции.
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 0
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p5.png
+    crops:
+    - 208n-243n-a1-p5.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p5.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p5, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p6-0
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p6
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при болезнях органов кровообращения
+  order: 30
+  act_id: 208n-243n
+  point: прил. 1, п. 6
+  anchor: p-a1-6
+  page: 11
+  text: конечные стадии хронической сердечной недостаточности;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p6.png
+    crops:
+    - 208n-243n-a1-p6.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p6.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p6, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p6-1
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p6
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при болезнях органов кровообращения
+  order: 31
+  act_id: 208n-243n
+  point: прил. 1, п. 6
+  anchor: p-a1-6
+  page: 11
+  text: неоднократная госпитализация по причине сердечной недостаточности или другие формы ишемической болезни сердца (более 3 раз за последние 12 месяцев);
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p6.png
+    crops:
+    - 208n-243n-a1-p6.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p6.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p6, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p6-2
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p6
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при болезнях органов кровообращения
+  order: 32
+  act_id: 208n-243n
+  point: прил. 1, п. 6
+  anchor: p-a1-6
+  page: 11
+  text: клапанные пороки сердца без возможности их оперативной коррекции, наличие иных значимых структурных поражений камер сердца или коронарных сосудов без возможности проведения реваскуляризационных и (или) реконструктивных вмешательств;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p6.png
+    crops:
+    - 208n-243n-a1-p6.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p6.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p6, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p6-3
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p6
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при болезнях органов кровообращения
+  order: 33
+  act_id: 208n-243n
+  point: прил. 1, п. 6
+  anchor: p-a1-6
+  page: 11
+  text: наличие сочетанной соматической и (или) психической патологии, значимо влияющей на качество жизни и (или) симптомы основного заболевания;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p6.png
+    crops:
+    - 208n-243n-a1-p6.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p6.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p6, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p6-4
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p6
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при болезнях органов кровообращения
+  order: 34
+  act_id: 208n-243n
+  point: прил. 1, п. 6
+  anchor: p-a1-6
+  page: 11
+  text: одышка или боли в груди в покое или при незначительной физической нагрузке;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p6.png
+    crops:
+    - 208n-243n-a1-p6.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p6.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p6, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p6-5
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p6
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при болезнях органов кровообращения
+  order: 35
+  act_id: 208n-243n
+  point: прил. 1, п. 6
+  anchor: p-a1-6
+  page: 11
+  text: 'результаты эхокардиографии: выраженное снижение фракции выброса (< 25%) или выраженная легочная гипертензия (давление в легочной артерии > 70 мм рт. ст.);'
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p6.png
+    crops:
+    - 208n-243n-a1-p6.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p6.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p6, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p6-6
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p6
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при болезнях органов кровообращения
+  order: 36
+  act_id: 208n-243n
+  point: прил. 1, п. 6
+  anchor: p-a1-6
+  page: 11
+  text: стабильная стенокардия 3 и 4 функциональных классов (одышка или боли в груди в покое или при незначительной физической нагрузке);
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p6.png
+    crops:
+    - 208n-243n-a1-p6.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p6.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p6, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p6-7
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p6
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при болезнях органов кровообращения
+  order: 37
+  act_id: 208n-243n
+  point: прил. 1, п. 6
+  anchor: p-a1-6
+  page: 11
+  text: тяжелое, неоперабельное заболевание периферических сосудов.
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p6.png
+    crops:
+    - 208n-243n-a1-p6.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p6.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p6, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p7-0
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p7
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при болезнях органов дыхания
+  order: 38
+  act_id: 208n-243n
+  point: прил. 1, п. 7
+  anchor: p-a1-7
+  page: 11
+  text: дыхательная недостаточность 3 степени в период ремиссии заболевания (одышка в покое или при незначительной физической нагрузке);
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p7.png
+    crops:
+    - 208n-243n-a1-p7.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p7.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p7, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p7-1
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p7
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при болезнях органов дыхания
+  order: 39
+  act_id: 208n-243n
+  point: прил. 1, п. 7
+  anchor: p-a1-7
+  page: 11
+  text: нуждаемость в респираторной поддержке вследствие дыхательной недостаточности.
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p7.png
+    crops:
+    - 208n-243n-a1-p7.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p7.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p7, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p8-0
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p8
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при почечной недостаточности
+  order: 40
+  act_id: 208n-243n
+  point: прил. 1, п. 8
+  anchor: p-a1-8
+  page: 11
+  text: хроническая почечная недостаточность 4 или 5 стадии (расчетная скорость клубочковой фильтрации менее 30 мл/мин) с прогрессивным ухудшением;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 0
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p8.png
+    crops:
+    - 208n-243n-a1-p8.png
+    - 208n-243n-a1-p8-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p8.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p8, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p8-1
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p8
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при почечной недостаточности
+  order: 41
+  act_id: 208n-243n
+  point: прил. 1, п. 8
+  anchor: p-a1-8
+  page: 12
+  text: прекращение диализа или отказ от его начала.
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 0
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p8.png
+    crops:
+    - 208n-243n-a1-p8.png
+    - 208n-243n-a1-p8-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p8.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p8, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p9-0
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p9
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при болезнях печени
+  order: 42
+  act_id: 208n-243n
+  point: прил. 1, п. 9
+  anchor: p-a1-9
+  page: 12
+  text: тяжесть цирроза печени по шкале Чайлд-Пью не менее 10 баллов (стадия С);
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p9.png
+    crops:
+    - 208n-243n-a1-p9.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p9.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p9, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p9-1
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p9
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при болезнях печени
+  order: 43
+  act_id: 208n-243n
+  point: прил. 1, п. 9
+  anchor: p-a1-9
+  page: 12
+  text: 'цирроз с одним или несколькими осложнениями в течение прошедшего года:'
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p9.png
+    crops:
+    - 208n-243n-a1-p9.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p9.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p9, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p9-2
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p9
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при болезнях печени
+  order: 44
+  act_id: 208n-243n
+  point: прил. 1, п. 9
+  anchor: p-a1-9
+  page: 12
+  text: асцит, резистентный к действию диуретиков;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p9.png
+    crops:
+    - 208n-243n-a1-p9.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p9.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p9, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p9-3
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p9
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при болезнях печени
+  order: 45
+  act_id: 208n-243n
+  point: прил. 1, п. 9
+  anchor: p-a1-9
+  page: 12
+  text: печеночная энцефалопатия;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p9.png
+    crops:
+    - 208n-243n-a1-p9.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p9.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p9, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p9-4
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p9
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при болезнях печени
+  order: 46
+  act_id: 208n-243n
+  point: прил. 1, п. 9
+  anchor: p-a1-9
+  page: 12
+  text: гепаторенальный синдром;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p9.png
+    crops:
+    - 208n-243n-a1-p9.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p9.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p9, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p9-5
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p9
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при болезнях печени
+  order: 47
+  act_id: 208n-243n
+  point: прил. 1, п. 9
+  anchor: p-a1-9
+  page: 12
+  text: спонтанный бактериальный перитонит;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p9.png
+    crops:
+    - 208n-243n-a1-p9.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p9.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p9, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p9-6
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p9
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при болезнях печени
+  order: 48
+  act_id: 208n-243n
+  point: прил. 1, п. 9
+  anchor: p-a1-9
+  page: 12
+  text: повторные кровотечения из варикозно расширенных вен;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p9.png
+    crops:
+    - 208n-243n-a1-p9.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p9.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p9, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p9-7
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p9
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при болезнях печени
+  order: 49
+  act_id: 208n-243n
+  point: прил. 1, п. 9
+  anchor: p-a1-9
+  page: 12
+  text: невозможность проведения пересадки печени.
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p9.png
+    crops:
+    - 208n-243n-a1-p9.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p9.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p9, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p10-0
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p10
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при дегенеративных заболеваниях нервной системы, боковом амиотрофическом склерозе и других заболеваниях двигательных нейронов, рассеянном склерозе, дегенеративных заболеваниях экстрапирамидной системы
+  order: 50
+  act_id: 208n-243n
+  point: прил. 1, п. 10
+  anchor: p-a1-10
+  page: 12
+  text: прогрессирующее нарушение глотания;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 53
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p10.png
+    crops:
+    - 208n-243n-a1-p10.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p10.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p10, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p10-1
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p10
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при дегенеративных заболеваниях нервной системы, боковом амиотрофическом склерозе и других заболеваниях двигательных нейронов, рассеянном склерозе, дегенеративных заболеваниях экстрапирамидной системы
+  order: 51
+  act_id: 208n-243n
+  point: прил. 1, п. 10
+  anchor: p-a1-10
+  page: 12
+  text: расстройства речевой деятельности, препятствующие полноценному речевому общению и социальному взаимодействию;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 53
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p10.png
+    crops:
+    - 208n-243n-a1-p10.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p10.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p10, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p10-2
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p10
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при дегенеративных заболеваниях нервной системы, боковом амиотрофическом склерозе и других заболеваниях двигательных нейронов, рассеянном склерозе, дегенеративных заболеваниях экстрапирамидной системы
+  order: 52
+  act_id: 208n-243n
+  point: прил. 1, п. 10
+  anchor: p-a1-10
+  page: 12
+  text: нуждаемость в длительной кислородотерапии;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 53
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p10.png
+    crops:
+    - 208n-243n-a1-p10.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p10.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p10, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p10-3
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p10
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым при дегенеративных заболеваниях нервной системы, боковом амиотрофическом склерозе и других заболеваниях двигательных нейронов, рассеянном склерозе, дегенеративных заболеваниях экстрапирамидной системы
+  order: 53
+  act_id: 208n-243n
+  point: прил. 1, п. 10
+  anchor: p-a1-10
+  page: 12
+  text: нуждаемость в респираторной поддержке вследствие дыхательной недостаточности.
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 53
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p10.png
+    crops:
+    - 208n-243n-a1-p10.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p10.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p10, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p11-0
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p11
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым с социально значимыми инфекционными заболеваниями в терминальной стадии развития (медицинская помощь оказывается с соблюдением санитарно-противоэпидемических (профилактических) мероприятий)
+  order: 54
+  act_id: 208n-243n
+  point: прил. 1, п. 11
+  anchor: p-a1-11
+  page: 12
+  text: терминальная стадия ВИЧ-инфекции;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 9
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p11.png
+    crops:
+    - 208n-243n-a1-p11.png
+    - 208n-243n-a1-p11-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p11.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p11, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p11-1
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p11
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым с социально значимыми инфекционными заболеваниями в терминальной стадии развития (медицинская помощь оказывается с соблюдением санитарно-противоэпидемических (профилактических) мероприятий)
+  order: 55
+  act_id: 208n-243n
+  point: прил. 1, п. 11
+  anchor: p-a1-11
+  page: 12
+  text: ВИЧ-инфекция с морфологически подтвержденным диагнозом распространенной формы злокачественного новообразования, не подлежащего радикальному противоопухолевому лечению;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 9
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p11.png
+    crops:
+    - 208n-243n-a1-p11.png
+    - 208n-243n-a1-p11-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p11.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p11, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p11-2
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p11
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым с социально значимыми инфекционными заболеваниями в терминальной стадии развития (медицинская помощь оказывается с соблюдением санитарно-противоэпидемических (профилактических) мероприятий)
+  order: 56
+  act_id: 208n-243n
+  point: прил. 1, п. 11
+  anchor: p-a1-11
+  page: 12
+  text: ВИЧ-инфекция с хроническим болевым синдромом, обусловленным злокачественным новообразованием;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 9
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p11.png
+    crops:
+    - 208n-243n-a1-p11.png
+    - 208n-243n-a1-p11-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p11.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p11, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p11-3
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p11
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым с социально значимыми инфекционными заболеваниями в терминальной стадии развития (медицинская помощь оказывается с соблюдением санитарно-противоэпидемических (профилактических) мероприятий)
+  order: 57
+  act_id: 208n-243n
+  point: прил. 1, п. 11
+  anchor: p-a1-11
+  page: 12
+  text: ВИЧ-инфекция с длительным болевым синдромом иной этиологии;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 9
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p11.png
+    crops:
+    - 208n-243n-a1-p11.png
+    - 208n-243n-a1-p11-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p11.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p11, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p11-4
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p11
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым с социально значимыми инфекционными заболеваниями в терминальной стадии развития (медицинская помощь оказывается с соблюдением санитарно-противоэпидемических (профилактических) мероприятий)
+  order: 58
+  act_id: 208n-243n
+  point: прил. 1, п. 11
+  anchor: p-a1-11
+  page: 12
+  text: ВИЧ-инфекция с тяжелыми мнестико-интеллектуальными нарушениями (деменцией), двигательными неврологическими расстройствами, возникшими в результате перенесенных оппортунистических и вторичных заболеваний, инсульта, черепно-мозговой травмы, злоупотребления психоактивными веществами;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 9
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p11.png
+    crops:
+    - 208n-243n-a1-p11.png
+    - 208n-243n-a1-p11-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p11.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p11, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p11-5
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p11
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым с социально значимыми инфекционными заболеваниями в терминальной стадии развития (медицинская помощь оказывается с соблюдением санитарно-противоэпидемических (профилактических) мероприятий)
+  order: 59
+  act_id: 208n-243n
+  point: прил. 1, п. 11
+  anchor: p-a1-11
+  page: 12
+  text: ВИЧ-инфекция с глубокими трофическими расстройствами (трофическими язвами, пролежнями);
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 9
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p11.png
+    crops:
+    - 208n-243n-a1-p11.png
+    - 208n-243n-a1-p11-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p11.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p11, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p11-6
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p11
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым с социально значимыми инфекционными заболеваниями в терминальной стадии развития (медицинская помощь оказывается с соблюдением санитарно-противоэпидемических (профилактических) мероприятий)
+  order: 60
+  act_id: 208n-243n
+  point: прил. 1, п. 11
+  anchor: p-a1-11
+  page: 12
+  text: туберкулез с множественной лекарственной устойчивостью или туберкулез с широкой лекарственной устойчивостью при неэффективности 2 курсов полноценной контролируемой химиотерапии;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 9
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p11.png
+    crops:
+    - 208n-243n-a1-p11.png
+    - 208n-243n-a1-p11-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p11.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p11, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p11-7
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p11
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым с социально значимыми инфекционными заболеваниями в терминальной стадии развития (медицинская помощь оказывается с соблюдением санитарно-противоэпидемических (профилактических) мероприятий)
+  order: 61
+  act_id: 208n-243n
+  point: прил. 1, п. 11
+  anchor: p-a1-11
+  page: 12
+  text: туберкулез с множественной лекарственной устойчивостью или туберкулез с широкой лекарственной устойчивостью после двукратного прерывания лечения при сохранении бактериовыделения, определяемого методом посева или двукратной микроскопией мокроты;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 9
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p11.png
+    crops:
+    - 208n-243n-a1-p11.png
+    - 208n-243n-a1-p11-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p11.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p11, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p11-8
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p11
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым с социально значимыми инфекционными заболеваниями в терминальной стадии развития (медицинская помощь оказывается с соблюдением санитарно-противоэпидемических (профилактических) мероприятий)
+  order: 62
+  act_id: 208n-243n
+  point: прил. 1, п. 11
+  anchor: p-a1-11
+  page: 13
+  text: фиброзно-кавернозный туберкулез легких, цирротический туберкулез легких независимо от лекарственной чувствительности микобактерии туберкулеза при отсутствии эффективности терапевтического лечения и невозможности выполнить хирургическое вмешательство по тяжести состояния основного заболевания, в том числе осложнений туберкулеза (сердечно-сосудистая недостаточность, амилоидоз внутренних органов, поражение костей) или при наличии тяжелых сопутствующих поражений органов;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 9
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p11.png
+    crops:
+    - 208n-243n-a1-p11.png
+    - 208n-243n-a1-p11-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p11.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p11, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-a1-p11-9
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: group
+  group_id: a1-p11
+  group_title: Медицинские показания к оказанию паллиативной медицинской помощи взрослым с социально значимыми инфекционными заболеваниями в терминальной стадии развития (медицинская помощь оказывается с соблюдением санитарно-противоэпидемических (профилактических) мероприятий)
+  order: 63
+  act_id: 208n-243n
+  point: прил. 1, п. 11
+  anchor: p-a1-11
+  page: 13
+  text: генерализованный туберкулез и отказ от высокоактивной антиретровирусной терапии у больных с сочетанием туберкулеза и ВИЧ-инфекции.
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 9
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-a1-p11.png
+    crops:
+    - 208n-243n-a1-p11.png
+    - 208n-243n-a1-p11-2.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-a1-p11.png
+      notes: строка дословно входит в цитату 208n-243n-a1-p11, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-p12-0
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: decision
+  group_id:
+  group_title:
+  order: 64
+  act_id: 208n-243n
+  point: п. 12 Положения
+  anchor: p-12
+  page: 6
+  text: '12. Медицинское заключение взрослому со злокачественным новообразованием выдается по решению:'
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-p12.png
+    crops:
+    - 208n-243n-p12.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-p12.png
+      notes: строка дословно входит в цитату 208n-243n-p12, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-p12-1
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: decision
+  group_id:
+  group_title:
+  order: 65
+  act_id: 208n-243n
+  point: п. 12 Положения
+  anchor: p-12
+  page: 6
+  text: врача-онколога при наличии гистологически верифицированного диагноза;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-p12.png
+    crops:
+    - 208n-243n-p12.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-p12.png
+      notes: строка дословно входит в цитату 208n-243n-p12, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-p12-2
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: decision
+  group_id:
+  group_title:
+  order: 66
+  act_id: 208n-243n
+  point: п. 12 Положения
+  anchor: p-12
+  page: 6
+  text: врача-терапевта участкового, врача общей практики (семейного врача), фельдшера, иного врача-специалиста при наличии заключения врача-онколога о необходимости проведения симптоматического лечения.
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-p12.png
+    crops:
+    - 208n-243n-p12.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-p12.png
+      notes: строка дословно входит в цитату 208n-243n-p12, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: adults-p13-0
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: adults
+  section: decision
+  group_id:
+  group_title:
+  order: 67
+  act_id: 208n-243n
+  point: п. 13 Положения
+  anchor: p-13
+  page: 6
+  text: 13. Медицинское заключение взрослому (за исключением больного злокачественным новообразованием при наличии гистологически верифицированного диагноза) выдается по решению врачебной комиссии медицинской организации или консилиума врачей медицинской организации (далее – консилиум врачей), в которой осуществляется наблюдение за ним и его лечение.
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 1
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-p13.png
+    crops:
+    - 208n-243n-p13.png
+    notes: тире короткое (U+2013), сверено по вырезке и увеличению 600 dpi 11.10.2026
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-p13.png
+      notes: строка дословно входит в цитату 208n-243n-p13, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: children-p5-0
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: children
+  section: scope
+  group_id:
+  group_title:
+  order: 68
+  act_id: 208n-243n
+  point: п. 5 Положения
+  anchor: p-5
+  page: 4
+  text: '5. Паллиативная медицинская помощь оказывается детям с неизлечимыми заболеваниями или состояниями, угрожающими жизни или сокращающими ее продолжительность, по медицинским показаниям с учетом тяжести, функционального состояния и прогноза основного заболевания, в том числе:'
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-p5.png
+    crops:
+    - 208n-243n-p5.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-p5.png
+      notes: строка дословно входит в цитату 208n-243n-p5, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: children-p5-1
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: children
+  section: scope
+  group_id:
+  group_title:
+  order: 69
+  act_id: 208n-243n
+  point: п. 5 Положения
+  anchor: p-5
+  page: 4
+  text: распространенные и метастатические формы злокачественных новообразований при невозможности достичь клинико-лабораторной ремиссии;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-p5.png
+    crops:
+    - 208n-243n-p5.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-p5.png
+      notes: строка дословно входит в цитату 208n-243n-p5, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: children-p5-2
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: children
+  section: scope
+  group_id:
+  group_title:
+  order: 70
+  act_id: 208n-243n
+  point: п. 5 Положения
+  anchor: p-5
+  page: 4
+  text: поражение нервной системы врожденного или приобретенного характера (включая нейродегенеративные и нервно-мышечные заболевания, врожденные пороки развития, тяжелые гипоксически-травматические поражения нервной системы любого генеза, поражения нервной системы при генетически обусловленных заболеваниях);
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-p5.png
+    crops:
+    - 208n-243n-p5.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-p5.png
+      notes: строка дословно входит в цитату 208n-243n-p5, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: children-p5-3
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: children
+  section: scope
+  group_id:
+  group_title:
+  order: 71
+  act_id: 208n-243n
+  point: п. 5 Положения
+  anchor: p-5
+  page: 4
+  text: неоперабельные врожденные пороки развития;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-p5.png
+    crops:
+    - 208n-243n-p5.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-p5.png
+      notes: строка дословно входит в цитату 208n-243n-p5, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: children-p5-4
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: children
+  section: scope
+  group_id:
+  group_title:
+  order: 72
+  act_id: 208n-243n
+  point: п. 5 Положения
+  anchor: p-5
+  page: 4
+  text: поздние стадии неизлечимых хронических прогрессирующих соматических заболеваний в стадии субкомпенсации и декомпенсации жизненно важных систем, нуждающиеся в симптоматическом лечении и уходе;
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-p5.png
+    crops:
+    - 208n-243n-p5.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-p5.png
+      notes: строка дословно входит в цитату 208n-243n-p5, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: children-p5-5
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: children
+  section: scope
+  group_id:
+  group_title:
+  order: 73
+  act_id: 208n-243n
+  point: п. 5 Положения
+  anchor: p-5
+  page: 4
+  text: последствия травм и социально значимых заболеваний, сопровождающиеся снижением (ограничением) функции органов и систем, с неблагоприятным прогнозом.
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-p5.png
+    crops:
+    - 208n-243n-p5.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-p5.png
+      notes: строка дословно входит в цитату 208n-243n-p5, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026
+- id: children-p15-0
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  audience: children
+  section: decision
+  group_id:
+  group_title:
+  order: 74
+  act_id: 208n-243n
+  point: п. 15 Положения
+  anchor: p-15
+  page: 6
+  text: 15. Медицинское заключение ребенку выдает врачебная комиссия медицинской организации, в которой осуществляется наблюдение за ним и его лечение.
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 0
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 208n-243n-p15.png
+    crops:
+    - 208n-243n-p15.png
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 208n-243n-p15.png
+      notes: строка дословно входит в цитату 208n-243n-p15, которую проверил проход c (450 dpi, psm 3) и повторная сверка по вырезке 12.10.2026

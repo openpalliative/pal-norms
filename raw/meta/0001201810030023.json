@@ -1,0 +1,26 @@
+{
+ "eoNumber": "0001201810030023",
+ "number": "353-ФЗ",
+ "documentDate": "2018-10-03T00:00:00",
+ "publishDateShort": "2018-10-03T00:00:00",
+ "name": "\"О внесении изменения в Трудовой кодекс Российской Федерации\"",
+ "complexName": "Федеральный закон от 03.10.2018 № 353-ФЗ\n \"О внесении изменения в Трудовой кодекс Российской Федерации\"",
+ "pagesCount": 2,
+ "pdfFileLength": 78962,
+ "signatoryAuthorities": [
+  {
+   "isMain": true,
+   "weight": 95000,
+   "name": "Президент Российской Федерации",
+   "id": "225698f1-cfbc-4e42-9caa-32f9f7403211"
+  }
+ ],
+ "signatoryAuthorityId": "225698f1-cfbc-4e42-9caa-32f9f7403211",
+ "documentType": {
+  "weight": 97,
+  "name": "Федеральный закон",
+  "id": "82a8bf1c-3bc7-47ed-827f-7affd43a7f27"
+ },
+ "jdRegNumber": null,
+ "jdRegDate": null
+}

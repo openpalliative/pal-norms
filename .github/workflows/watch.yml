@@ -1,0 +1,96 @@
+name: watch
+on:
+  schedule:
+    - cron: "17 4 * * 1"
+    - cron: "17 4 * 9 *"
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: watch
+  cancel-in-progress: false
+jobs:
+  watch:
+    runs-on: ${{ fromJSON(vars.WATCH_RUNNER || '"ubuntu-24.04"') }}
+    timeout-minutes: 60
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+      actions: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@1c37ad07a6a961277cf70c0d37d6f313000f5884 # v10.3.0
+        with:
+          version: "0.11.7"
+          enable-cache: false
+      - run: uv sync --frozen
+      - name: ocr tools
+        if: runner.os == 'Linux'
+        run: |
+          if command -v pdftoppm >/dev/null && command -v tesseract >/dev/null && tesseract --list-langs 2>/dev/null | grep -qx rus; then
+            exit 0
+          fi
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils tesseract-ocr tesseract-ocr-rus
+      - name: watch
+        run: uv run python -m pipeline.watch --apply --report _reports/watch.json
+      - id: day
+        run: echo "d=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+      - name: facts
+        id: facts
+        env:
+          DAY: ${{ steps.day.outputs.d }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/snapshots/watch-state.json
+          if git diff --cached --quiet; then
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "data: снимок pravo.gov.ru $DAY"
+          auth=$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 | tr -d '\n')
+          git -c "http.https://github.com/.extraheader=AUTHORIZATION: basic $auth" push origin "HEAD:$GITHUB_REF_NAME"
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+      - name: site
+        if: steps.facts.outputs.pushed == 'true' && github.ref_name == github.event.repository.default_branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref "$GITHUB_REF_NAME" --repo "$GITHUB_REPOSITORY"
+      - name: drafts
+        id: drafts
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
+        with:
+          branch: watch/${{ steps.day.outputs.d }}
+          title: "data: черновик от наблюдателя ${{ steps.day.outputs.d }}"
+          commit-message: "data: черновик от наблюдателя ${{ steps.day.outputs.d }}"
+          body: "Наблюдатель нашёл новое постановление о переносе выходных дней. Черновик календаря помечен как непроверенный: сверьте даты со сканом и цитату, затем поставьте verified."
+          labels: review:data
+          add-paths: |
+            data/calendar/transfers.yaml
+            data/changes.yaml
+      - name: checks on draft
+        if: steps.drafts.outputs.pull-request-operation == 'created' || steps.drafts.outputs.pull-request-operation == 'updated'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: ${{ steps.drafts.outputs.pull-request-branch }}
+        run: gh workflow run checks.yml --ref "$BRANCH" --repo "$GITHUB_REPOSITORY"
+      - name: review
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: uv run python -m pipeline.watch --open-issues _reports/watch.json
+      - if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: watch
+          path: _reports
+          if-no-files-found: ignore
+      - name: keepalive
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X PUT "repos/$GITHUB_REPOSITORY/actions/workflows/watch.yml/enable"

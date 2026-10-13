@@ -1,0 +1,5 @@
+triggers:
+  no_answer_after_due: { repo: obrashchenie-kit, path: scenarios/no-answer/, label: Собрать жалобу на нарушение срока }
+  redirected_to_accused: { repo: obrashchenie-kit, path: scenarios/forwarded/, label: Собрать повторную жалобу }
+  answer_not_on_merits: { repo: obrashchenie-kit, path: answer/, label: Разобрать ответ и собрать жалобу }
+  threat_to_life: { repo: obrashchenie-kit, path: case/, label: Начать дело и собрать документы }

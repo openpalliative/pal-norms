@@ -1,0 +1,52 @@
+.pn-home .op-lead,
+.pn-deadlines .op-lead {
+  max-width: 38em;
+}
+
+.pn-home__main {
+  margin-bottom: 40px;
+}
+
+.pn-entry {
+  min-height: 132px;
+  padding: 22px 22px 20px;
+}
+
+.pn-entry .op-card__title {
+  font-size: calc(var(--op-size-h3) * 1.08);
+}
+
+.pn-entry .op-card__text {
+  font-size: var(--op-size-small);
+}
+
+.pn-home__orgs,
+.pn-home__about {
+  max-width: 48em;
+}
+
+.pn-facts {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 28px;
+  color: var(--op-muted);
+}
+
+.pn-facts li {
+  margin: 0;
+}
+
+.pn-facts strong {
+  color: var(--op-text);
+  font-size: calc(var(--op-size-body) * 1.15);
+}
+
+@media (max-width: 599px) {
+  .pn-entry {
+    min-height: 0;
+    padding: 18px;
+  }
+}

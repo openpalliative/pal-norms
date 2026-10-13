@@ -1,0 +1,26 @@
+{
+ "eoNumber": "0001202411190033",
+ "number": "1583",
+ "documentDate": "2024-11-19T00:00:00",
+ "publishDateShort": "2024-11-19T00:00:00",
+ "name": "О внесении изменений в некоторые акты Правительства Российской Федерации",
+ "complexName": "Постановление Правительства Российской Федерации от 19.11.2024 № 1583\n \"О внесении изменений в некоторые акты Правительства Российской Федерации\"",
+ "pagesCount": 16,
+ "pdfFileLength": 4059292,
+ "signatoryAuthorities": [
+  {
+   "isMain": true,
+   "weight": 93000,
+   "name": "Правительство Российской Федерации",
+   "id": "8005d8c9-4b6d-48d3-861a-2a37e69fccb3"
+  }
+ ],
+ "signatoryAuthorityId": "8005d8c9-4b6d-48d3-861a-2a37e69fccb3",
+ "documentType": {
+  "weight": 95,
+  "name": "Постановление",
+  "id": "fd5a8766-f6fd-4ac2-8fd9-66f414d314ac"
+ },
+ "jdRegNumber": null,
+ "jdRegDate": null
+}

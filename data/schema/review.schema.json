@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openpalliative.github.io/pal-norms/data/v1/review.schema.json",
+  "title": "Ревью толкований и цитат юристом или медиком в РФ (data/review/*.yaml)",
+  "type": "object",
+  "required": ["reviews"],
+  "additionalProperties": false,
+  "properties": {
+    "reviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["target_kind", "target", "role", "reviewed_at", "expires_after", "verdict"],
+        "additionalProperties": false,
+        "properties": {
+          "target_kind": {"enum": ["act", "rule", "escalation", "quote", "indication"]},
+          "target": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"},
+          "role": {"enum": ["lawyer", "medic"]},
+          "reviewed_at": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$", "x-message-ru": "дата в виде ГГГГ-ММ-ДД"},
+          "expires_after": {"type": "string", "pattern": "^\\d+[dmy]?$", "x-message-ru": "срок действия ревью: число дней или 6m, 1y"},
+          "expires_at": {"type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+          "verdict": {"enum": ["ok", "wrong", "unsure"]},
+          "questions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "answer"],
+              "additionalProperties": false,
+              "properties": {
+                "id": {"type": "string"},
+                "answer": {"enum": ["yes", "no", "unsure"]},
+                "comment": {"type": ["string", "null"]}
+              }
+            }
+          },
+          "ref": {"type": ["string", "null"]},
+          "notes": {"type": ["string", "null"]}
+        }
+      }
+    }
+  }
+}

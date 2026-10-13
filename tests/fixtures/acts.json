@@ -1,0 +1,198 @@
+{
+  "format": "openpalliative-dataset/1",
+  "dataset": "acts",
+  "repo": "pal-norms",
+  "schema_version": "1.0.0",
+  "version": "2026.10.11",
+  "generated_at": "2026-10-11T12:00:00Z",
+  "data_date": "2026-10-11",
+  "stale_after_days": 90,
+  "license": "CC-BY-4.0",
+  "source": [
+    {
+      "id": "demo-source",
+      "title": "Пример источника для разработки сайта, не настоящий документ"
+    }
+  ],
+  "content_sha256": "e9e5aaf8341707b226191f826f1f7c8d50c8f34375d15850b4338a3f1917aa2d",
+  "counts": {
+    "items": 3,
+    "unverified": 1,
+    "excluded": 0
+  },
+  "items": [
+    {
+      "id": "demo-polozhenie",
+      "verified": true,
+      "verified_at": "2026-10-11",
+      "source_ref": "demo-source",
+      "kind": "joint_order",
+      "authority": "Пример: министерство А и министерство Б",
+      "number": "000н/000н",
+      "doc_date": "2025-01-10",
+      "title": "Пример действующего акта для разработки сайта",
+      "short_title": "Пример: положение о помощи",
+      "topics": [
+        "palliative"
+      ],
+      "eoNumber": "0000000000000001",
+      "publish_date": "2025-01-20",
+      "pages": 12,
+      "url": null,
+      "pdf_url": null,
+      "pdf_sha256": null,
+      "text_source": "official_pdf",
+      "alt_source": null,
+      "status": "in_force",
+      "status_basis": null,
+      "in_force_from": "2025-09-01",
+      "valid_until": "2031-09-01",
+      "repealed_at": null,
+      "supersedes": [
+        "demo-old"
+      ],
+      "superseded_by": [],
+      "amended_by": [],
+      "cites": [
+        {
+          "act_id": "demo-old",
+          "point": "п. 25",
+          "quote_id": "demo-polozhenie-p25"
+        }
+      ],
+      "cites_repealed": [
+        {
+          "act_id": "demo-old",
+          "point": "п. 25",
+          "quote_id": "demo-polozhenie-p25"
+        }
+      ],
+      "aliases": [
+        "000н/000н"
+      ],
+      "quote_ids": [
+        "demo-polozhenie-p2",
+        "demo-polozhenie-p23",
+        "demo-polozhenie-p25"
+      ],
+      "rule_ids": [
+        "demo-turning-18"
+      ],
+      "review": {
+        "status": "none",
+        "role": null,
+        "reviewed_at": null,
+        "expires_at": null,
+        "ref": null
+      },
+      "notes": null
+    },
+    {
+      "id": "demo-old",
+      "verified": true,
+      "verified_at": "2026-10-11",
+      "source_ref": "demo-source",
+      "kind": "joint_order",
+      "authority": "Пример: министерство А и министерство Б",
+      "number": "111н/111н",
+      "doc_date": "2019-05-31",
+      "title": "Пример отменённого акта",
+      "short_title": "Пример: старое положение",
+      "topics": [
+        "palliative"
+      ],
+      "eoNumber": "0000000000000002",
+      "publish_date": "2019-06-27",
+      "pages": 100,
+      "url": null,
+      "pdf_url": null,
+      "pdf_sha256": null,
+      "text_source": "official_pdf",
+      "alt_source": null,
+      "status": "repealed",
+      "status_basis": {
+        "act_id": "demo-polozhenie",
+        "point": "п. 2",
+        "quote_id": "demo-polozhenie-p2"
+      },
+      "in_force_from": "2019-07-08",
+      "valid_until": null,
+      "repealed_at": "2025-09-01",
+      "supersedes": [],
+      "superseded_by": [
+        "demo-polozhenie"
+      ],
+      "amended_by": [],
+      "cites": [],
+      "cites_repealed": [],
+      "aliases": [
+        "111н/111н",
+        "111н"
+      ],
+      "quote_ids": [],
+      "rule_ids": [],
+      "review": {
+        "status": "none",
+        "role": null,
+        "reviewed_at": null,
+        "expires_at": null,
+        "ref": null
+      },
+      "notes": null
+    },
+    {
+      "id": "demo-law",
+      "verified": false,
+      "verified_at": null,
+      "source_ref": "demo-source",
+      "kind": "federal_law",
+      "authority": "Пример: федеральный закон",
+      "number": "00-ФЗ",
+      "doc_date": "2006-05-02",
+      "title": "Пример закона без текста на портале публикации",
+      "short_title": "Пример: закон об обращениях",
+      "topics": [
+        "appeals"
+      ],
+      "eoNumber": null,
+      "publish_date": null,
+      "pages": null,
+      "url": null,
+      "pdf_url": null,
+      "pdf_sha256": null,
+      "text_source": "ips_archive",
+      "alt_source": {
+        "kind": "ips_archive",
+        "nd": "000",
+        "snapshot_url": "https://example.invalid/demo",
+        "sha256": null,
+        "retrieved_at": "2026-10-11"
+      },
+      "status": "in_force",
+      "status_basis": null,
+      "in_force_from": "2006-11-02",
+      "valid_until": null,
+      "repealed_at": null,
+      "supersedes": [],
+      "superseded_by": [],
+      "amended_by": [],
+      "cites": [],
+      "cites_repealed": [],
+      "aliases": [],
+      "quote_ids": [
+        "demo-law-p12"
+      ],
+      "rule_ids": [
+        "demo-answer"
+      ],
+      "review": {
+        "status": "none",
+        "role": null,
+        "reviewed_at": null,
+        "expires_at": null,
+        "ref": null
+      },
+      "notes": null
+    }
+  ]
+}

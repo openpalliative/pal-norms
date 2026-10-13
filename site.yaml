@@ -1,0 +1,20 @@
+repo: pal-norms
+title: Нормы и сроки
+tagline: Дословные цитаты из официальных публикаций, сроки ответа и куда обращаться дальше. У каждой цитаты ссылка на публикацию и дата сверки
+prefix: pn
+port: 8701
+base: /pal-norms/
+site_url: https://openpalliative.github.io
+pwa: false
+stale_after_days: 90
+draft_default: none
+github: https://github.com/openpalliative/pal-norms
+nav:
+  - title: Сроки
+    path: deadlines/
+  - title: Если не ответили
+    path: escalation/
+  - title: Показания
+    path: indications/
+  - title: Документы
+    path: acts/

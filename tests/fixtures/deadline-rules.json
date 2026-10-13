@@ -1,0 +1,148 @@
+{
+  "format": "openpalliative-dataset/1",
+  "dataset": "deadline-rules",
+  "repo": "pal-norms",
+  "schema_version": "1.0.0",
+  "version": "2026.10.11",
+  "generated_at": "2026-10-11T12:00:00Z",
+  "data_date": "2026-10-11",
+  "stale_after_days": 90,
+  "license": "CC-BY-4.0",
+  "source": [
+    {
+      "id": "demo-source",
+      "title": "Пример источника для разработки сайта, не настоящий документ"
+    }
+  ],
+  "content_sha256": "b51ea16bec1420f4622c0574a59a4bdf5463f91f866de557b9fb833ff3735a63",
+  "counts": {
+    "items": 3,
+    "unverified": 1,
+    "excluded": 0
+  },
+  "items": [
+    {
+      "id": "demo-answer",
+      "verified": false,
+      "verified_at": null,
+      "source_ref": "demo-source",
+      "situation": "Пример: отправили письменное обращение",
+      "result_label": "Ответ должен прийти не позже",
+      "from_event": "received",
+      "from_event_label": "Когда обращение получили",
+      "who": "организация или орган, куда вы написали",
+      "value": 30,
+      "unit": "calendar_days",
+      "direction": "forward",
+      "pre": {
+        "value": 3,
+        "unit": "calendar_days",
+        "label": "на регистрацию"
+      },
+      "extension": {
+        "value": 30,
+        "unit": "calendar_days",
+        "label": "могут продлить, но должны сообщить вам"
+      },
+      "shift_if_nonworking": "unknown",
+      "margin_working_days": 0,
+      "norm_ids": [
+        "demo-law"
+      ],
+      "quote_ids": [
+        "demo-law-p12"
+      ],
+      "ambiguous": true,
+      "ambiguity_note": "Пример: в тексте не сказано, переносится ли срок с выходного дня",
+      "escalation_ids": [
+        "demo-no-answer"
+      ],
+      "audience": [
+        "family",
+        "org"
+      ],
+      "legal_review": {
+        "status": "none",
+        "role": null,
+        "reviewed_at": null,
+        "expires_at": null,
+        "ref": null
+      }
+    },
+    {
+      "id": "demo-turning-18",
+      "verified": true,
+      "verified_at": "2026-10-11",
+      "source_ref": "demo-source",
+      "situation": "Пример: ребёнку скоро 18",
+      "result_label": "Сведения должны передать не позже",
+      "from_event": "turns-18",
+      "from_event_label": "Дата, когда исполнится 18",
+      "who": "детская медицинская организация",
+      "value": 90,
+      "unit": "working_days",
+      "direction": "backward",
+      "pre": null,
+      "extension": null,
+      "shift_if_nonworking": "no",
+      "margin_working_days": 5,
+      "norm_ids": [
+        "demo-polozhenie"
+      ],
+      "quote_ids": [
+        "demo-polozhenie-p23"
+      ],
+      "ambiguous": false,
+      "ambiguity_note": null,
+      "escalation_ids": [],
+      "audience": [
+        "family",
+        "org"
+      ],
+      "legal_review": {
+        "status": "none",
+        "role": null,
+        "reviewed_at": null,
+        "expires_at": null,
+        "ref": null
+      }
+    },
+    {
+      "id": "demo-24h",
+      "verified": true,
+      "verified_at": "2026-10-11",
+      "source_ref": "demo-source",
+      "situation": "Пример: попросили копию документа в стационаре",
+      "result_label": "Должны выдать не позже",
+      "from_event": "requested",
+      "from_event_label": "Когда попросили",
+      "who": "стационар",
+      "value": 1,
+      "unit": "within_24h",
+      "direction": "forward",
+      "pre": null,
+      "extension": null,
+      "shift_if_nonworking": "no",
+      "margin_working_days": 0,
+      "norm_ids": [
+        "demo-polozhenie"
+      ],
+      "quote_ids": [
+        "demo-polozhenie-p25"
+      ],
+      "ambiguous": false,
+      "ambiguity_note": null,
+      "escalation_ids": [],
+      "audience": [
+        "family"
+      ],
+      "legal_review": {
+        "status": "none",
+        "role": null,
+        "reviewed_at": null,
+        "expires_at": null,
+        "ref": null
+      }
+    }
+  ]
+}

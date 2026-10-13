@@ -1,0 +1,10 @@
+Наборы данных в data/ и опубликованные снимки data/v1/*.json распространяются
+по лицензии Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/legalcode.ru
+
+Атрибуция: openpalliative, pal-norms, https://github.com/openpalliative/pal-norms,
+источник текстов норм publication.pravo.gov.ru
+
+Цитаты норм, выдержки распознанного текста в raw/ и вырезки сканов в raw/crops/
+сделаны из официальных документов. Официальные документы не являются объектами
+авторских прав (п. 6 ст. 1259 ГК РФ)

@@ -1,0 +1,19 @@
+[
+  {"name": "home", "path": "", "nojs": true},
+  {"name": "deadlines", "path": "deadlines/", "nojs": true},
+  {"name": "deadline-208n-p23-transition", "path": "deadlines/208n-p23-transition/", "nojs": true},
+  {"name": "escalation", "path": "escalation/", "nojs": true, "print_pages": null},
+  {"name": "indications", "path": "indications/", "nojs": true},
+  {"name": "acts", "path": "acts/", "nojs": true},
+  {"name": "act-208n-243n", "path": "acts/208n-243n/", "nojs": true},
+  {"name": "act-345n-372n", "path": "acts/345n-372n/", "nojs": true},
+  {"name": "act-59-fz", "path": "acts/59-fz/", "nojs": true},
+  {"name": "calendar", "path": "calendar/", "nojs": true},
+  {"name": "calendar-2027", "path": "calendar/2027/", "nojs": true},
+  {"name": "changes", "path": "changes/", "nojs": true},
+  {"name": "check", "path": "check/", "nojs": true},
+  {"name": "data", "path": "data/", "nojs": true},
+  {"name": "deadline-100n-deferred", "path": "deadlines/100n-deferred/", "nojs": true},
+  {"name": "act-505n", "path": "acts/505n/", "nojs": true},
+  {"name": "calendar-2028", "path": "calendar/2028/", "nojs": true}
+]

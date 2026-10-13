@@ -1,0 +1,97 @@
+{% extends "op/base.html.j2" %}
+{% import "op/macros.html.j2" as op with context %}
+{% import "partials/pn.html.j2" as pnm with context %}
+{% block title %}Данные для разработчиков{% endblock %}
+{% block description %}Наборы данных о нормах и сроках в JSON со схемами, код расчёта сроков и проверки текста{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{ url('assets/css/pn-misc.css') }}"><link rel="stylesheet" href="{{ url('assets/css/pn-print.css') }}" media="print">{% endblock %}
+{% block main %}
+<div class="op-wrap op-page pn-data">
+  {{ op.crumbs([("openpalliative", hub('')), (site.title, url('')), ("Данные", "")]) }}
+  <h1>Данные для разработчиков</h1>
+  <p class="op-lead">Всё, что видно на этом сайте, лежит в открытых файлах JSON. Их можно забрать в свой сайт, бот или памятку</p>
+  <section aria-labelledby="pn-src">
+    <h2 id="pn-src">Откуда эти данные</h2>
+    {{ pnm.sources() }}
+  </section>
+  {% if site.pn.datasets %}
+  <div class="op-table-wrap">
+    <table class="op-table">
+      <caption class="op-visually-hidden">Наборы данных</caption>
+      <thead><tr><th scope="col">Набор</th><th scope="col">Что внутри</th><th scope="col" class="op-num">Записей</th><th scope="col" class="op-num">Не проверено</th><th scope="col">Версия</th></tr></thead>
+      <tbody>
+        {% for d in site.pn.datasets %}
+        <tr>
+          <th scope="row"><a href="{{ url('data/v1/' ~ d.name ~ '.json') }}"><span class="op-code">{{ d.name }}</span></a><br><a class="pn-data__schema" href="{{ url('data/v1/' ~ d.name ~ '.schema.json') }}">схема</a></th>
+          <td>{{ d.summary }}</td>
+          <td class="op-num">{{ d["items"] }}</td>
+          <td class="op-num">{{ d.unverified }}</td>
+          <td><span class="op-code">{{ d.version }}</span></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <p>Список с контрольными суммами: <a href="{{ url('data/v1/index.json') }}"><span class="op-code">data/v1/index.json</span></a></p>
+  {% endif %}
+  {% set un_acts = site.pn.acts | rejectattr("verified") | list %}
+  {% set un_rules = site.pn.rules | rejectattr("rule.verified") | list %}
+  {% set un_esc = site.pn.escalation | rejectattr("verified") | list %}
+  {% set un_quotes = site.pn.quotes.values() | rejectattr("verified") | list %}
+  <section id="unverified" aria-labelledby="pn-unv">
+    <h2 id="pn-unv">Что не проверено</h2>
+    <p>Эти записи видны на сайте с пометкой «Не проверено». Их текст не сверен со сканом официальной публикации</p>
+    {% if un_acts %}
+    <h3>Документы: {{ un_acts | length }}</h3>
+    <ul class="pn-plain">
+      {% for a in un_acts %}<li><a href="{{ url('acts/' ~ a.id ~ '/') }}">{{ a.short_title }}</a>{% if a.notes %}. {{ a.notes }}{% endif %}</li>{% endfor %}
+    </ul>
+    {% endif %}
+    {% if un_rules %}
+    <h3>Сроки: {{ un_rules | length }}</h3>
+    <ul class="pn-plain">
+      {% for rv in un_rules %}<li><a href="{{ url('deadlines/' ~ rv.rule.id ~ '/') }}">{{ rv.rule.situation }}</a>. Опирается на {% for nid in rv.rule.norm_ids %}{% set na = site.pn.acts_by_id.get(nid) %}{% if na and not na.verified %}«{{ na.short_title }}»{% endif %}{% endfor %}, его текст не сверен с официальной публикацией</li>{% endfor %}
+    </ul>
+    {% endif %}
+    {% if un_esc %}
+    <h3>Шаги «Если не ответили»: {{ un_esc | length }}</h3>
+    <ul class="pn-plain">
+      {% for e in un_esc %}<li><a href="{{ url('escalation/') }}#{{ e.id }}">{{ e.title }}</a></li>{% endfor %}
+    </ul>
+    {% endif %}
+    {% if un_quotes %}
+    <p>Цитат не сверено: {{ un_quotes | length }}. Из документов: {% for aid in un_quotes | map(attribute="act_id") | unique %}{% set qa = site.pn.acts_by_id.get(aid) %}«{{ qa.short_title if qa else aid }}»{% if not loop.last %}, {% endif %}{% endfor %}</p>
+    {% endif %}
+    {% if not (site.pn.rules | selectattr("rule.legal_review.status", "equalto", "ok") | list) and not (site.pn.escalation | selectattr("legal_review.status", "equalto", "ok") | list) %}
+    <p>Толкования, например с какого дня считать срок и переносится ли он с выходного, юрист в РФ пока не проверял ни у одной записи</p>
+    {% endif %}
+  </section>
+  <section aria-labelledby="pn-how">
+    <h2 id="pn-how">Как подключить</h2>
+    <p>Расчёт срока без сети и без браузерных функций. Подключите файл <span class="op-code">lib/deadlines.js</span> и передайте правило, дату события и календарь:</p>
+    <pre class="pn-code" tabindex="0" aria-label="Пример: расчёт срока"><code>import { computeDeadline } from "./lib/deadlines.js";
+const rules = await (await fetch("data/v1/deadline-rules.json")).json();
+const calendar = await (await fetch("data/v1/calendar.json")).json();
+const rule = rules.items.find((r) =&gt; r.verified);
+const result = computeDeadline({ rule, start: "2026-11-02", calendar });
+console.log(result.due, result.formula);</code></pre>
+    <p>Проверка текста памятки по правилам из <span class="op-code">lint-rules.json</span>, тот же результат в JavaScript и Python:</p>
+    <pre class="pn-code" tabindex="0" aria-label="Пример: проверка текста"><code>import { checkText } from "./lib/textcheck.js";
+const findings = checkText(text, lintRules.items, { acts: acts.items });
+
+python3 tools/pack_lint.py memo.md --rules lint-rules.json --acts acts.json</code></pre>
+  </section>
+  <section aria-labelledby="pn-lic">
+    <h2 id="pn-lic">Лицензия и правки</h2>
+    <ul class="pn-plain">
+      <li>Данные под лицензией CC BY 4.0. При использовании укажите источник: publication.pravo.gov.ru и openpalliative</li>
+      <li>Код под лицензией MIT</li>
+      <li>Ошибку в данных можно исправить через запрос на изменение в файлах YAML в <a href="{{ site.github }}">репозитории</a>. Цитаты и сроки проверяет человек по скану официальной публикации</li>
+      <li>Поля <span class="op-code">verified</span> и <span class="op-code">legal_review</span> разные: первое значит, что текст сверен со сканом, второе, что толкование проверил юрист</li>
+    </ul>
+  </section>
+  {{ pnm.back() }}
+</div>
+{% endblock %}
+{% block scripts %}
+<script type="module" src="{{ url('assets/js/pn-page.js') }}"></script>
+{% endblock %}

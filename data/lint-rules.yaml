@@ -1,0 +1,188 @@
+rules:
+- id: lint-345n-372n
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  kind: repealed_act
+  patterns:
+  - (?<![0-9A-Za-zА-Яа-яЁё])345\s?-?\s?н\s?/\s?(?:№\s?)?372\s?-?\s?н(?![0-9A-Za-zА-Яа-яЁё])
+  - (?<![0-9A-Za-zА-Яа-яЁё])345\s?-?\s?н(?![0-9A-Za-zА-Яа-яЁё])
+  - (?<![0-9A-Za-zА-Яа-яЁё])372\s?-?\s?н(?![0-9A-Za-zА-Яа-яЁё])
+  flags: i
+  context:
+    pattern: паллиатив
+    window: 400
+  act_id: 345n-372n
+  suggest_act_id: 208n-243n
+  message: Упомянут приказ о паллиативной помощи 2019 года, он утратил силу 01.09.2025
+  severity: error
+  quote_ids:
+  - 208n-243n-o2
+  - 208n-243n-o3
+  since: 2025-09-01
+- id: lint-187n
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  kind: repealed_act
+  patterns:
+  - (?<![0-9A-Za-zА-Яа-яЁё])187\s?-?\s?н(?![0-9A-Za-zА-Яа-яЁё])
+  flags: i
+  context:
+    pattern: паллиатив
+    window: 400
+  act_id: 187n
+  suggest_act_id: 208n-243n
+  message: Упомянут порядок паллиативной помощи взрослым 2015 года, он утратил силу
+  severity: error
+  quote_ids:
+  - 345n-372n-o2
+  since:
+- id: lint-193n
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  kind: repealed_act
+  patterns:
+  - (?<![0-9A-Za-zА-Яа-яЁё])193\s?-?\s?н(?![0-9A-Za-zА-Яа-яЁё])
+  flags: i
+  context:
+    pattern: паллиатив
+    window: 400
+  act_id: 193n
+  suggest_act_id: 208n-243n
+  message: Упомянут порядок паллиативной помощи детям 2015 года, он утратил силу
+  severity: error
+  quote_ids:
+  - 345n-372n-o2
+  since:
+- id: lint-348n
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-398n
+  kind: repealed_act
+  patterns:
+  - (?<![0-9A-Za-zА-Яа-яЁё])348\s?-?\s?н(?![0-9A-Za-zА-Яа-яЁё])
+  flags: i
+  context:
+    pattern: издели|на дому
+    window: 400
+  act_id: 348n
+  suggest_act_id: 398n
+  message: Упомянут перечень медицинских изделий для дома 2019 года, он утратил силу, действует перечень 398н. В п. 25 Положения 208н/243н ссылка на 348н осталась, в дословной цитате этого пункта номер верен
+  severity: warning
+  quote_ids:
+  - 398n-o2
+  since:
+- id: lint-502n
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-180n
+  kind: repealed_act
+  patterns:
+  - (?<![0-9A-Za-zА-Яа-яЁё])502\s?-?\s?н(?![0-9A-Za-zА-Яа-яЁё])
+  flags: i
+  context:
+    pattern: врачебн[а-яё]* комисси
+    window: 400
+  act_id: 502n
+  suggest_act_id: 180n
+  message: Упомянут порядок врачебной комиссии 2012 года, он утратил силу 01.09.2025
+  severity: error
+  quote_ids:
+  - 180n-o2
+  - 180n-o3
+  since: 2025-09-01
+- id: lint-1093n
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-100n
+  kind: repealed_act
+  patterns:
+  - (?<![0-9A-Za-zА-Яа-яЁё])1093\s?-?\s?н(?![0-9A-Za-zА-Яа-яЁё])
+  flags: i
+  context:
+    pattern: отпуск|аптек|лекарствен|рецепт
+    window: 400
+  act_id: 1093n
+  suggest_act_id: 100n
+  message: Упомянуты правила отпуска лекарственных препаратов 2021 года, они утратили силу
+  severity: error
+  quote_ids:
+  - 100n-o2
+  since:
+- id: lint-1195n
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-398n
+  kind: repealed_act
+  patterns:
+  - (?<![0-9A-Za-zА-Яа-яЁё])1195\s?-?\s?н(?![0-9A-Za-zА-Яа-яЁё])
+  flags: i
+  context:
+    pattern: издели|на дому
+    window: 400
+  act_id: 1195n
+  suggest_act_id: 398n
+  message: Упомянуты изменения 2020 года в перечень медицинских изделий для дома, они утратили силу вместе с перечнем
+  severity: error
+  quote_ids:
+  - 398n-o2
+  since:
+- id: lint-792n
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-692n
+  kind: repealed_act
+  patterns:
+  - (?<![0-9A-Za-zА-Яа-яЁё])792\s?-?\s?н(?![0-9A-Za-zА-Яа-яЁё])
+  flags: i
+  context:
+    pattern: медико-социальн|МСЭ|экспертиз
+    window: 400
+  act_id: 792n
+  suggest_act_id: 692n
+  message: Упомянут порядок медико-социальной экспертизы без доступа к персональным данным 2023 года, он утратил силу
+  severity: error
+  quote_ids:
+  - 692n-o2
+  since:
+- id: lint-agencies
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-236-fz
+  kind: agency
+  patterns:
+  - (?<![0-9A-Za-zА-Яа-яЁё])ПФР(?![0-9A-Za-zА-Яа-яЁё])
+  - (?<![0-9A-Za-zА-Яа-яЁё])ФСС(?![0-9A-Za-zА-Яа-яЁё])
+  - Пенсионн[а-яё]* фонд[а-яё]*
+  - Фонд[а-яё]* социального страхования
+  flags: i
+  context:
+  act_id: 236-fz
+  suggest_act_id: 236-fz
+  message: С 1 января 2023 года вместо Пенсионного фонда и Фонда социального страхования работает Фонд пенсионного и социального страхования Российской Федерации
+  severity: warning
+  quote_ids:
+  - 236-fz-s18-1
+  - 236-fz-s18-2
+  since: 2023-01-01
+- id: lint-transition-30
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-208n-243n
+  kind: deadline_mismatch
+  patterns:
+  - (?<![0-9A-Za-zА-Яа-яЁё])30\s*(?:\(тридцат[а-яё]*\)\s*)?рабоч[а-яё]*\s+дн
+  - (?<![0-9A-Za-zА-Яа-яЁё])тридцат[а-яё]*\s+рабоч[а-яё]*\s+дн
+  flags: i
+  context:
+    pattern: 18\s*лет|восемнадцат|совершеннолет
+    window: 300
+  act_id: 208n-243n
+  suggest_act_id: 208n-243n
+  message: 'В действующем Положении другой срок: выписку направляют не менее чем за 90 рабочих дней до 18 лет'
+  severity: warning
+  quote_ids:
+  - 208n-243n-p23
+  since: 2025-09-01

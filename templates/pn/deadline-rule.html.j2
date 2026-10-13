@@ -1,0 +1,65 @@
+{% extends "op/base.html.j2" %}
+{% set draft = "legal" %}
+{% import "op/macros.html.j2" as op with context %}
+{% import "partials/pn.html.j2" as pnm with context %}
+{% set r = rv.rule %}
+{% block title %}{{ r.situation }}{% endblock %}
+{% block description %}{{ rv.terms.summary }}. {{ r.from_event_label }}{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{ url('assets/css/pn-calc.css') }}"><link rel="stylesheet" href="{{ url('assets/css/pn-links.css') }}"><link rel="stylesheet" href="{{ url('assets/css/pn-print.css') }}" media="print">{% endblock %}
+{% block main %}
+<div class="op-wrap op-page pn-deadlines pn-rule">
+  <div class="pn-print-skip">
+    {{ op.crumbs([("openpalliative", hub('')), (site.title, url('')), ("Сроки", url('deadlines/')), (r.situation, "")]) }}
+    <h1>{{ r.situation }}</h1>
+    {% if rv.group == "pharmacy" %}{{ pnm.pain_now() }}{% endif %}
+    <section class="pn-term" aria-labelledby="pn-term-title">
+      <h2 class="pn-term__label" id="pn-term-title">Срок</h2>
+      <p class="pn-term__value">{{ rv.terms.headline }}</p>
+      <dl class="op-dl pn-term__dl">
+        <dt>От какого события</dt><dd>{{ r.from_event_label }}</dd>
+        <dt>Кто должен</dt><dd>{{ r.who }}</dd>
+        {% if rv.terms.pre %}<dt>Ещё</dt><dd>{{ rv.terms.pre }}</dd>{% endif %}
+        {% if rv.terms.extension %}<dt>Продление</dt><dd>{{ rv.terms.extension }}</dd>{% endif %}
+        {% if r.unit != "within_24h" %}<dt>Если последний день выходной</dt><dd>{{ rv.terms.shift }}</dd>{% endif %}
+        {% if r.direction == "backward" and r.margin_working_days %}<dt>Запас</dt><dd>Если календарь на нужный год ещё не утверждён, прибавляем {{ r.margin_working_days }} {{ r.margin_working_days | plural("рабочий день", "рабочих дня", "рабочих дней", false) }}</dd>{% endif %}
+        <dt>Норма</dt><dd>{% for nid in r.norm_ids %}{{ pnm.norm_link(nid) }}{% if not loop.last %}, {% endif %}{% endfor %}</dd>
+      </dl>
+      {% if r.ambiguous %}{{ pnm.status("info", "Ориентировочно. " ~ r.ambiguity_note) }}{% endif %}
+      {% if not r.verified %}{{ pnm.status("unverified", "Текст нормы ещё не сверен с официальной публикацией. Срок показан ориентировочно") }}{% endif %}
+      {{ pnm.legal(r.legal_review) }}
+    </section>
+    <section aria-labelledby="pn-quotes-title">
+      <h2 id="pn-quotes-title">Что сказано в норме</h2>
+      {{ pnm.quotes(r.quote_ids) }}
+    </section>
+    <h2 class="pn-calc__h">Посчитать дату</h2>
+  </div>
+  {{ pnm.calc(rv) }}
+  {% if r.escalation_ids %}
+  <section class="pn-print-skip op-no-print" aria-labelledby="pn-esc-title">
+    <h2 id="pn-esc-title">Если срок нарушен</h2>
+    <ul class="pn-links">
+      {% for eid in r.escalation_ids %}
+      {% set e = site.pn.esc_by_id.get(eid) %}
+      {% if e %}
+      <li><a class="pn-links__row" href="{{ url('escalation/') }}#{{ e.id }}"><span class="pn-links__icon">{{ pnm.ic("file-text") }}</span><span class="pn-links__text"><span class="pn-links__title">{{ e.title }}</span><span class="pn-links__hint">{{ e.what }}</span></span>{{ pnm.ic("chevron-right", "pn-links__chev") }}</a></li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+  {% else %}
+  <section class="pn-print-skip op-no-print" aria-labelledby="pn-esc-title">
+    <h2 id="pn-esc-title">Если срок нарушен</h2>
+    <ul class="pn-links">
+      <li><a class="pn-links__row" href="{{ url('escalation/') }}"><span class="pn-links__icon">{{ pnm.ic("file-text") }}</span><span class="pn-links__text"><span class="pn-links__title">Что можно сделать дальше</span><span class="pn-links__hint">Куда обращаться, если срок прошёл или ответили не по существу</span></span>{{ pnm.ic("chevron-right", "pn-links__chev") }}</a></li>
+    </ul>
+  </section>
+  {% endif %}
+  <p class="pn-print-skip op-no-print"><a href="{{ url('deadlines/') }}">Все сроки</a></p>
+  {{ pnm.back() }}
+</div>
+{% endblock %}
+{% block scripts %}
+<script type="module" src="{{ url('assets/js/pn-page.js') }}"></script>
+<script type="module" src="{{ url('assets/js/pn-deadline.js') }}"></script>
+{% endblock %}

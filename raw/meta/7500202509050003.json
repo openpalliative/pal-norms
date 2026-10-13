@@ -1,0 +1,26 @@
+{
+ "eoNumber": "7500202509050003",
+ "number": "99",
+ "documentDate": "2025-09-05T00:00:00",
+ "publishDateShort": "2025-09-05T00:00:00",
+ "name": "Об объявлении даты праздника Белого месяца «Сагаалган» в 2026 году",
+ "complexName": "Постановление Губернатора Забайкальского края от 05.09.2025 № 99\n \"Об объявлении даты праздника Белого месяца \"Сагаалган\" в 2026 году\"",
+ "pagesCount": 1,
+ "pdfFileLength": 19797,
+ "signatoryAuthorities": [
+  {
+   "isMain": true,
+   "weight": 59990,
+   "name": "Губернатор Забайкальского края",
+   "id": "a3dd10b1-8f50-4b4f-9608-6dad4117cede"
+  }
+ ],
+ "signatoryAuthorityId": "a3dd10b1-8f50-4b4f-9608-6dad4117cede",
+ "documentType": {
+  "weight": 95,
+  "name": "Постановление",
+  "id": "fd5a8766-f6fd-4ac2-8fd9-66f414d314ac"
+ },
+ "jdRegNumber": null,
+ "jdRegDate": null
+}

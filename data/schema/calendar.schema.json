@@ -1,0 +1,462 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openpalliative.github.io/pal-norms/data/v1/calendar.schema.json",
+  "title": "Производственный календарь из постановлений о переносе выходных дней",
+  "type": "object",
+  "required": [
+    "dataset",
+    "items"
+  ],
+  "properties": {
+    "dataset": {
+      "const": "calendar"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "verified",
+          "verified_at",
+          "source_ref",
+          "kind",
+          "quote_ids"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^(baseline|\\d{4})$"
+          },
+          "verified": {
+            "type": "boolean"
+          },
+          "verified_at": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+            "x-message-ru": "дата в виде ГГГГ-ММ-ДД или пусто"
+          },
+          "source_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "baseline",
+              "year"
+            ]
+          },
+          "year": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "holidays_mmdd": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^\\d{2}-\\d{2}$"
+            }
+          },
+          "carry_over": {
+            "type": "boolean"
+          },
+          "carry_exclude_mmdd": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^\\d{2}-\\d{2}$"
+            }
+          },
+          "decree_act_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "decree_eoNumber": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^\\d{16}$",
+            "x-message-ru": "eoNumber из 16 цифр или пусто"
+          },
+          "transfers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "from",
+                "to"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "from": {
+                  "type": "string",
+                  "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+                  "x-message-ru": "дата в виде ГГГГ-ММ-ДД"
+                },
+                "to": {
+                  "type": "string",
+                  "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+                  "x-message-ru": "дата в виде ГГГГ-ММ-ДД"
+                }
+              }
+            }
+          },
+          "off": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+              "x-message-ru": "дата в виде ГГГГ-ММ-ДД"
+            }
+          },
+          "work": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+              "x-message-ru": "дата в виде ГГГГ-ММ-ДД"
+            }
+          },
+          "quote_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+            }
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "kind": {
+                  "const": "baseline"
+                }
+              },
+              "required": [
+                "kind"
+              ]
+            },
+            "then": {
+              "required": [
+                "holidays_mmdd",
+                "carry_over",
+                "carry_exclude_mmdd"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "kind": {
+                  "const": "year"
+                }
+              },
+              "required": [
+                "kind"
+              ]
+            },
+            "then": {
+              "required": [
+                "year",
+                "decree_act_id",
+                "decree_eoNumber",
+                "transfers",
+                "off",
+                "work"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "regional": {
+      "type": "array",
+      "description": "Региональные нерабочие праздничные дни из официальных публикаций регионов на pravo.gov.ru. Срок в калькуляторе по ним не сдвигается, это справка",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "region_id",
+          "region_name",
+          "region_in",
+          "date",
+          "title",
+          "eoNumber",
+          "act",
+          "quote_ids",
+          "quote",
+          "verified",
+          "verified_at",
+          "source_ref",
+          "legal_review"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "region_id": {
+            "type": "string",
+            "pattern": "^RU-[A-Z]{2,3}$"
+          },
+          "region_name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "region_in": {
+            "type": "string",
+            "minLength": 1
+          },
+          "date": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+            "x-message-ru": "дата в виде ГГГГ-ММ-ДД"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "eoNumber": {
+            "type": "string",
+            "pattern": "^\\d{16}$",
+            "x-message-ru": "eoNumber из 16 цифр"
+          },
+          "act": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "eoNumber",
+              "number",
+              "doc_date",
+              "title",
+              "authority",
+              "url",
+              "pdf_sha256"
+            ],
+            "properties": {
+              "eoNumber": {
+                "type": "string",
+                "pattern": "^\\d{16}$",
+                "x-message-ru": "eoNumber из 16 цифр"
+              },
+              "number": {
+                "type": "string"
+              },
+              "doc_date": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+                "x-message-ru": "дата в виде ГГГГ-ММ-ДД"
+              },
+              "publish_date": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+                "x-message-ru": "дата в виде ГГГГ-ММ-ДД или пусто"
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "authority": {
+                "type": "string",
+                "minLength": 1
+              },
+              "url": {
+                "type": "string",
+                "pattern": "^http://publication\\.pravo\\.gov\\.ru/document/\\d{16}$"
+              },
+              "pdf_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            }
+          },
+          "quote_ids": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+            }
+          },
+          "quote": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "page",
+              "text",
+              "text_source",
+              "scan_checked"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+              },
+              "page": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "text_source": {
+                "const": "official_pdf"
+              },
+              "ocr": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "passes": {
+                    "type": "integer"
+                  },
+                  "diff_lines": {
+                    "type": "integer"
+                  },
+                  "dpi": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              },
+              "scan_checked": {
+                "type": [
+                  "object",
+                  "null"
+                ],
+                "additionalProperties": false,
+                "required": [
+                  "at",
+                  "method"
+                ],
+                "properties": {
+                  "at": {
+                    "type": "string",
+                    "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+                    "x-message-ru": "дата в виде ГГГГ-ММ-ДД"
+                  },
+                  "method": {
+                    "enum": [
+                      "visual-crop"
+                    ]
+                  },
+                  "crop": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "crops": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "notes": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "second": {
+                    "type": [
+                      "object",
+                      "null"
+                    ],
+                    "additionalProperties": false,
+                    "required": [
+                      "at",
+                      "method",
+                      "agrees"
+                    ],
+                    "properties": {
+                      "at": {
+                        "type": "string",
+                        "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+                        "x-message-ru": "дата в виде ГГГГ-ММ-ДД"
+                      },
+                      "method": {
+                        "enum": [
+                          "ocr-pass-c",
+                          "visual-reread"
+                        ]
+                      },
+                      "agrees": {
+                        "type": "boolean"
+                      },
+                      "crop": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "notes": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "verified": {
+            "type": "boolean"
+          },
+          "verified_at": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+            "x-message-ru": "дата в виде ГГГГ-ММ-ДД или пусто"
+          },
+          "source_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "legal_review": {
+            "type": "object",
+            "required": [
+              "status"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "none",
+                  "ok",
+                  "expired"
+                ]
+              }
+            }
+          },
+          "notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

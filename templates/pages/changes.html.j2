@@ -1,0 +1,50 @@
+{% extends "op/base.html.j2" %}
+{% import "op/macros.html.j2" as op with context %}
+{% import "partials/pn.html.j2" as pnm with context %}
+{% block title %}Что изменилось{% endblock %}
+{% block description %}Новые и изменённые документы на портале официальной публикации, которые касаются паллиативной помощи{% endblock %}
+{% block head %}<link rel="alternate" type="application/atom+xml" title="Что изменилось: лента Atom" href="{{ url('changes/changes.xml') }}"><link rel="stylesheet" href="{{ url('assets/css/pn-misc.css') }}"><link rel="stylesheet" href="{{ url('assets/css/pn-print.css') }}" media="print">{% endblock %}
+{% block main %}
+<div class="op-wrap op-page pn-changes">
+  {{ op.crumbs([("openpalliative", hub('')), (site.title, url('')), ("Что изменилось", "")]) }}
+  <h1>Что изменилось</h1>
+  <p class="op-lead">Новые и изменённые документы на портале официальной публикации, которые касаются паллиативной помощи. Запись появляется после проверки человеком</p>
+  {% if site.pn.watch and site.pn.watch.checked_at %}
+  <p class="pn-watchline">{{ pnm.ic("history") }}<span>Последняя проверка новых публикаций: <time datetime="{{ site.pn.watch.checked_at }}">{{ site.pn.watch.checked_at | ru_date }}</time></span></p>
+  {% if site.pn.watch.failures >= 3 %}{{ pnm.status("stale", "Портал публикации не отвечал при последних проверках. Новые документы могли не попасть в ленту") }}{% endif %}
+  {% else %}
+  <p class="pn-watchline">{{ pnm.ic("history") }}<span>Автоматическая проверка новых публикаций ещё не запускалась. Записи ниже внесены вручную</span></p>
+  {% endif %}
+  {% if site.pn.changes %}
+  <ol class="pn-feed">
+    {% for c in site.pn.changes %}
+    <li class="pn-feed__item" id="{{ c.id }}">
+      <p class="pn-feed__meta"><time datetime="{{ c.published_at }}">{{ c.published_at | ru_date_long }}</time><span class="pn-feed__kind">{{ site.pn.labels.change_kind[c.kind] }}</span></p>
+      <h2 class="pn-feed__title">{{ c.summary }}</h2>
+      <p class="pn-feed__official"><span data-verbatim>{{ c.title }}</span></p>
+      <p class="pn-feed__links">
+        {% if c.eoNumber %}{{ pnm.ext_link("http://publication.pravo.gov.ru/document/" ~ c.eoNumber, "Публикация") }}{% endif %}
+        {% for aid in c.related_act_ids %}{% if loop.first %}<span class="pn-feed__rel">Документы: {% endif %}{{ pnm.act_link(aid) }}{% if not loop.last %}, {% else %}</span>{% endif %}{% endfor %}
+      </p>
+      {% if not c.verified %}{{ pnm.status("unverified", "Запись ещё не сверена с публикацией") }}{% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+  {% else %}
+  {{ pnm.status("info", "Записей пока нет") }}
+  {% endif %}
+  <section aria-labelledby="pn-how">
+    <h2 id="pn-how">Как работает проверка</h2>
+    <ul class="pn-plain">
+      <li>Раз в неделю, а в сентябре каждый день, программа смотрит портал publication.pravo.gov.ru: новые документы со словами о паллиативной помощи, изменения документов из нашего списка и постановление о переносе выходных на следующий год</li>
+      <li>Сама программа ничего не меняет на сайте. Она открывает задачу, и человек сверяет документ со сканом</li>
+      <li>Сайты фондов, больниц и госорганов мы не проверяем, только портал официальной публикации</li>
+    </ul>
+    <p>Ленту можно читать в программе для новостей: <a href="{{ url('changes/changes.xml') }}">лента Atom</a>. Она обновляется вместе с этой страницей</p>
+  </section>
+  {{ pnm.back() }}
+</div>
+{% endblock %}
+{% block scripts %}
+<script type="module" src="{{ url('assets/js/pn-page.js') }}"></script>
+{% endblock %}

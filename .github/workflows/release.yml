@@ -1,0 +1,49 @@
+name: release
+on:
+  push:
+    tags: ["v*"]
+permissions:
+  contents: read
+concurrency:
+  group: release
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    env:
+      OP_TARGET: pages
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@1c37ad07a6a961277cf70c0d37d6f313000f5884 # v10.3.0
+        with:
+          version: "0.11.7"
+          enable-cache: false
+      - run: uv sync --frozen
+      - run: uv run python -m pipeline.check
+      - run: uv run python -m opsite build
+      - run: uv run python -m opsite check --ci
+      - name: indications gate
+        run: |
+          if grep -Eq '^indications_public: *true' content/gates.yaml; then exit 0; fi
+          grep -q 'проверки медиком и юристом' _site/indications/index.html
+      - name: pack
+        env:
+          REPO: ${{ github.event.repository.name }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          name="$REPO-$TAG"
+          zip -qr "$name-site.zip" _site
+          (cd _site/data/v1 && zip -qr "../../../$name-data.zip" .)
+          uv run python .github/scripts/datasets_sqlite.py _site/data/v1 "$name-data.sqlite"
+          sha256sum ./*.zip ./*.sqlite > SHA256SUMS
+          cat SHA256SUMS
+      - name: publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: gh release create "$TAG" ./*.zip ./*.sqlite SHA256SUMS --repo "$GITHUB_REPOSITORY" --verify-tag --generate-notes

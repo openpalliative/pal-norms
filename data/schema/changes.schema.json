@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openpalliative.github.io/pal-norms/data/v1/changes.schema.json",
+  "title": "Что изменилось в официальных публикациях",
+  "type": "object",
+  "required": [
+    "dataset",
+    "items"
+  ],
+  "properties": {
+    "dataset": {
+      "const": "changes"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "verified",
+          "verified_at",
+          "source_ref",
+          "published_at",
+          "detected_at",
+          "eoNumber",
+          "title",
+          "kind",
+          "related_act_ids",
+          "summary",
+          "state",
+          "review_ref"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "verified": {
+            "type": "boolean"
+          },
+          "verified_at": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+            "x-message-ru": "дата в виде ГГГГ-ММ-ДД или пусто"
+          },
+          "source_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "published_at": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+            "x-message-ru": "дата в виде ГГГГ-ММ-ДД"
+          },
+          "detected_at": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+            "x-message-ru": "дата в виде ГГГГ-ММ-ДД"
+          },
+          "eoNumber": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^\\d{16}$",
+            "x-message-ru": "eoNumber из 16 цифр или пусто"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "new_act",
+              "amendment",
+              "repeal",
+              "transfer_decree",
+              "sunset_soon",
+              "in_force"
+            ]
+          },
+          "related_act_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+            }
+          },
+          "summary": {
+            "type": "string",
+            "minLength": 1
+          },
+          "state": {
+            "const": "accepted"
+          },
+          "review_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

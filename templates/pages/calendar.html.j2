@@ -1,0 +1,66 @@
+{% extends "op/base.html.j2" %}
+{% import "op/macros.html.j2" as op with context %}
+{% import "partials/pn.html.j2" as pnm with context %}
+{% block title %}Праздники и выходные{% endblock %}
+{% block description %}Нерабочие дни по Трудовому кодексу и постановлениям Правительства о переносе выходных{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{ url('assets/css/pn-cal.css') }}"><link rel="stylesheet" href="{{ url('assets/css/pn-links.css') }}"><link rel="stylesheet" href="{{ url('assets/css/pn-print.css') }}" media="print">{% endblock %}
+{% block main %}
+{% set built_year = site.pn.built[:4] | int %}
+<div class="op-wrap op-page pn-cal">
+  {{ op.crumbs([("openpalliative", hub('')), (site.title, url('')), ("Праздники и выходные", "")]) }}
+  <h1>Праздники и выходные</h1>
+  <p class="op-lead">Нерабочие дни по Трудовому кодексу и постановлениям Правительства о переносе выходных. В эти дни многие учреждения не работают, а сроки могут сдвигаться</p>
+  <section aria-labelledby="pn-next-title">
+    <h2 id="pn-next-title">Ближайшие нерабочие дни</h2>
+    {% set upcoming = site.pn.upcoming %}
+    {% if upcoming %}
+    <pn-holidays class="pn-next">
+      <ol class="pn-next__list">
+        {% set shown = namespace(n=0) %}
+        {% for r in upcoming %}
+        {% set future = r.end >= site.pn.built %}
+        <li class="pn-next__item" data-start="{{ r.start }}" data-end="{{ r.end }}"{% if not future or shown.n >= 4 %} hidden{% endif %}>
+          <span class="pn-next__when">{{ r.text }}</span>
+          <span class="pn-next__days">{{ r.days_text }}</span>
+          {% if not r.approved %}<span class="pn-next__unv">{{ pnm.unv() }} календарь на {{ r.unapproved_years | join(" и ") }} год не утверждён</span>{% endif %}
+        </li>
+        {% if future %}{% set shown.n = shown.n + 1 %}{% endif %}
+        {% endfor %}
+      </ol>
+      <div class="pn-next__empty" hidden>{{ pnm.status("info", "Ближайших нерабочих дней в данных нет. Календарь на следующий год появится после постановления Правительства, обычно в сентябре") }}</div>
+    </pn-holidays>
+    {% else %}
+    {{ pnm.status("info", "Календаря пока нет в данных") }}
+    {% endif %}
+  </section>
+  <section aria-labelledby="pn-years-title">
+    <h2 id="pn-years-title">По годам</h2>
+    <ul class="pn-links pn-years">
+      {% for y in site.pn.years %}
+      <li>
+        <a class="pn-links__row" href="{{ url('calendar/' ~ y.year ~ '/') }}">
+          <span class="pn-links__icon">{{ pnm.ic("calendar-days") }}</span>
+          <span class="pn-links__text"><span class="pn-links__title">{{ y.year }} год</span>
+            <span class="pn-links__hint">{% if y.approved and y.verified %}Утверждён, сверено с постановлением{% elif y.approved %}Утверждён, текст постановления ещё не сверен{% else %}Ещё не утверждён, показаны только праздники по Трудовому кодексу{% endif %}</span></span>
+          {{ pnm.ic("chevron-right", "pn-links__chev") }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <section aria-labelledby="pn-how-title">
+    <h2 id="pn-how-title">Откуда даты</h2>
+    <p>Праздники перечислены в статье 112 Трудового кодекса. Если праздник выпал на субботу или воскресенье, выходной переносится на следующий рабочий день, кроме январских. Как перенести январские и другие выходные, Правительство решает каждый год отдельным постановлением, обычно в сентябре</p>
+    {% if site.pn.baseline %}
+    {% if not site.pn.baseline.verified %}{{ pnm.status("unverified", "Список праздников ещё не сверен с официальной публикацией") }}{% endif %}
+    {{ pnm.quotes(site.pn.baseline.quote_ids) }}
+    {% endif %}
+  </section>
+  {{ pnm.related("calendar") }}
+  {{ pnm.back() }}
+</div>
+{% endblock %}
+{% block scripts %}
+<script type="module" src="{{ url('assets/js/pn-page.js') }}"></script>
+<script type="module" src="{{ url('assets/js/pn-holidays.js') }}"></script>
+{% endblock %}

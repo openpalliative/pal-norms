@@ -1,0 +1,59 @@
+quotes:
+- id: 236-fz-s18-1
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-236-fz
+  act_id: 236-fz
+  point: ч. 1 ст. 18
+  anchor: p-18-1
+  page: 33
+  text: 1. Фонд создается путем реорганизации государственного учреждения - Пенсионного фонда Российской Федерации с одновременным присоединением к нему Фонда социального страхования Российской Федерации.
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 1
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 236-fz-s18-1.png
+    crops:
+    - 236-fz-s18-1.png
+    notes:
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 236-fz-s18-1.png
+      notes: 'проход c (450 dpi, psm 3) дал расхождения только в распознавании: знаки препинания и пробелы, номера страниц и сносок, римские цифры и буквы, прочитанные как цифры или черта; спорные места заново сверены по вырезке 12.10.2026, текст цитаты верен. Таблица в raw/ocr-diff/236-fz-s18-1.second.tsv'
+- id: 236-fz-s18-2
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-236-fz
+  act_id: 236-fz
+  point: ч. 2 ст. 18, первое предложение
+  anchor: p-18-2
+  page: 33
+  text: 2. Датой создания Фонда считается 1 января 2023 года.
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 0
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 236-fz-s18-2.png
+    crops:
+    - 236-fz-s18-2.png
+    notes:
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 236-fz-s18-2.png
+      notes: проход c (450 dpi, psm 3) совпал со словами цитаты

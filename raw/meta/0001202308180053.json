@@ -1,0 +1,26 @@
+{
+ "eoNumber": "0001202308180053",
+ "number": "1314",
+ "documentDate": "2023-08-10T00:00:00",
+ "publishDateShort": "2023-08-18T00:00:00",
+ "name": "О переносе выходных дней в 2024 году",
+ "complexName": "Постановление Правительства Российской Федерации от 10.08.2023 № 1314\n \"О переносе выходных дней в 2024 году\"",
+ "pagesCount": 1,
+ "pdfFileLength": 130309,
+ "signatoryAuthorities": [
+  {
+   "isMain": true,
+   "weight": 93000,
+   "name": "Правительство Российской Федерации",
+   "id": "8005d8c9-4b6d-48d3-861a-2a37e69fccb3"
+  }
+ ],
+ "signatoryAuthorityId": "8005d8c9-4b6d-48d3-861a-2a37e69fccb3",
+ "documentType": {
+  "weight": 95,
+  "name": "Постановление",
+  "id": "fd5a8766-f6fd-4ac2-8fd9-66f414d314ac"
+ },
+ "jdRegNumber": null,
+ "jdRegDate": null
+}

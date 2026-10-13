@@ -1,0 +1,73 @@
+main:
+  - path: deadlines/
+    icon: calendar-clock
+    title: Посчитать срок ответа
+    summary: Укажите, что произошло и когда. Покажем дату, до которой должны ответить, и как её посчитали
+  - path: escalation/
+    icon: file-text
+    title: Если не ответили
+    summary: Что делать, если срок прошёл, жалобу переслали или ответили не по существу
+  - path: indications/
+    icon: book-open
+    title: Показания к паллиативной помощи
+    summary: Дословный текст приказа для разговора с врачом. Решает врачебная комиссия
+  - path: acts/
+    icon: scale
+    title: Все документы
+    summary: Приказы, законы и постановления со статусом и ссылкой на официальную публикацию
+
+orgs:
+  - path: check/
+    icon: file-check
+    title: Проверить памятку или шаблон
+    summary: Найдёт ссылки на документы, которые утратили силу. Текст не покидает устройство
+  - path: changes/
+    icon: history
+    title: Что изменилось
+    summary: Новые и изменённые документы, которые касаются паллиативной помощи
+  - path: calendar/
+    icon: calendar-days
+    title: Праздники и выходные
+    summary: Нерабочие дни и переносы по постановлениям Правительства
+  - path: data/
+    icon: code-xml
+    title: Данные для разработчиков
+    summary: Наборы данных в JSON, схемы и код для расчёта сроков
+
+related:
+  deadlines:
+    - repo: obrashchenie-kit
+      path: ""
+      label: Попросить ответ на бумаге и следить за сроком
+      tool: Заявления и жалобы
+    - repo: openpalliative.github.io
+      path: s/refused/
+      label: Отказали на словах или не отвечают
+      tool: openpalliative
+  escalation:
+    - repo: obrashchenie-kit
+      path: ""
+      label: Собрать заявление или жалобу
+      tool: Заявления и жалобы
+    - repo: openpalliative.github.io
+      path: s/refused/
+      label: Отказали на словах или не отвечают
+      tool: openpalliative
+  indications:
+    - repo: home-care-kit
+      path: conclusion/
+      label: Распечатать лист для разговора с врачом
+      tool: Листы для дома
+    - repo: obrashchenie-kit
+      path: scenarios/vk-refused/
+      label: Врачебную комиссию не созывают
+      tool: Заявления и жалобы
+  calendar:
+    - repo: home-care-kit
+      path: night/
+      label: Распечатать карту на ночь и праздники
+      tool: Листы для дома
+    - repo: openpalliative.github.io
+      path: s/night-pain/
+      label: Сильная боль ночью или в праздники
+      tool: openpalliative

@@ -1,0 +1,59 @@
+quotes:
+- id: 3551-r-2023-p1
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-3551-r-2023
+  act_id: 3551-r-2023
+  point: п. 1 распоряжения
+  anchor: p-1
+  page: 1
+  text: 1. Утвердить прилагаемый перечень специализированных продуктов лечебного питания для детей-инвалидов.
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 0
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 3551-r-2023-p1.png
+    crops:
+    - 3551-r-2023-p1.png
+    notes:
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 3551-r-2023-p1.png
+      notes: проход c (450 dpi, psm 3) совпал со словами цитаты
+- id: 3551-r-2023-p2
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-3551-r-2023
+  act_id: 3551-r-2023
+  point: п. 2 распоряжения
+  anchor: p-2
+  page: 1
+  text: 2. Настоящее распоряжение вступает в силу с 1 января 2024 г.
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 2
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 3551-r-2023-p2.png
+    crops:
+    - 3551-r-2023-p2.png
+    notes:
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 3551-r-2023-p2.png
+      notes: проход c (450 dpi, psm 3) совпал со словами цитаты

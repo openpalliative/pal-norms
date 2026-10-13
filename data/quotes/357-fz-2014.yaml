@@ -1,0 +1,32 @@
+quotes:
+- id: 357fz-2014-s4-2a
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-357-fz-2014
+  act_id: 357-fz-2014
+  point: подп. «а» п. 2 ст. 4 закона 357-ФЗ
+  anchor: p-s4-2a
+  page: 44
+  text: |-
+    2) в статье 12:
+    а) часть 1 дополнить словами ", за исключением случая, указанного в части 1¹ настоящей статьи";
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 0
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: 357fz-2014-s4-2a.png
+    crops:
+    - 357fz-2014-s4-2a.png
+    notes: в скане прямые кавычки и надстрочная 1 в «части 1¹»
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: 357fz-2014-s4-2a.png
+      notes: проход c (450 dpi, psm 3) совпал со словами цитаты

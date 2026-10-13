@@ -1,0 +1,26 @@
+{
+ "eoNumber": "7500202608100002",
+ "number": "95",
+ "documentDate": "2026-08-07T00:00:00",
+ "publishDateShort": "2026-08-10T00:00:00",
+ "name": "Об объявлении даты праздника Белого месяца «Сагаалган» в 2027 году",
+ "complexName": "Постановление Губернатора Забайкальского края от 07.08.2026 № 95\n \"Об объявлении даты праздника Белого месяца \"Сагаалган\" в 2027 году\"",
+ "pagesCount": 1,
+ "pdfFileLength": 18477,
+ "signatoryAuthorities": [
+  {
+   "isMain": true,
+   "weight": 59990,
+   "name": "Губернатор Забайкальского края",
+   "id": "a3dd10b1-8f50-4b4f-9608-6dad4117cede"
+  }
+ ],
+ "signatoryAuthorityId": "a3dd10b1-8f50-4b4f-9608-6dad4117cede",
+ "documentType": {
+  "weight": 95,
+  "name": "Постановление",
+  "id": "fd5a8766-f6fd-4ac2-8fd9-66f414d314ac"
+ },
+ "jdRegNumber": null,
+ "jdRegDate": null
+}

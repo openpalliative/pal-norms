@@ -1,0 +1,226 @@
+{% import "op/macros.html.j2" as op with context %}
+{% macro ic(name, cls="") -%}
+<span class="op-icon pn-i pn-i--{{ name }}{{ ' ' ~ cls if cls }}" aria-hidden="true"></span>
+{%- endmacro %}
+
+{% set STATUS = {"done": ("circle-check", "Готово"), "deadline": ("clock", "Срок"), "error": ("triangle-alert", "Ошибка"), "info": ("info", "Важно"), "unverified": ("circle-help", "Не проверено"), "stale": ("history", "Снимок устарел")} %}
+
+{% macro status(kind, text=none) -%}
+{% set s = STATUS[kind] %}
+<div class="op-status op-status--{{ kind }}">{{ ic(s[0]) }}<p><strong class="op-status__word">{{ s[1] }}.</strong>{% if text %} {{ text }}{% endif %}{% if caller is defined %} {{ caller() }}{% endif %}</p></div>
+{%- endmacro %}
+
+{% macro unv() -%}
+<span class="op-status op-status--unverified op-status--inline">{{ ic("circle-help") }}<span>Не проверено</span></span>
+{%- endmacro %}
+
+{% macro norm_link(act_id) -%}
+{% set a = site.pn.acts_by_id.get(act_id) %}
+{% if a %}<a class="op-norm" href="{{ url('acts/' ~ act_id ~ '/') }}">{{ a.short_title }}</a>{% if not (a.verified and a.status == "in_force") %} {{ unv() }}{% endif %}{% else %}<span class="op-norm op-norm--unknown">{{ act_id }}</span> {{ unv() }}{% endif %}
+{%- endmacro %}
+
+{% macro share(title) -%}
+<op-share class="op-share" data-text="" data-title="{{ title }}">
+  <a class="op-btn op-btn--secondary" href="sms:" data-share="sms">{{ ic("message-square") }}<span>СМС</span></a>
+  <a class="op-btn op-btn--secondary" href="mailto:" data-share="mail">{{ ic("mail") }}<span>Почта</span></a>
+  <button class="op-btn op-btn--secondary" type="button" data-share="native" hidden>{{ ic("share-2") }}<span>Отправить</span></button>
+  <button class="op-btn op-btn--secondary" type="button" data-share="copy" hidden>{{ ic("copy") }}<span>Скопировать текст</span></button>
+  <span class="op-share__live op-visually-hidden" aria-live="polite"></span>
+</op-share>
+{%- endmacro %}
+
+{% macro act_status(act, big=false) -%}
+{% set st = site.pn.labels.act_status[act.status] %}
+<span class="pn-act-status pn-act-status--{{ act.status }}{{ ' pn-act-status--big' if big }}">{{ ic(st.icon) }}<span>{{ st.word }}</span></span>
+{%- endmacro %}
+
+{% macro req_line(act) -%}
+{% set L = site.pn.labels %}
+{% set who = L.req_authority.get(act.authority, act.authority) %}
+{{ L.req_kind.get(act.kind, L.act_kind[act.kind]) }}{% if who %} {{ who }}{% endif %} от&nbsp;{{ act.doc_date | ru_date }} №&nbsp;{{ act.number }}
+{%- endmacro %}
+
+{% macro pain_now() -%}
+<div class="op-status op-status--warning pn-painnow">{{ ic("triangle-alert") }}<p><strong class="op-status__word">Важно.</strong> Если сильная боль сейчас, не ждите, пока аптека выполнит рецепт. Звоните <a href="tel:103">103</a> или в выездную паллиативную службу: <a href="{{ xurl('pal-directory', '') }}">номера вашего региона</a></p></div>
+{%- endmacro %}
+
+{% macro act_link(act_id, anchor="") -%}
+{% set a = site.pn.acts_by_id.get(act_id) %}
+{% if a %}<a href="{{ url('acts/' ~ act_id ~ '/') }}{{ '#' ~ anchor if anchor }}">{{ a.short_title }}</a>{% else %}<span class="op-muted">{{ act_id }}</span> {{ unv() }}{% endif %}
+{%- endmacro %}
+
+{% macro ext_link(href, label, domain="publication.pravo.gov.ru") -%}
+<a class="pn-ext" href="{{ href }}"><span class="pn-ext__label">{{ label }}</span><span class="pn-ext__note">откроется сайт {{ domain }}</span></a>
+{%- endmacro %}
+
+{% macro quote(q, with_act=true, anchor_id=false, compact=false) -%}
+{% set a = site.pn.acts_by_id.get(q.act_id) %}
+<figure class="op-quote pn-quote"{% if anchor_id %} id="{{ q.anchor }}"{% endif %}>
+  <blockquote data-verbatim>{{ q.text }}</blockquote>
+  <figcaption class="op-cite pn-cite">
+    {%- set pub = (a.url or ("http://publication.pravo.gov.ru/document/" ~ a.eoNumber)) if (q.text_source == "official_pdf" and a and a.eoNumber) else "" %}
+    {%- set snap = a.alt_source.snapshot_url if (q.text_source == "ips_archive" and a and a.get("alt_source") and a.alt_source.snapshot_url) else "" %}
+    <span class="op-cite__title">{% if with_act and a %}<a href="{{ url('acts/' ~ a.id ~ '/') }}#{{ q.anchor }}">{{ a.short_title }}</a>, {% endif %}{{ q.point }}{% if q.page %}, страница {{ q.page }} скана{% endif %}.</span>
+    {% if pub and not compact %}<a class="pn-cite__pub" href="{{ pub }}" title="Номер публикации {{ a.eoNumber }}">Официальная публикация</a>{% elif snap %}<a class="pn-cite__pub" href="{{ snap }}">Снимок текста в архиве</a>{% endif %}{% if q.verified and q.verified_at %}{% if (pub and not compact) or snap %}, сверено{% else %}Сверено{% endif %} со сканом {{ q.verified_at | ru_date }}{% endif %}
+    {% if a and a.eoNumber %}<span class="op-cite__eo">Номер публикации {{ a.eoNumber }}</span>{% endif %}
+  </figcaption>
+  {% if not q.verified %}
+  {% if q.text_source == "ips_archive" and not with_act %}
+  <p class="pn-quote__unv">{{ unv() }}</p>
+  {% elif q.text_source == "ips_archive" %}
+  {{ status("unverified", "Текста этого документа нет на портале официальной публикации. Цитата взята из базы «Законодательство России» по снимку web.archive.org" ~ ((" от " ~ (site.pn.snapshot_dates[a.id] | ru_date)) if a and a.id in site.pn.snapshot_dates else "") ~ " и с официальным текстом не сверена") }}
+  {% else %}
+  {{ status("unverified", "Цитата ещё не сверена со сканом официальной публикации. Уточните по ссылке") }}
+  {% endif %}
+  {% endif %}
+</figure>
+{%- endmacro %}
+
+{% macro quotes(ids, with_act=true, anchor_id=false, compact=false) -%}
+{% for qid in ids %}
+{% set q = site.pn.quotes.get(qid) %}
+{% if q %}{{ quote(q, with_act, anchor_id, compact) }}{% else %}{{ op.unverified("Цитата не найдена в данных") }}{% endif %}
+{% endfor %}
+{%- endmacro %}
+
+{% macro legal(review) -%}
+{% if review and review.status == "ok" %}
+<p class="pn-legal pn-legal--ok">{{ ic("circle-check") }}<span>Толкование проверил юрист в РФ{% if review.reviewed_at %} {{ review.reviewed_at | ru_date }}{% endif %}</span></p>
+{% elif review and review.status == "expired" %}
+{{ status("stale", "Проверка юристом устарела. Сверьте толкование с текстом нормы") }}
+{% else %}
+<p class="pn-legal">{{ ic("circle-help") }}<span>Толкование не проверено юристом в РФ</span></p>
+{% endif %}
+{%- endmacro %}
+
+{% macro rule_table(groups) -%}
+<div class="op-table-wrap"><table class="op-table pn-rule-table"><caption class="op-visually-hidden">Сроки по нормам</caption>
+<thead><tr><th scope="col">Что произошло</th><th scope="col">Срок и от какого события</th><th scope="col">Норма</th></tr></thead>
+{% for g in groups -%}
+<tbody data-group="{{ g.id }}"><tr class="pn-rule-table__group"><th colspan="3" scope="colgroup">{{ g.title }}</th></tr>
+{% for rv in g.rules -%}
+{% set r = rv.rule -%}
+<tr data-rule="{{ r.id }}" data-dir="{{ r.direction }}"{% if r.direction == "forward" and r.from_event != "turns-18" %} data-from{% endif %}><th scope="row"><a href="{{ url('deadlines/' ~ r.id ~ '/') }}">{{ r.situation }}</a>{% if not r.verified %} {{ unv() }}{% endif %}</th><td>{{ rv.terms.summary }}<span class="pn-note"><span data-ev>{{ r.from_event_label }}</span>{% if r.ambiguous %}, ориентировочно{% endif %}</span></td><td>{% for nid in r.norm_ids %}{% set a = site.pn.acts_by_id.get(nid) %}<a href="{{ url('acts/' ~ nid ~ '/') }}">{{ a.short_title if a else nid }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</td></tr>
+{% endfor -%}
+</tbody>
+{% endfor -%}
+</table></div>
+{%- endmacro %}
+
+{% macro related(key) -%}
+{% set items = site.pn.home.get("related", {}).get(key) %}
+{% if items %}
+<section class="pn-related op-no-print" aria-labelledby="pn-related-title">
+  <h2 id="pn-related-title">Что ещё может пригодиться</h2>
+  <ul class="pn-related__list">
+    {% for it in items %}
+    <li><a href="{{ xurl(it.repo, it.path) }}">{{ it.label }}</a><span class="pn-related__tool">{{ it.tool }}</span></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+{%- endmacro %}
+
+{% macro back() -%}
+<pn-back class="pn-back op-no-print" hidden>
+  <a class="pn-back__link" href="{{ hub('') }}">{{ ic("arrow-left") }}<span>Вернуться: <span data-back-title></span></span></a>
+</pn-back>
+{%- endmacro %}
+
+{% macro sources() -%}
+{% set c = site.pn.counts %}
+<p><strong data-count="scan">{{ c.quotes_scan }}</strong> из {{ c.quotes | plural("цитаты", "цитат", "цитат") }} сверены со сканом официальной публикации на портале publication.pravo.gov.ru.</p>
+{% if c.quotes_unverified %}
+<p><strong data-count="unverified">{{ c.quotes_unverified }}</strong> {{ c.quotes_unverified | plural("цитата не сверена", "цитаты не сверены", "цитат не сверены", false) }}{% if c.quotes_ips %}{% if c.quotes_ips == c.quotes_unverified %}: {% else %}, из них {{ c.quotes_ips }} {% endif %}{{ "взята" if c.quotes_ips == 1 else "взяты" }} из базы «Законодательство России» по снимку web.archive.org ({% for aid in c.quotes_ips_acts %}{% set a = site.pn.acts_by_id.get(aid) %}{{ a.short_title if a else aid }}{% if not loop.last %}, {% endif %}{% endfor %}), потому что на портале официальной публикации этого текста нет{% endif %}. Они видны с пометкой «Не проверено». <a href="{{ url('data/') }}#unverified">Что не проверено</a></p>
+{% else %}
+<p data-count="unverified" hidden>0</p>
+{% endif %}
+<p>Толкования, например с какого дня считать срок, юрист в РФ ещё не проверял, и мы пишем об этом рядом</p>
+{%- endmacro %}
+
+{% macro data_line() -%}
+<div class="pn-dataline">
+  {{ op.data_date(site.pn.data_date, site.pn.stale_after, label="Данные сверены") }}
+  {% if site.pn.watch and site.pn.watch.checked_at %}
+  <p class="op-data-date pn-dataline__watch">{{ ic("history") }}<span>Последняя проверка новых публикаций: <time datetime="{{ site.pn.watch.checked_at }}">{{ site.pn.watch.checked_at | ru_date }}</time></span></p>
+  {% endif %}
+</div>
+{%- endmacro %}
+
+{% macro calc(single=none) -%}
+{% set all = site.pn.rules %}
+<pn-deadline class="pn-calc" data-today="{{ site.pn.built }}">
+  <p class="pn-nojs op-no-print">{{ ic("info") }}<span>Чтобы посчитать дату, нужен включённый JavaScript. {% if single %}Срок словами написан выше{% else %}Все сроки словами есть в таблице ниже{% endif %}</span></p>
+  <form class="pn-calc__form op-no-print" novalidate hidden>
+    {% if single %}
+    <span data-event="{{ single.rule.from_event_label }}" data-dir="{{ single.rule.direction }}"{% if single.rule.direction == "forward" and single.rule.from_event != "turns-18" %} data-from{% endif %}><input type="hidden" name="rule" value="{{ single.rule.id }}"></span>
+    {% else %}
+    <fieldset class="pn-calc__step pn-calc__pick" aria-describedby="pn-rule-error">
+      <legend class="pn-calc__legend"><span class="pn-calc__num">Шаг 1</span>Что произошло?</legend>
+      <p class="op-field__error" id="pn-rule-error" hidden>{{ ic("circle-alert") }}<span><strong>Ошибка:</strong> выберите, что произошло</span></p>
+      <template data-tpl="group"><details class="pn-calc__group"><summary class="pn-calc__gtitle"><span class="pn-calc__gname"></span><span class="pn-calc__gcount"></span>{{ ic("chevron-down", "pn-calc__chev") }}</summary><div class="pn-calc__gbody" role="group"></div></details></template>
+      <template data-tpl="opt"><label class="op-choice__item pn-calc__opt"><input type="radio" name="rule"><span></span></label></template>
+    </fieldset>
+    {% endif %}
+    <div class="pn-calc__step pn-calc__when">
+      {% set legend %}{% if not single %}<span class="pn-calc__num">Шаг 2</span>{% endif %}<span data-event-label>{{ single.rule.from_event_label if single else "Когда это случилось" }}</span>{% endset %}
+      {% set backward = single and single.rule.direction == "backward" %}
+      {{ op.date_field("pn-date", legend, hint="Дата нигде не сохраняется и никуда не отправляется", min="2000-01-01", max=("2100-12-31" if backward else "today")) }}
+    </div>
+    <button class="op-btn op-btn--primary op-btn--large" type="submit">{{ ic("calendar-clock") }}<span>Посчитать</span></button>
+  </form>
+  <section class="pn-result" aria-live="polite" aria-label="Результат расчёта" hidden></section>
+  <template data-tpl="result">
+    <div class="pn-res">
+      <h2 class="pn-res__title" tabindex="-1" data-f="situation"></h2>
+      <p class="pn-res__label" data-f="label"></p>
+      <p class="pn-res__date" data-f="due"></p>
+      <p class="pn-res__alt" data-part="alt" hidden>Если срок переносится с выходного дня: <strong data-f="alt"></strong></p>
+      <p class="pn-res__alt" data-part="extended" hidden>Если срок продлят: <strong data-f="extended"></strong><span class="pn-res__ext" data-f="ext-label"></span></p>
+      <div data-part="pain" hidden>{{ pain_now() }}</div>
+      <div data-part="passed" hidden>
+        {% call status("deadline") %}<span data-f="passed-text"></span>{% endcall %}
+        <ul class="pn-res__next">
+          <li data-part="passed-ok"><a data-f="ok-link" href="{{ xurl('obrashchenie-kit', 'case/') }}">Пожаловаться на нарушение срока</a></li>
+          <li data-part="passed-18" hidden><a href="{{ xurl('obrashchenie-kit', 'turning-18/') }}">Что делать при переходе во взрослую сеть</a></li>
+          <li><a href="{{ url('escalation/') }}">Куда обращаться дальше</a></li>
+        </ul>
+      </div>
+      <div data-part="ambiguous" hidden>{% call status("info") %}Ориентировочно. <span data-f="note"></span>{% endcall %}</div>
+      <div data-part="unverified" hidden>{% call status("unverified") %}<span data-f="unv-text"></span>{% endcall %}</div>
+      <div class="pn-res__regional" data-part="regional" hidden></div>
+      <p class="pn-legal" data-f="legal">{{ ic("circle-help") }}<span>Толкование не проверено юристом в РФ</span></p>
+      <h3 class="pn-res__h">Как считали</h3>
+      <p class="pn-res__formula" data-f="formula"></p>
+      <ol class="pn-res__steps" data-f="steps"></ol>
+      <details class="pn-res__quotes" data-part="quotes">
+        <summary>Что сказано в норме</summary>
+        <div data-f="quotes"></div>
+      </details>
+      <div class="op-actions op-no-print pn-res__actions">
+        <button class="op-btn op-btn--secondary" type="button" data-act="ics">{{ ic("calendar-days") }}<span>Добавить в календарь</span></button>
+        {{ op.print_btn() }}
+      </div>
+      <div class="op-no-print pn-res__share">{{ share("Срок") }}</div>
+      <p class="op-no-print pn-res__more"><a data-f="rule-link" href="{{ url('deadlines/') }}">Откуда этот срок</a></p>
+      {{ op.sheet_footer(site.pn.data_date, site.pn.sheet_until, "openpalliative.github.io" ~ site.base ~ (page_out | replace("index.html", "")), "legal") }}
+    </div>
+  </template>
+  {{ quote_tpl() }}
+</pn-deadline>
+{%- endmacro %}
+
+
+{% macro quote_tpl() -%}
+  <template data-tpl="quote">
+    <figure class="op-quote pn-quote">
+      <blockquote data-verbatim data-f="q-text"></blockquote>
+      <figcaption class="op-cite pn-cite">
+        <span class="op-cite__title"><a data-f="q-act" href="{{ url('acts/') }}"></a><span data-f="q-point"></span>.</span>
+        <a class="pn-cite__pub" data-f="q-link" href="{{ url('acts/') }}"></a><span data-f="q-checked"></span>
+        <span class="op-cite__eo" data-part="q-eo">Номер публикации <span data-f="q-eo"></span></span>
+      </figcaption>
+      <div data-part="q-unv" hidden>{% call status("unverified") %}<span data-f="q-unv"></span>{% endcall %}</div>
+    </figure>
+  </template>
+{%- endmacro %}

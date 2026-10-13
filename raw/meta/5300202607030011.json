@@ -1,0 +1,26 @@
+{
+ "eoNumber": "5300202607030011",
+ "number": "262",
+ "documentDate": "2026-06-26T00:00:00",
+ "publishDateShort": "2026-07-03T00:00:00",
+ "name": "Об установлении нерабочих дней",
+ "complexName": "Постановление Правительства Новгородской области от 26.06.2026 № 262\n \"Об установлении нерабочих дней\"",
+ "pagesCount": 2,
+ "pdfFileLength": 91959,
+ "signatoryAuthorities": [
+  {
+   "isMain": true,
+   "weight": 34970,
+   "name": "Правительство Новгородской области",
+   "id": "ab8ddf72-cb61-48aa-b3f9-df5a0fe85dbe"
+  }
+ ],
+ "signatoryAuthorityId": "ab8ddf72-cb61-48aa-b3f9-df5a0fe85dbe",
+ "documentType": {
+  "weight": 95,
+  "name": "Постановление",
+  "id": "fd5a8766-f6fd-4ac2-8fd9-66f414d314ac"
+ },
+ "jdRegNumber": null,
+ "jdRegDate": null
+}

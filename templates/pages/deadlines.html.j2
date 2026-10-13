@@ -1,0 +1,34 @@
+{% extends "op/base.html.j2" %}
+{% set draft = "legal" %}
+{% import "op/macros.html.j2" as op with context %}
+{% import "partials/pn.html.j2" as pnm with context %}
+{% block title %}Посчитать срок{% endblock %}
+{% block description %}Сроки ответа и выдачи документов по официальным нормам: выберите, что произошло, и укажите дату{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{ url('assets/css/pn-calc.css') }}"><link rel="stylesheet" href="{{ url('assets/css/pn-print.css') }}" media="print">{% endblock %}
+{% block main %}
+<div class="op-wrap op-page pn-deadlines">
+  <div class="pn-print-skip">
+    {{ op.crumbs([("openpalliative", hub('')), (site.title, url('')), ("Посчитать срок", "")]) }}
+    <h1>Посчитать срок</h1>
+    <p class="op-lead">Выберите, что произошло, и укажите дату. Покажем, до какого числа должны ответить</p>
+  </div>
+  {% if site.pn.rules %}
+  {{ pnm.calc() }}
+  <section class="pn-print-skip pn-all-rules" aria-labelledby="pn-all">
+    <details class="pn-all-rules__details" open>
+      <summary class="pn-all-rules__summary"><h2 id="pn-all">Все сроки</h2>{{ pnm.ic("chevron-down", "pn-calc__chev") }}</summary>
+      <p class="op-section__lead">Срок, событие, от которого считать, и норма. Подробности и цитата на странице каждого срока</p>
+      {{ pnm.rule_table(site.pn.rule_groups) }}
+    </details>
+  </section>
+  {% else %}
+  {{ pnm.status("info", "Правил сроков пока нет в данных. Мы добавляем только те сроки, для которых нашли дословную цитату в официальной публикации") }}
+  {% endif %}
+  {{ pnm.related("deadlines") }}
+  {{ pnm.back() }}
+</div>
+{% endblock %}
+{% block scripts %}
+<script type="module" src="{{ url('assets/js/pn-page.js') }}"></script>
+<script type="module" src="{{ url('assets/js/pn-deadline.js') }}"></script>
+{% endblock %}

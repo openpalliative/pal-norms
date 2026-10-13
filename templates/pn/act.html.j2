@@ -1,0 +1,147 @@
+{% extends "op/base.html.j2" %}
+{% set draft = "legal" %}
+{% import "op/macros.html.j2" as op with context %}
+{% import "partials/pn.html.j2" as pnm with context %}
+{% set L = site.pn.labels %}
+{% block title %}{{ act.short_title }}{% endblock %}
+{% block description %}{{ L.act_kind[act.kind] }} от {{ act.doc_date | ru_date }}: статус, реквизиты, ключевые пункты дословно и ссылка на официальную публикацию{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{ url('assets/css/pn-docs.css') }}"><link rel="stylesheet" href="{{ url('assets/css/pn-print.css') }}" media="print">{% endblock %}
+{% block main %}
+<div class="op-wrap op-page pn-actpage">
+  {{ op.crumbs([("openpalliative", hub('')), (site.title, url('')), ("Документы", url('acts/')), (act.short_title, "")]) }}
+  <h1>{{ act.short_title }}</h1>
+  <p class="pn-actpage__req">{{ pnm.req_line(act) }}</p>
+  {% set boxed = act.status_basis or act.superseded_by or act.status in ("repealed", "draft") %}
+  {% set dates = [] %}
+  {% if act.in_force_from %}{% set _ = dates.append(("вступает в силу " if act.status == "not_yet_in_force" else "с ") ~ (act.in_force_from | ru_date)) %}{% endif %}
+  {% if act.valid_until %}{% set _ = dates.append("до " ~ (act.valid_until | ru_date)) %}{% endif %}
+  {% if act.repealed_at %}{% set _ = dates.append("с " ~ (act.repealed_at | ru_date)) %}{% endif %}
+  <section class="pn-statusbox pn-statusbox--{{ act.status }}{{ ' pn-statusbox--line' if not boxed }}" aria-labelledby="pn-status-title">
+    <h2 class="op-visually-hidden" id="pn-status-title">Статус</h2>
+    <p class="pn-statusbox__main">{{ pnm.act_status(act, big=true) }}{% if dates %} <span class="pn-statusbox__dates">{{ dates | join(", ") }}</span>{% endif %}</p>
+    {% if act.superseded_by %}<p class="pn-statusbox__rel">Заменён: {% for sid in act.superseded_by %}{{ pnm.act_link(sid) }}{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
+    {% if act.status_basis %}
+    <details class="pn-statusbox__basis pn-basis">
+      <summary>Основание: {{ site.pn.acts_by_id[act.status_basis.act_id].short_title if act.status_basis.act_id in site.pn.acts_by_id else act.status_basis.act_id }}, {{ act.status_basis.point }}{{ pnm.ic("chevron-down", "pn-basis__chev") }}</summary>
+      {% if act.status_basis.quote_id %}{{ pnm.quotes([act.status_basis.quote_id]) }}{% else %}<p>{{ pnm.act_link(act.status_basis.act_id) }}, {{ act.status_basis.point }}</p>{% endif %}
+    </details>
+    {% endif %}
+  </section>
+  <p class="pn-actpage__official"><span class="op-visually-hidden">Официальное название: </span><span data-verbatim>{{ act.title }}</span></p>
+  {% if act.id in site.pn.sunset %}{{ pnm.status("info", "Срок действия этого документа истекает " ~ (site.pn.sunset[act.id] | ru_date)) }}{% endif %}
+  {% if not act.verified %}
+  {% if act.text_source == "ips_archive" %}
+  {{ pnm.status("unverified", "Текста этого документа нет на портале официальной публикации. Цитаты взяты из базы «Законодательство России» по снимку web.archive.org" ~ ((" от " ~ (site.pn.snapshot_dates[act.id] | ru_date)) if act and act.id in site.pn.snapshot_dates else "") ~ " и с официальным текстом не сверены") }}
+  {% elif act.text_source == "none" %}
+  {{ pnm.status("unverified", "Текста этого документа нет на портале официальной публикации. Статус известен только из другого документа") }}
+  {% else %}
+  {{ pnm.status("unverified", "Реквизиты или статус ещё не сверены с официальной публикацией") }}
+  {% endif %}
+  {% endif %}
+
+  <section aria-labelledby="pn-req">
+    <h2 id="pn-req">Реквизиты</h2>
+    <dl class="op-dl pn-req">
+      <dt>Кто принял</dt><dd>{{ act.authority }}</dd>
+      <dt>Дата и номер</dt><dd>от&nbsp;{{ act.doc_date | ru_date }} №&nbsp;{{ act.number }}</dd>
+      {% if act.eoNumber %}
+      <dt>Номер публикации</dt>
+      <dd class="pn-req__eo"><span class="op-code" id="pn-eo">{{ act.eoNumber }}</span>
+        <op-copy class="pn-copy" for="pn-eo" hidden><button class="op-btn op-btn--link" type="button">{{ pnm.ic("copy") }}<span>Скопировать</span></button><span class="op-visually-hidden" aria-live="polite"></span></op-copy>
+      </dd>
+      {% endif %}
+      {% if act.get("publish_date") %}<dt>Опубликован</dt><dd>{{ act.publish_date | ru_date }}{% if act.get("pages") %}, {{ act.pages | plural("страница", "страницы", "страниц") }}{% endif %}</dd>{% endif %}
+      {% if act.verified_at %}<dt>Сверено</dt><dd>{{ act.verified_at | ru_date }}</dd>{% endif %}
+    </dl>
+    <ul class="pn-extlinks">
+      {% if act.eoNumber %}
+      <li>{{ pnm.ext_link(act.url or ("http://publication.pravo.gov.ru/document/" ~ act.eoNumber), "Официальная публикация") }}</li>
+      <li>{{ pnm.ext_link(act.pdf_url or ("http://publication.pravo.gov.ru/file/pdf?eoNumber=" ~ act.eoNumber), "Скан PDF") }}</li>
+      {% endif %}
+      {% if act.get("alt_source") and act.alt_source.snapshot_url %}<li>{{ pnm.ext_link(act.alt_source.snapshot_url, "Снимок текста в архиве", "web.archive.org") }}</li>{% endif %}
+    </ul>
+  </section>
+
+  {% if act.quote_ids %}
+  <section aria-labelledby="pn-points">
+    <h2 id="pn-points">Ключевые пункты</h2>
+    <p class="op-section__lead">Дословно, только те пункты, на которые опираются сроки, показания и статусы</p>
+    {% set ind_ids = [] %}{% set main_ids = [] %}
+    {% for qid in act.quote_ids %}{% set q = site.pn.quotes.get(qid) %}{% if q and (act.id ~ "#" ~ q.anchor) in site.pn.ind_anchor %}{% set _ = ind_ids.append(q) %}{% else %}{% set _ = main_ids.append(qid) %}{% endif %}{% endfor %}
+    {{ pnm.quotes(main_ids, with_act=false, anchor_id=true, compact=true) }}
+    {% if ind_ids %}
+    <div class="pn-indpoints">
+      <h3>Показания к паллиативной помощи</h3>
+      <p>Эти пункты дословно приведены на {% if site.pn.indications_stub %}странице «Показания» после проверки медиком и юристом, а пока есть в <a href="{{ url('data/v1/indications.json') }}">наборе данных</a>{% else %}<a href="{{ url('indications/') }}">странице «Показания»</a>{% endif %}:</p>
+      <ul class="pn-pointlinks">
+        {% for q in ind_ids %}<li id="{{ q.anchor }}">{% if site.pn.indications_stub %}{{ q.point }}{% else %}<a href="{{ url('indications/') }}#{{ site.pn.ind_anchor[act.id ~ '#' ~ q.anchor] }}">{{ q.point }}</a>{% endif %}</li>{% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </section>
+  {% endif %}
+
+  {% set has_links = act.supersedes or act.superseded_by or act.amended_by or act.cites_repealed %}
+  {% if has_links %}
+  <section aria-labelledby="pn-links">
+    <h2 id="pn-links">Связи</h2>
+    {% if act.supersedes %}<h3>Заменяет</h3><ul class="pn-rel">{% for sid in act.supersedes %}<li>{{ pnm.act_link(sid) }}{% set s = site.pn.acts_by_id.get(sid) %}{% if s %} {{ pnm.act_status(s) }}{% endif %}</li>{% endfor %}</ul>{% endif %}
+    {% if act.superseded_by %}<h3>Заменён</h3><ul class="pn-rel">{% for sid in act.superseded_by %}<li>{{ pnm.act_link(sid) }}</li>{% endfor %}</ul>{% endif %}
+    {% if act.amended_by %}
+    <h3>Изменения</h3>
+    <ul class="pn-rel">
+      {% for m in act.amended_by %}
+      <li><span data-verbatim>{{ m.title }}</span> от {{ m.doc_date | ru_date }}. {{ pnm.ext_link("http://publication.pravo.gov.ru/document/" ~ m.eoNumber, "Публикация") }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% if act.cites_repealed %}
+    <h3>Ссылается на документ, который утратил силу</h3>
+    <p class="op-section__lead">Это факт текста: в пункте названа отменённая норма</p>
+    <ul class="pn-rel">
+    {% for c in act.cites_repealed %}
+    {% set cq = site.pn.quotes.get(c.quote_id) if c.quote_id else none %}
+    {% set s = site.pn.acts_by_id.get(c.act_id) %}
+    <li class="pn-citerep">{% if cq and c.quote_id in act.quote_ids %}<a href="#{{ cq.anchor }}">{{ c.point }}</a>{% else %}{{ c.point }}{% endif %} ссылается на {{ pnm.act_link(c.act_id) }}{% if s %} {{ pnm.act_status(s) }}{% endif %}
+      {% if cq and c.quote_id not in act.quote_ids %}{{ pnm.quotes([c.quote_id], with_act=false) }}{% endif %}
+    </li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+  </section>
+  {% endif %}
+
+  {% if act.rule_ids %}
+  <section aria-labelledby="pn-rules">
+    <h2 id="pn-rules">Используется в сроках</h2>
+    <ul class="pn-rel">
+      {% for rid in act.rule_ids %}{% set rv = site.pn.rules_by_id.get(rid) %}
+      <li>{% if rv %}<a href="{{ url('deadlines/' ~ rid ~ '/') }}">{{ rv.rule.situation }}</a>: {{ rv.terms.summary }}{% else %}{{ rid }}{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <section aria-labelledby="pn-review">
+    <h2 id="pn-review">Проверка юристом</h2>
+    {% if act.review.status == "ok" %}
+    <p>Проверено {{ act.review.reviewed_at | ru_date }}{% if act.review.role %}, {{ act.review.role }}{% endif %}{% if act.review.expires_at %}. Проверка действует до {{ act.review.expires_at | ru_date }}{% endif %}</p>
+    {% elif act.review.status == "expired" %}
+    {{ pnm.status("stale", "Проверка юристом устарела") }}
+    {% else %}
+    {% if act.verified %}
+    <p>Не было. Реквизиты и цитаты сверены с официальной публикацией, а толкования юрист в РФ пока не проверял</p>
+    {% else %}
+    <p>Не было. Текст этого документа ещё не сверен с официальной публикацией, а толкования юрист в РФ пока не проверял</p>
+    {% endif %}
+    {% endif %}
+    {% if act.notes %}<p class="op-muted">{{ act.notes }}</p>{% endif %}
+  </section>
+  <div class="pn-printrow">{{ op.print_btn() }}</div>
+  {{ pnm.back() }}
+  {{ op.sheet_footer(site.pn.data_date, site.pn.sheet_until, "openpalliative.github.io" ~ site.base ~ (page_out | replace("index.html", "")), "none") }}
+</div>
+{% endblock %}
+{% block scripts %}
+<script type="module" src="{{ url('assets/js/pn-page.js') }}"></script>
+{% endblock %}

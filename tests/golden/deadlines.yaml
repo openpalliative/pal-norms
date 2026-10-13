@@ -1,0 +1,59 @@
+cases:
+- {rule: 59fz-answer, start: 2026-10-01, due: 2026-11-03, due_alt: null, extended: 2026-12-03}
+- {rule: 59fz-answer, start: 2026-10-02, due: 2026-11-04, due_alt: 2026-11-05}
+- {rule: 59fz-answer, start: 2026-12-01, due: 2027-01-03, due_alt: 2027-01-11}
+- {rule: 59fz-answer, start: 2025-12-01, due: 2026-01-03, due_alt: 2026-01-12}
+- {rule: 59fz-answer, start: 2027-04-01, due: 2027-05-04, due_alt: null}
+- {rule: 59fz-answer, start: 2027-04-06, due: 2027-05-09, due_alt: 2027-05-11}
+- {rule: 59fz-answer, start: 2026-05-10, due: 2026-06-12, due_alt: 2026-06-15}
+- {rule: 59fz-answer, start: 2027-01-21, due: 2027-02-23, due_alt: 2027-02-24}
+- {rule: 59fz-answer, start: 2029-01-10, due: 2029-02-12, due_alt: null, calendar_verified: false}
+- {rule: 59fz-redirect, start: 2026-12-27, due: 2027-01-06, due_alt: 2027-01-11}
+- {rule: 59fz-redirect, start: 2025-10-27, due: 2025-11-06, due_alt: null}
+- {rule: 208n-p23-transition, start: 2027-06-01, due: 2027-01-20, margin: 0, calendar_verified: true}
+- {rule: 208n-p23-transition, start: 2028-03-01, due: 2027-10-07, margin: 5, calendar_verified: false}
+- {rule: 208n-p23-transition, start: 2026-03-02, due: 2025-10-13, margin: 0, calendar_verified: true}
+- {rule: 208n-p10-first-visit, start: 2026-12-30, due: 2027-01-12}
+- {rule: 208n-p10-first-visit, start: 2027-02-19, due: 2027-02-24}
+- {rule: 208n-p10-first-visit, start: 2025-10-31, due: 2025-11-05}
+- {rule: 208n-p10-first-visit, start: 2026-06-11, due: 2026-06-16}
+- {rule: 208n-p20-after-discharge, start: 2025-05-07, due: 2025-05-13}
+- {rule: 789n-inpatient, start: 2026-12-31, due: 2027-01-01, due_alt: null}
+- {rule: 789n-inpatient, start: 2026-05-08, due: 2026-05-09, due_alt: null}
+- {rule: 789n-incomplete-request, start: 2026-04-27, due: 2026-05-11, due_alt: 2026-05-12}
+- {rule: 789n-incomplete-request, start: 2026-03-01, due: 2026-03-15, due_alt: 2026-03-16}
+- {rule: 789n-incomplete-request, start: 2026-02-02, due: 2026-02-16, due_alt: null}
+- {rule: 789n-incomplete-request, start: 2027-02-06, due: 2027-02-20, due_alt: null}
+- {rule: 100n-deferred, start: 2026-04-28, due: 2026-05-14}
+- {rule: 100n-deferred, start: 2027-12-24, due: 2028-01-17, calendar_verified: false}
+- {rule: 100n-deferred-cito, start: 2027-02-18, due: 2027-02-24}
+- {rule: 100n-deferred-purchase, start: 2026-12-01, due: 2027-01-21}
+- {rule: 505n-transfer, start: 2025-12-26, due: 2026-01-14}
+- {rule: pp588-mse, start: 2027-04-30, due: 2027-05-06}
+- {rule: pp588-mse, start: 2026-03-06, due: 2026-03-12}
+- {rule: pp588-referral, start: 2026-11-03, due: 2026-11-05}
+- {rule: 180n-protocol-extract, start: 2025-06-11, due: 2025-06-18}
+- {rule: 208n-p20-after-discharge, start: 2027-02-18, due: 2027-02-20}
+- {rule: 208n-p20-after-discharge, start: 2026-12-30, due: 2027-01-12}
+- {rule: 505n-vk-decision, start: 2027-02-18, due: 2027-02-24}
+- {rule: 505n-vk-decision, start: 2026-04-29, due: 2026-05-05}
+- {rule: 505n-transfer, start: 2027-02-17, due: 2027-02-25}
+- {rule: 180n-protocol-extract, start: 2026-12-29, due: 2027-01-12}
+- {rule: 789n-copies, start: 2026-10-01, due: 2026-10-31, due_alt: 2026-11-02}
+- {rule: 789n-copies, start: 2027-04-09, due: 2027-05-09, due_alt: 2027-05-11}
+- {rule: pp588-vk-referral, start: 2026-11-02, due: 2026-12-15}
+- {rule: pp588-vk-referral, start: 2027-01-29, due: 2027-03-16}
+- {rule: pp588-referral, start: 2027-02-19, due: 2027-02-20}
+- {rule: 100n-deferred-cito, start: 2026-12-30, due: 2027-01-13}
+- {rule: 100n-deferred-purchase, start: 2027-02-10, due: 2027-03-26}
+- {rule: 100n-deferred, start: 2024-12-20, due: 2025-01-14}
+- {rule: 59fz-answer, start: 2024-12-02, due: 2025-01-04, due_alt: 2025-01-09}
+- {rule: 208n-a38-social-visit, start: 2026-05-08, due: 2026-05-13}
+- {rule: 208n-a38-social-visit, start: 2027-02-19, due: 2027-02-24}
+- {rule: 208n-a38-social-decision, start: 2026-12-30, due: 2027-01-12}
+- {rule: 208n-a38-social-decision, start: 2026-11-03, due: 2026-11-06}
+- {rule: 208n-a38-mse-consent, start: 2027-02-19, due: 2027-02-20}
+- {rule: 208n-a38-mse-consent, start: 2026-12-30, due: 2027-01-11}
+- {rule: pp588-appeal-main, start: 2026-10-12, due: 2026-11-24}
+- {rule: pp588-appeal-main, start: 2027-04-20, due: 2027-06-03}
+- {rule: pp588-appeal-main, start: 2026-12-15, due: 2027-02-04}

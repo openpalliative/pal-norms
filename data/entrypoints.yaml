@@ -1,0 +1,73 @@
+entrypoints:
+- id: deadlines
+  title: Посчитать срок ответа
+  summary: Дата, до которой должны ответить, выдать документ или провести осмотр, и норма, откуда этот срок
+  path: deadlines/
+  audience: [family, org]
+  situations: [refused, turning-18]
+  offline: false
+  printable: true
+  maturity: beta
+- id: escalation
+  title: Если не ответили
+  summary: Что делать, если срок прошёл, жалобу переслали не туда или ответили не по существу
+  path: escalation/
+  audience: [family, org]
+  situations: [refused, conclusion, discharge]
+  offline: false
+  printable: true
+  maturity: beta
+- id: indications
+  title: Показания к паллиативной помощи
+  summary: Дословный текст приказа для разговора с врачом. Решение принимает врачебная комиссия
+  path: indications/
+  audience: [family, medic]
+  situations: [conclusion]
+  offline: false
+  printable: true
+  maturity: demo
+- id: calendar
+  title: Праздники и выходные
+  summary: Ближайшие нерабочие дни по Трудовому кодексу и постановлениям о переносе выходных
+  path: calendar/
+  audience: [family]
+  situations: [night-pain]
+  offline: false
+  printable: true
+  maturity: beta
+- id: acts
+  title: Все документы
+  summary: Приказы, законы и постановления со статусом и ссылкой на официальную публикацию
+  path: acts/
+  audience: [org, lawyer]
+  situations: []
+  offline: false
+  printable: false
+  maturity: beta
+- id: check
+  title: Проверить памятку или шаблон
+  summary: Находит в тексте ссылки на документы, которые утратили силу. Текст не покидает устройство
+  path: check/
+  audience: [org]
+  situations: []
+  offline: false
+  printable: false
+  maturity: demo
+- id: changes
+  title: Что изменилось
+  summary: Новые и изменённые документы на портале официальной публикации
+  path: changes/
+  audience: [org, lawyer]
+  situations: []
+  offline: false
+  printable: false
+  maturity: beta
+- id: data
+  title: Данные для разработчиков
+  summary: Датасеты, схемы и код расчёта сроков под открытой лицензией
+  path: data/
+  audience: [developer]
+  situations: []
+  offline: false
+  printable: false
+  maturity: beta

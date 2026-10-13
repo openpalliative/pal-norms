@@ -1,0 +1,36 @@
+quotes:
+- id: pp-1335-p1
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-pp-1335
+  act_id: pp-1335
+  point: постановление, единственный пункт
+  anchor: p-1
+  page: 1
+  text: |-
+    Перенести в 2025 году следующие выходные дни:
+    с субботы 4 января на пятницу 2 мая;
+    с воскресенья 5 января на среду 31 декабря;
+    с воскресенья 23 февраля на четверг 8 мая;
+    с субботы 8 марта на пятницу 13 июня;
+    с субботы 1 ноября на понедельник 3 ноября.
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 0
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: pp-1335-p1.png
+    crops:
+    - pp-1335-p1.png
+    notes:
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: pp-1335-p1.png
+      notes: проход c (450 dpi, psm 3) совпал со словами цитаты

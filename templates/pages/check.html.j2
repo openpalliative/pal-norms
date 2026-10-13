@@ -1,0 +1,63 @@
+{% extends "op/base.html.j2" %}
+{% set draft = "legal" %}
+{% import "op/macros.html.j2" as op with context %}
+{% import "partials/pn.html.j2" as pnm with context %}
+{% block title %}Проверить памятку или шаблон{% endblock %}
+{% block description %}Найдёт в тексте ссылки на документы, которые утратили силу, и устаревшие названия ведомств. Проверка идёт на этом устройстве{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{ url('assets/css/pn-misc.css') }}"><link rel="stylesheet" href="{{ url('assets/css/pn-print.css') }}" media="print">{% endblock %}
+{% block main %}
+{% set lr = site.pn.lint_rules %}
+<div class="op-wrap op-page pn-check">
+  {{ op.crumbs([("openpalliative", hub('')), (site.title, url('')), ("Проверить памятку", "")]) }}
+  <h1>Проверить памятку или шаблон</h1>
+  <p class="op-lead">Вставьте текст. Проверка идёт на этом устройстве, текст никуда не отправляется и не сохраняется</p>
+  <pn-check class="pn-checker">
+    <p class="pn-nojs">{{ pnm.ic("info") }}<span>Для проверки нужен включённый JavaScript. Ниже список того, что мы проверяем</span></p>
+    <form class="pn-check__form" hidden>
+      <div class="op-field pn-check__field">
+        <label class="op-field__label" for="pn-text">Текст памятки, шаблона или письма</label>
+        <p class="op-field__hint" id="pn-text-hint">Можно вставить целиком. Номера строк в результате считаются от начала текста</p>
+        <textarea class="op-input op-input--area pn-check__text" id="pn-text" rows="10" autocomplete="off" spellcheck="false" aria-describedby="pn-text-hint"></textarea>
+      </div>
+      <div class="op-actions">
+        <button class="op-btn op-btn--primary" type="submit">{{ pnm.ic("file-check") }}<span>Проверить</span></button>
+        <button class="op-btn op-btn--secondary" type="reset">{{ pnm.ic("x") }}<span>Очистить</span></button>
+      </div>
+    </form>
+    <section class="pn-check__result" aria-live="polite" aria-label="Результат проверки" hidden></section>
+    <template data-tpl="done">{% call pnm.status("done") %}Ссылок на документы, которые утратили силу, мы не нашли. Мы проверяем только <span data-f="n"></span>, список ниже{% endcall %}</template>
+    <template data-tpl="found"><h2 class="pn-check__count" tabindex="-1" data-f="count"></h2><ol class="pn-findings" data-f="list"></ol></template>
+    <template data-tpl="finding">
+      <li class="pn-finding">
+        <div data-part="error" hidden>{% call pnm.status("error") %}<span data-f="message"></span>{% endcall %}</div>
+        <div data-part="warning" hidden>{% call pnm.status("info") %}<span data-f="message"></span>{% endcall %}</div>
+        <p class="pn-finding__where">Строка <span data-f="line"></span>: <span class="pn-finding__frag" data-f="fragment"></span></p>
+        <p class="pn-finding__act" data-part="suggest" hidden>Действующий документ: <a data-f="suggest" href="{{ url('acts/') }}"></a></p>
+        <details class="pn-basis" data-part="basis" hidden><summary>Основание{{ pnm.ic("chevron-down", "pn-basis__chev") }}</summary><div data-f="quotes"></div></details>
+      </li>
+    </template>
+    <template data-tpl="error">{{ pnm.status("error", "Не получилось загрузить правила проверки. Обновите страницу") }}</template>
+    {{ pnm.quote_tpl() }}
+  </pn-check>
+  <section aria-labelledby="pn-rules-title">
+    <h2 id="pn-rules-title">Что мы проверяем</h2>
+    <p class="pn-check__dict">Словарь от {{ site.pn.data_date | ru_date }}, {{ lr | length | plural("правило", "правила", "правил") }}</p>
+    {% if lr %}
+    <details class="pn-basis" open>
+      <summary>Список правил{{ pnm.ic("chevron-down", "pn-basis__chev") }}</summary>
+      <ul class="pn-plain pn-check__rules">
+        {% for r in lr %}
+        <li>{{ r.message }}{% if r.act_id %} ({{ pnm.act_link(r.act_id) }}){% endif %}{% if not r.verified %} {{ pnm.unv() }}{% endif %}</li>
+        {% endfor %}
+      </ul>
+    </details>
+    {% endif %}
+    <p>Проверка находит только то, что есть в этом списке. Если ничего не нашлось, это не значит, что в тексте нет других ошибок</p>
+  </section>
+  {{ pnm.back() }}
+</div>
+{% endblock %}
+{% block scripts %}
+<script type="module" src="{{ url('assets/js/pn-page.js') }}"></script>
+<script type="module" src="{{ url('assets/js/pn-check.js') }}"></script>
+{% endblock %}

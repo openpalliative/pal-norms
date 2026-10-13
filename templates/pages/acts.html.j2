@@ -1,0 +1,55 @@
+{% extends "op/base.html.j2" %}
+{% set draft = "legal" %}
+{% import "op/macros.html.j2" as op with context %}
+{% import "partials/pn.html.j2" as pnm with context %}
+{% block title %}Документы{% endblock %}
+{% block description %}Приказы, законы и постановления, на которые опираются сроки и показания, со статусом и ссылкой на официальную публикацию{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{ url('assets/css/pn-docs.css') }}"><link rel="stylesheet" href="{{ url('assets/css/pn-print.css') }}" media="print">{% endblock %}
+{% block main %}
+<div class="op-wrap op-page pn-acts">
+  {{ op.crumbs([("openpalliative", hub('')), (site.title, url('')), ("Документы", "")]) }}
+  <h1>Документы</h1>
+  <p class="op-lead">Приказы, законы и постановления, на которые опираются сроки и показания. У каждого статус и ссылка на официальную публикацию</p>
+  {% if site.pn.acts %}
+  <pn-acts class="pn-acts__tool">
+    <form class="pn-filter" role="search" hidden>
+      <div class="op-search">
+        <label class="op-field__label" for="pn-q">Найти документ</label>
+        <p class="op-field__hint" id="pn-q-hint">Название или номер, например «положение» или «перечень изделий»</p>
+        <div class="op-search__row">
+          <span class="op-search__icon">{{ pnm.ic("search") }}</span>
+          <input class="op-input op-search__input" id="pn-q" type="search" autocomplete="off" aria-describedby="pn-q-hint">
+        </div>
+      </div>
+      <fieldset class="pn-seg">
+        <legend class="op-visually-hidden">Показать</legend>
+        <label><input type="radio" name="st" value="all" checked><span>Все</span></label>
+        <label><input type="radio" name="st" value="in_force"><span>Действуют</span></label>
+        <label><input type="radio" name="st" value="repealed"><span>Утратили силу</span></label>
+        <label><input type="radio" name="st" value="unverified"><span>Не проверено</span></label>
+      </fieldset>
+      <p class="pn-filter__count" aria-live="polite" data-count></p>
+    </form>
+    <div class="pn-empty" data-empty hidden>{{ pnm.status("info", "Ничего не нашли. Попробуйте другое слово или выберите «Все»") }}</div>
+    {% for g in site.pn.act_groups %}
+    <section class="pn-actgroup" aria-labelledby="pn-tg-{{ loop.index }}">
+      <h2 id="pn-tg-{{ loop.index }}">{{ g.title }}</h2>
+      <ul class="pn-actlist">
+        {% for a in g.acts -%}
+        <li class="pn-act" data-id="{{ a.id }}" data-status="{{ site.pn.labels.act_status[a.status].filter }}" data-verified="{{ 'true' if a.verified else 'false' }}"><div class="pn-act__main"><a class="pn-act__title" href="{{ url('acts/' ~ a.id ~ '/') }}">{{ a.short_title }}</a><p class="pn-act__meta">{{ site.pn.labels.act_kind[a.kind] }} от {{ a.doc_date | ru_date }} № {{ a.number }}</p>{% if a.superseded_by %}<p class="pn-act__rel">Заменён: {% for sid in a.superseded_by %}{{ pnm.act_link(sid) }}{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}</div><div class="pn-act__badges">{{ pnm.act_status(a) }}{% if not a.verified %}{{ pnm.unv() }}{% endif %}</div></li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endfor %}
+  </pn-acts>
+  {% else %}
+  {{ pnm.status("info", "Документов пока нет в данных") }}
+  {% endif %}
+  {{ pnm.data_line() }}
+  {{ pnm.back() }}
+</div>
+{% endblock %}
+{% block scripts %}
+<script type="module" src="{{ url('assets/js/pn-page.js') }}"></script>
+<script type="module" src="{{ url('assets/js/pn-acts.js') }}"></script>
+{% endblock %}

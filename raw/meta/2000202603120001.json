@@ -1,0 +1,26 @@
+{
+ "eoNumber": "2000202603120001",
+ "number": "46",
+ "documentDate": "2026-03-10T00:00:00",
+ "publishDateShort": "2026-03-12T00:00:00",
+ "name": "О нерабочих (праздничных) днях",
+ "complexName": "Указ Главы Чеченской Республики от 10.03.2026 № 46\n \"О нерабочих (праздничных) днях\"",
+ "pagesCount": 1,
+ "pdfFileLength": 23939,
+ "signatoryAuthorities": [
+  {
+   "isMain": true,
+   "weight": 62995,
+   "name": "Глава Чеченской Республики",
+   "id": "18aaeb7b-483e-4d59-9324-08de3f2c9ce5"
+  }
+ ],
+ "signatoryAuthorityId": "18aaeb7b-483e-4d59-9324-08de3f2c9ce5",
+ "documentType": {
+  "weight": 96,
+  "name": "Указ",
+  "id": "0790e34b-784b-4372-884e-3282622a24bd"
+ },
+ "jdRegNumber": null,
+ "jdRegDate": null
+}

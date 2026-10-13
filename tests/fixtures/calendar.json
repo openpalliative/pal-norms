@@ -1,0 +1,90 @@
+{
+  "format": "openpalliative-dataset/1",
+  "dataset": "calendar",
+  "repo": "pal-norms",
+  "schema_version": "1.0.0",
+  "version": "2026.10.11",
+  "generated_at": "2026-10-11T12:00:00Z",
+  "data_date": "2026-10-11",
+  "stale_after_days": 90,
+  "license": "CC-BY-4.0",
+  "source": [
+    {
+      "id": "demo-source",
+      "title": "Пример источника для разработки сайта, не настоящий документ"
+    }
+  ],
+  "content_sha256": "03dcfc564e297f3ca21d894775cc5a59d9cd431b150807767ca4b588f3eb47f8",
+  "counts": {
+    "items": 2,
+    "unverified": 2,
+    "excluded": 0
+  },
+  "items": [
+    {
+      "id": "baseline",
+      "verified": false,
+      "verified_at": null,
+      "source_ref": "demo-source",
+      "kind": "baseline",
+      "year": null,
+      "holidays_mmdd": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "01-04",
+        "01-05",
+        "01-06",
+        "01-07",
+        "01-08",
+        "02-23",
+        "03-08",
+        "05-01",
+        "05-09",
+        "06-12",
+        "11-04"
+      ],
+      "carry_over": true,
+      "carry_exclude_mmdd": [
+        "01-01",
+        "01-02",
+        "01-03",
+        "01-04",
+        "01-05",
+        "01-06",
+        "01-07",
+        "01-08"
+      ],
+      "quote_ids": []
+    },
+    {
+      "id": "2026",
+      "verified": false,
+      "verified_at": null,
+      "source_ref": "demo-source",
+      "kind": "year",
+      "year": 2026,
+      "decree_act_id": null,
+      "decree_eoNumber": null,
+      "transfers": [],
+      "off": [
+        "2026-01-01",
+        "2026-01-02",
+        "2026-01-03",
+        "2026-01-04",
+        "2026-01-05",
+        "2026-01-06",
+        "2026-01-07",
+        "2026-01-08",
+        "2026-02-23",
+        "2026-03-08",
+        "2026-05-01",
+        "2026-05-09",
+        "2026-06-12",
+        "2026-11-04"
+      ],
+      "work": [],
+      "quote_ids": []
+    }
+  ]
+}

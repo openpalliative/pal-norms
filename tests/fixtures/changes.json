@@ -1,0 +1,58 @@
+{
+  "format": "openpalliative-dataset/1",
+  "dataset": "changes",
+  "repo": "pal-norms",
+  "schema_version": "1.0.0",
+  "version": "2026.10.11",
+  "generated_at": "2026-10-11T12:00:00Z",
+  "data_date": "2026-10-11",
+  "stale_after_days": 90,
+  "license": "CC-BY-4.0",
+  "source": [
+    {
+      "id": "demo-source",
+      "title": "Пример источника для разработки сайта, не настоящий документ"
+    }
+  ],
+  "content_sha256": "9928d1c436f4cc2202ee410bddda86662ec06c61f510230404b3c080fd735187",
+  "counts": {
+    "items": 2,
+    "unverified": 0,
+    "excluded": 0
+  },
+  "items": [
+    {
+      "id": "demo-change-1",
+      "verified": true,
+      "verified_at": "2026-10-11",
+      "source_ref": "demo-source",
+      "published_at": "2026-09-18",
+      "detected_at": "2026-09-21",
+      "eoNumber": "0000000000000003",
+      "title": "Пример: постановление о переносе выходных дней",
+      "kind": "transfer_decree",
+      "related_act_ids": [],
+      "summary": "Пример: опубликован календарь на следующий год",
+      "state": "accepted",
+      "review_ref": null
+    },
+    {
+      "id": "demo-change-2",
+      "verified": true,
+      "verified_at": "2026-10-11",
+      "source_ref": "demo-source",
+      "published_at": "2025-05-29",
+      "detected_at": "2025-06-02",
+      "eoNumber": "0000000000000001",
+      "title": "Пример: новое положение",
+      "kind": "new_act",
+      "related_act_ids": [
+        "demo-polozhenie",
+        "demo-old"
+      ],
+      "summary": "Пример: опубликовано новое положение, старое утратит силу",
+      "state": "accepted",
+      "review_ref": null
+    }
+  ]
+}

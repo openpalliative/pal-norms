@@ -1,0 +1,13 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")/.."
+uv sync --frozen
+uv run python -m pipeline.watch --apply --report _reports/watch.json
+uv run python -m pipeline.check || true
+if command -v gh >/dev/null 2>&1 && gh auth status >/dev/null 2>&1; then
+  uv run python -m pipeline.watch --open-issues _reports/watch.json
+else
+  echo "gh не настроен: задачи из _reports/watch.json нужно завести вручную"
+fi
+git status --short data/
+echo "Снимок data/snapshots/watch-state.json можно закоммитить как «data: снимок pravo.gov.ru $(date -u +%Y-%m-%d)». Черновики в data/calendar и data/changes.yaml отправляйте отдельным PR на ревью"

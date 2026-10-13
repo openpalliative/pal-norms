@@ -1,0 +1,26 @@
+{
+ "eoNumber": "0001202412180026",
+ "number": "1811",
+ "documentDate": "2024-12-18T00:00:00",
+ "publishDateShort": "2024-12-18T00:00:00",
+ "name": "О внесении изменений в некоторые акты Правительства Российской Федерации",
+ "complexName": "Постановление Правительства Российской Федерации от 18.12.2024 № 1811\n \"О внесении изменений в некоторые акты Правительства Российской Федерации\"",
+ "pagesCount": 6,
+ "pdfFileLength": 1415824,
+ "signatoryAuthorities": [
+  {
+   "isMain": true,
+   "weight": 93000,
+   "name": "Правительство Российской Федерации",
+   "id": "8005d8c9-4b6d-48d3-861a-2a37e69fccb3"
+  }
+ ],
+ "signatoryAuthorityId": "8005d8c9-4b6d-48d3-861a-2a37e69fccb3",
+ "documentType": {
+  "weight": 95,
+  "name": "Постановление",
+  "id": "fd5a8766-f6fd-4ac2-8fd9-66f414d314ac"
+ },
+ "jdRegNumber": null,
+ "jdRegDate": null
+}

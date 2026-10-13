@@ -1,0 +1,36 @@
+quotes:
+- id: pp-1314-p1
+  verified: true
+  verified_at: 2026-10-11
+  source_ref: pravo-pp-1314
+  act_id: pp-1314
+  point: постановление, единственный пункт
+  anchor: p-1
+  page: 1
+  text: |-
+    Перенести в 2024 году следующие выходные дни:
+    с субботы 6 января на пятницу 10 мая;
+    с воскресенья 7 января на вторник 31 декабря;
+    с субботы 27 апреля на понедельник 29 апреля;
+    с субботы 2 ноября на вторник 30 апреля;
+    с субботы 28 декабря на понедельник 30 декабря.
+  text_source: official_pdf
+  ocr:
+    passes: 2
+    diff_lines: 0
+    dpi:
+    - 300
+    - 400
+  scan_checked:
+    at: 2026-10-11
+    method: visual-crop
+    crop: pp-1314-p1.png
+    crops:
+    - pp-1314-p1.png
+    notes: сверено по вырезке 11.10.2026
+    second:
+      at: 2026-10-12
+      method: ocr-pass-c
+      agrees: true
+      crop: pp-1314-p1.png
+      notes: проход c (450 dpi, psm 3) совпал со словами цитаты

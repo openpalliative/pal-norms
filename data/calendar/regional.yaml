@@ -1,0 +1,2098 @@
+regional:
+- id: ru-bu-2026-02-18
+  region_id: RU-BU
+  region_name: Республика Бурятия
+  region_in: в Республике Бурятия
+  date: 2026-02-18
+  title: Сагаалган, праздник Белого месяца
+  eoNumber: '0300202512100005'
+  act:
+    eoNumber: '0300202512100005'
+    number: 320
+    doc_date: 2025-12-05
+    publish_date: 2025-12-10
+    title: Указ Главы Республики Бурятия от 05.12.2025 № 320  "О празднике Белого месяца "Сагаалган" в 2026 году"
+    authority: Глава Республики Бурятия
+    url: http://publication.pravo.gov.ru/document/0300202512100005
+    pdf_sha256: 2c15381a66d9829e00860b0d272f6b6a1992950c7b1323fd612fc277955d636d
+  quote_ids:
+  - rg-bu-2025-320
+  quote:
+    id: rg-bu-2025-320
+    page: 1
+    text: 1. Объявить нерабочим праздничным днем на территории Республики Бурятия 18 февраля 2026 года - первый день Нового года по лунному календарю - праздник Белого месяца «Сагаалган».
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 0
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-bu-2025-320.png
+      crops:
+      - rg-bu-2025-320.png
+      notes: сверено по вырезке 12.10.2026, перенос слова «Республики» снят
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-bu-2025-320.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-0300202512100005
+  legal_review:
+    status: none
+  notes:
+- id: ru-irk-2026-02-18
+  region_id: RU-IRK
+  region_name: Иркутская область
+  region_in: в Иркутской области
+  date: 2026-02-18
+  title: Сагаалган
+  eoNumber: '3800202602170001'
+  act:
+    eoNumber: '3800202602170001'
+    number: 39-уг
+    doc_date: 2026-02-16
+    publish_date: 2026-02-17
+    title: Указ Губернатора Иркутской области от 16.02.2026 № 39-уг  "О праздновании национально-культурного праздника "Сагаалган"
+    authority: Губернатор Иркутской области
+    url: http://publication.pravo.gov.ru/document/3800202602170001
+    pdf_sha256: 17a43d478553e53254de8ccd9049fcff5cfb0ee8c3d2a3a1fc0e528f3a122426
+  quote_ids:
+  - rg-irk-2026-39
+  quote:
+    id: rg-irk-2026-39
+    page: 1
+    text: 2. Объявить 18 февраля 2026 года - первый день, в который в Усть-Ордынском Бурятском округе, Ольхонском районе Иркутской области отмечается национально-культурный праздник «Сагаалган», - нерабочим (праздничным) днем на территории Усть-Ордынского Бурятского округа, Ольхонского района Иркутской области.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 0
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-irk-2026-39.png
+      crops:
+      - rg-irk-2026-39.png
+      notes: сверено по вырезке 12.10.2026
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-irk-2026-39.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-3800202602170001
+  legal_review:
+    status: none
+  notes: Нерабочий день только в Усть-Ордынском Бурятском округе и Ольхонском районе
+- id: ru-kl-2026-02-18
+  region_id: RU-KL
+  region_name: Республика Калмыкия
+  region_in: в Республике Калмыкия
+  date: 2026-02-18
+  title: Цаган Сар
+  eoNumber: '0800202602040001'
+  act:
+    eoNumber: '0800202602040001'
+    number: 8
+    doc_date: 2026-02-03
+    publish_date: 2026-02-04
+    title: Указ Главы Республики Калмыкия от 03.02.2026 № 8  "Об объявлении 18 февраля 2026 года Днём национального праздника "Цаган Сар"
+    authority: Глава Республики Калмыкия
+    url: http://publication.pravo.gov.ru/document/0800202602040001
+    pdf_sha256: ea8f943c09692db9fba9fb7a25419cb889755d9117a353a6e2efe25f322a6df5
+  quote_ids:
+  - rg-kl-2026-8
+  quote:
+    id: rg-kl-2026-8
+    page: 1
+    text: объявить 18 февраля 2026 года Днём национального праздника «Цаган Сар».
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 1
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-kl-2026-8.png
+      crops:
+      - rg-kl-2026-8.png
+      notes: сверено по вырезке 12.10.2026
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-kl-2026-8.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: false
+  verified_at:
+  source_ref: pravo-0800202602040001
+  legal_review:
+    status: none
+  notes: Указ объявляет день национального праздника, но не называет его нерабочим. Это зависит от закона Республики Калмыкия о праздничных днях, его текст не сверен
+- id: ru-zab-2026-02-18
+  region_id: RU-ZAB
+  region_name: Забайкальский край
+  region_in: в Забайкальском крае
+  date: 2026-02-18
+  title: Сагаалган, праздник Белого месяца
+  eoNumber: '7500202509050003'
+  act:
+    eoNumber: '7500202509050003'
+    number: 99
+    doc_date: 2025-09-05
+    publish_date: 2025-09-05
+    title: Постановление Губернатора Забайкальского края от 05.09.2025 № 99  "Об объявлении даты праздника Белого месяца "Сагаалган" в 2026 году"
+    authority: Губернатор Забайкальского края
+    url: http://publication.pravo.gov.ru/document/7500202509050003
+    pdf_sha256: 52382da7dec35e789a78916f35dfa4ad1e401c6708add945c2c81f0a9ee2fced
+  quote_ids:
+  - rg-zab-2025-99
+  quote:
+    id: rg-zab-2025-99
+    page: 1
+    text: Объявить 18 февраля 2026 года первым днем Нового года по лунному календарю – праздником Белого месяца «Сагаалган».
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 0
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-zab-2025-99.png
+      crops:
+      - rg-zab-2025-99.png
+      notes: сверено по вырезке 12.10.2026
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-zab-2025-99.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: false
+  verified_at:
+  source_ref: pravo-7500202509050003
+  legal_review:
+    status: none
+  notes: Постановление объявляет дату праздника, но не называет день нерабочим. Это зависит от закона Забайкальского края от 31.03.2015 № 1151-ЗЗК, его текст не сверен
+- id: ru-ce-2026-03-19
+  region_id: RU-CE
+  region_name: Чеченская Республика
+  region_in: в Чеченской Республике
+  date: 2026-03-19
+  title: Ураза-байрам
+  eoNumber: '2000202603120001'
+  act:
+    eoNumber: '2000202603120001'
+    number: 46
+    doc_date: 2026-03-10
+    publish_date: 2026-03-12
+    title: Указ Главы Чеченской Республики от 10.03.2026 № 46  "О нерабочих (праздничных) днях"
+    authority: Глава Чеченской Республики
+    url: http://publication.pravo.gov.ru/document/2000202603120001
+    pdf_sha256: 5153c44e43e03c9f6d5c70fe1ef7c3279894d376125736fe4c3822a02cc9f9e6
+  quote_ids:
+  - rg-ce-2026-46
+  quote:
+    id: rg-ce-2026-46
+    page: 1
+    text: Объявить 19, 20 и 21 марта 2026 года нерабочими (праздничными) днями на территории Чеченской Республики.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 0
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-ce-2026-46.png
+      crops:
+      - rg-ce-2026-46.png
+      notes: сверено по вырезке и увеличению 600 dpi 12.10.2026
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-ce-2026-46.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-2000202603120001
+  legal_review:
+    status: none
+  notes:
+- id: ru-da-2026-03-19
+  region_id: RU-DA
+  region_name: Республика Дагестан
+  region_in: в Республике Дагестан
+  date: 2026-03-19
+  title: Ураза-байрам
+  eoNumber: '0500202603190006'
+  act:
+    eoNumber: '0500202603190006'
+    number: 47
+    doc_date: 2026-03-13
+    publish_date: 2026-03-19
+    title: Постановление Правительства Республики Дагестан от 13.03.2026 № 47  "О мусульманском празднике Ураза-байрам"
+    authority: Правительство Республики Дагестан
+    url: http://publication.pravo.gov.ru/document/0500202603190006
+    pdf_sha256: 809f9ef96fc24e43eecc7110a293ebad99ce6bdd386bccd8ffd6c0621eb9468e
+  quote_ids:
+  - rg-da-2026-47
+  quote:
+    id: rg-da-2026-47
+    page: 1
+    text: Считать 19 и 20 марта 2026 года нерабочими праздничными днями.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 0
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-da-2026-47.png
+      crops:
+      - rg-da-2026-47.png
+      notes: сверено по вырезке 12.10.2026
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-da-2026-47.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-0500202603190006
+  legal_review:
+    status: none
+  notes:
+- id: ru-ad-2026-03-20
+  region_id: RU-AD
+  region_name: Республика Адыгея
+  region_in: в Республике Адыгея
+  date: 2026-03-20
+  title: Ураза-байрам
+  eoNumber: '0100202510140001'
+  act:
+    eoNumber: '0100202510140001'
+    number: 117
+    doc_date: 2025-10-13
+    publish_date: 2025-10-14
+    title: Указ Главы Республики Адыгея от 13.10.2025 № 117  "Об установлении дат проведения религиозных праздничных дней и переносе выходного дня в 2026 году"
+    authority: Глава Республики Адыгея
+    url: http://publication.pravo.gov.ru/document/0100202510140001
+    pdf_sha256: a8bbf4063da6563eeb71a80f8cf941f2a1398adf9eea46ca6b70228cb79f3aa7
+  quote_ids:
+  - rg-ad-2025-117
+  quote:
+    id: rg-ad-2025-117
+    page: 1
+    text: |-
+      1. Установить в 2026 году даты проведения религиозных праздничных дней:
+      1) Ураза-Байрам – 20 марта;
+      2) День поминовения усопших (Радоница) – 21 апреля;
+      3) Курбан-Байрам – 27 мая.
+      2. Перенести в 2026 году выходной день с субботы 25 апреля на понедельник 20 апреля.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 7
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-ad-2025-117.png
+      crops:
+      - rg-ad-2025-117.png
+      notes: 'сверено по вырезке 12.10.2026, исправлено распознавание: «1)» вместо «Г)», «Перенести», лишняя точка после «усопших»'
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-ad-2025-117.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: false
+  verified_at:
+  source_ref: pravo-0100202510140001
+  legal_review:
+    status: none
+  notes: Указ называет день религиозным праздничным днём и ссылается на закон Республики Адыгея от 14.02.1995 № 168-1. Что день нерабочий, следует из закона, его текст не сверен
+- id: ru-ce-2026-03-20
+  region_id: RU-CE
+  region_name: Чеченская Республика
+  region_in: в Чеченской Республике
+  date: 2026-03-20
+  title: Ураза-байрам
+  eoNumber: '2000202603120001'
+  act:
+    eoNumber: '2000202603120001'
+    number: 46
+    doc_date: 2026-03-10
+    publish_date: 2026-03-12
+    title: Указ Главы Чеченской Республики от 10.03.2026 № 46  "О нерабочих (праздничных) днях"
+    authority: Глава Чеченской Республики
+    url: http://publication.pravo.gov.ru/document/2000202603120001
+    pdf_sha256: 5153c44e43e03c9f6d5c70fe1ef7c3279894d376125736fe4c3822a02cc9f9e6
+  quote_ids:
+  - rg-ce-2026-46
+  quote:
+    id: rg-ce-2026-46
+    page: 1
+    text: Объявить 19, 20 и 21 марта 2026 года нерабочими (праздничными) днями на территории Чеченской Республики.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 0
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-ce-2026-46.png
+      crops:
+      - rg-ce-2026-46.png
+      notes: сверено по вырезке и увеличению 600 dpi 12.10.2026
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-ce-2026-46.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-2000202603120001
+  legal_review:
+    status: none
+  notes:
+- id: ru-da-2026-03-20
+  region_id: RU-DA
+  region_name: Республика Дагестан
+  region_in: в Республике Дагестан
+  date: 2026-03-20
+  title: Ураза-байрам
+  eoNumber: '0500202603190006'
+  act:
+    eoNumber: '0500202603190006'
+    number: 47
+    doc_date: 2026-03-13
+    publish_date: 2026-03-19
+    title: Постановление Правительства Республики Дагестан от 13.03.2026 № 47  "О мусульманском празднике Ураза-байрам"
+    authority: Правительство Республики Дагестан
+    url: http://publication.pravo.gov.ru/document/0500202603190006
+    pdf_sha256: 809f9ef96fc24e43eecc7110a293ebad99ce6bdd386bccd8ffd6c0621eb9468e
+  quote_ids:
+  - rg-da-2026-47
+  quote:
+    id: rg-da-2026-47
+    page: 1
+    text: Считать 19 и 20 марта 2026 года нерабочими праздничными днями.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 0
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-da-2026-47.png
+      crops:
+      - rg-da-2026-47.png
+      notes: сверено по вырезке 12.10.2026
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-da-2026-47.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-0500202603190006
+  legal_review:
+    status: none
+  notes:
+- id: ru-kb-2026-03-20
+  region_id: RU-KB
+  region_name: Кабардино-Балкарская Республика
+  region_in: в Кабардино-Балкарской Республике
+  date: 2026-03-20
+  title: Ураза-байрам
+  eoNumber: '0700202603160004'
+  act:
+    eoNumber: '0700202603160004'
+    number: 22-УГ
+    doc_date: 2026-03-13
+    publish_date: 2026-03-16
+    title: Указ Главы Кабардино-Балкарской Республики от 13.03.2026 № 22-УГ  "Об объявлении 20 марта 2026 г. нерабочим праздничным днем"
+    authority: Глава Кабардино-Балкарской Республики
+    url: http://publication.pravo.gov.ru/document/0700202603160004
+    pdf_sha256: 43e16864368b59b096aa5261c10292e2feb6c3aa1f688b3cababda530ee6d2cf
+  quote_ids:
+  - rg-kb-2026-22
+  quote:
+    id: rg-kb-2026-22
+    page: 1
+    text: Объявить 20 марта 2026 г. в Кабардино-Балкарской Республике нерабочим праздничным днем.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 1
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-kb-2026-22.png
+      crops:
+      - rg-kb-2026-22.png
+      notes: сверено по вырезке 12.10.2026
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-kb-2026-22.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-0700202603160004
+  legal_review:
+    status: none
+  notes:
+- id: ru-ta-2026-03-20
+  region_id: RU-TA
+  region_name: Республика Татарстан
+  region_in: в Республике Татарстан
+  date: 2026-03-20
+  title: Ураза-байрам
+  eoNumber: '1600202601210002'
+  act:
+    eoNumber: '1600202601210002'
+    number: 17
+    doc_date: 2026-01-17
+    publish_date: 2026-01-21
+    title: Указ Раиса Республики Татарстан от 17.01.2026 № 17  "Об определении дней проведения праздников Ураза-байрам и Курбан-байрам в 2026 году"
+    authority: Раис Республики Татарстан
+    url: http://publication.pravo.gov.ru/document/1600202601210002
+    pdf_sha256: 0249480c9a54623ad97053acd62d72394d40b56cc65d2adb538b572f082ba7ef
+  quote_ids:
+  - rg-ta-2026-17
+  quote:
+    id: rg-ta-2026-17
+    page: 1
+    text: |-
+      1. Определить в Республике Татарстан:
+      20 марта 2026 года днем, на который в соответствии с лунным календарем и сложившимися традициями приходится начало проведения праздника Ураза-байрам;
+      27 мая 2026 года днем, на который в соответствии с лунным календарем и сложившимися традициями приходится начало проведения праздника Курбан-байрам.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 0
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-ta-2026-17.png
+      crops:
+      - rg-ta-2026-17.png
+      notes: сверено по вырезке 12.10.2026
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-ta-2026-17.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: false
+  verified_at:
+  source_ref: pravo-1600202601210002
+  legal_review:
+    status: none
+  notes: Указ определяет день праздника и ссылается на закон Республики Татарстан от 19.02.1992 № 1448-XII. Что день нерабочий, следует из закона, его текст на портале не сверен
+- id: ru-ce-2026-03-21
+  region_id: RU-CE
+  region_name: Чеченская Республика
+  region_in: в Чеченской Республике
+  date: 2026-03-21
+  title: Ураза-байрам
+  eoNumber: '2000202603120001'
+  act:
+    eoNumber: '2000202603120001'
+    number: 46
+    doc_date: 2026-03-10
+    publish_date: 2026-03-12
+    title: Указ Главы Чеченской Республики от 10.03.2026 № 46  "О нерабочих (праздничных) днях"
+    authority: Глава Чеченской Республики
+    url: http://publication.pravo.gov.ru/document/2000202603120001
+    pdf_sha256: 5153c44e43e03c9f6d5c70fe1ef7c3279894d376125736fe4c3822a02cc9f9e6
+  quote_ids:
+  - rg-ce-2026-46
+  quote:
+    id: rg-ce-2026-46
+    page: 1
+    text: Объявить 19, 20 и 21 марта 2026 года нерабочими (праздничными) днями на территории Чеченской Республики.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 0
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-ce-2026-46.png
+      crops:
+      - rg-ce-2026-46.png
+      notes: сверено по вырезке и увеличению 600 dpi 12.10.2026
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-ce-2026-46.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-2000202603120001
+  legal_review:
+    status: none
+  notes:
+- id: ru-da-2026-04-13
+  region_id: RU-DA
+  region_name: Республика Дагестан
+  region_in: в Республике Дагестан
+  date: 2026-04-13
+  title: Пасха (Светлое Христово Воскресение)
+  eoNumber: '0500202604030007'
+  act:
+    eoNumber: '0500202604030007'
+    number: 64
+    doc_date: 2026-03-31
+    publish_date: 2026-04-03
+    title: Постановление Правительства Республики Дагестан от 31.03.2026 № 64  "О православном празднике - Светлом Христовом Воскресении (Пасхе) и дне особого поминовения усопших – Радонице"
+    authority: Правительство Республики Дагестан
+    url: http://publication.pravo.gov.ru/document/0500202604030007
+    pdf_sha256: a926aced2ad18e8d2eb724c567e6b101bb30be2ec272d391e073fa7bd1721c44
+  quote_ids:
+  - rg-da-2026-64
+  quote:
+    id: rg-da-2026-64
+    page: 1
+    text: Считать 13 и 21 апреля 2026 года нерабочими праздничными днями.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 0
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-da-2026-64.png
+      crops:
+      - rg-da-2026-64.png
+      notes: сверено по вырезке 12.10.2026
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-da-2026-64.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-0500202604030007
+  legal_review:
+    status: none
+  notes:
+- id: ru-ad-2026-04-20
+  region_id: RU-AD
+  region_name: Республика Адыгея
+  region_in: в Республике Адыгея
+  date: 2026-04-20
+  title: Выходной день перенесён с субботы 25 апреля
+  eoNumber: '0100202510140001'
+  act:
+    eoNumber: '0100202510140001'
+    number: 117
+    doc_date: 2025-10-13
+    publish_date: 2025-10-14
+    title: Указ Главы Республики Адыгея от 13.10.2025 № 117  "Об установлении дат проведения религиозных праздничных дней и переносе выходного дня в 2026 году"
+    authority: Глава Республики Адыгея
+    url: http://publication.pravo.gov.ru/document/0100202510140001
+    pdf_sha256: a8bbf4063da6563eeb71a80f8cf941f2a1398adf9eea46ca6b70228cb79f3aa7
+  quote_ids:
+  - rg-ad-2025-117
+  quote:
+    id: rg-ad-2025-117
+    page: 1
+    text: |-
+      1. Установить в 2026 году даты проведения религиозных праздничных дней:
+      1) Ураза-Байрам – 20 марта;
+      2) День поминовения усопших (Радоница) – 21 апреля;
+      3) Курбан-Байрам – 27 мая.
+      2. Перенести в 2026 году выходной день с субботы 25 апреля на понедельник 20 апреля.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 7
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-ad-2025-117.png
+      crops:
+      - rg-ad-2025-117.png
+      notes: 'сверено по вырезке 12.10.2026, исправлено распознавание: «1)» вместо «Г)», «Перенести», лишняя точка после «усопших»'
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-ad-2025-117.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-0100202510140001
+  legal_review:
+    status: none
+  notes: Суббота 25 апреля 2026 года в регионе рабочая
+- id: ru-ad-2026-04-21
+  region_id: RU-AD
+  region_name: Республика Адыгея
+  region_in: в Республике Адыгея
+  date: 2026-04-21
+  title: Радоница, день поминовения усопших
+  eoNumber: '0100202510140001'
+  act:
+    eoNumber: '0100202510140001'
+    number: 117
+    doc_date: 2025-10-13
+    publish_date: 2025-10-14
+    title: Указ Главы Республики Адыгея от 13.10.2025 № 117  "Об установлении дат проведения религиозных праздничных дней и переносе выходного дня в 2026 году"
+    authority: Глава Республики Адыгея
+    url: http://publication.pravo.gov.ru/document/0100202510140001
+    pdf_sha256: a8bbf4063da6563eeb71a80f8cf941f2a1398adf9eea46ca6b70228cb79f3aa7
+  quote_ids:
+  - rg-ad-2025-117
+  quote:
+    id: rg-ad-2025-117
+    page: 1
+    text: |-
+      1. Установить в 2026 году даты проведения религиозных праздничных дней:
+      1) Ураза-Байрам – 20 марта;
+      2) День поминовения усопших (Радоница) – 21 апреля;
+      3) Курбан-Байрам – 27 мая.
+      2. Перенести в 2026 году выходной день с субботы 25 апреля на понедельник 20 апреля.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 7
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-ad-2025-117.png
+      crops:
+      - rg-ad-2025-117.png
+      notes: 'сверено по вырезке 12.10.2026, исправлено распознавание: «1)» вместо «Г)», «Перенести», лишняя точка после «усопших»'
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-ad-2025-117.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: false
+  verified_at:
+  source_ref: pravo-0100202510140001
+  legal_review:
+    status: none
+  notes: Указ называет день религиозным праздничным днём и ссылается на закон Республики Адыгея от 14.02.1995 № 168-1. Что день нерабочий, следует из закона, его текст не сверен
+- id: ru-bry-2026-04-21
+  region_id: RU-BRY
+  region_name: Брянская область
+  region_in: в Брянской области
+  date: 2026-04-21
+  title: Радоница, день особого поминовения усопших
+  eoNumber: '3200202604130001'
+  act:
+    eoNumber: '3200202604130001'
+    number: 40
+    doc_date: 2026-04-08
+    publish_date: 2026-04-13
+    title: Указ Губернатора Брянской области от 08.04.2026 № 40  "Об объявлении нерабочим праздничным днем на территории Брянской области 21 апреля 2026 года"
+    authority: Губернатор Брянской области
+    url: http://publication.pravo.gov.ru/document/3200202604130001
+    pdf_sha256: d23d107a0f5752b27bff1be84f188bf8d2a3ece01c6eaacf8ab34327c04266b3
+  quote_ids:
+  - rg-bry-2026-40
+  quote:
+    id: rg-bry-2026-40
+    page: 1
+    text: 1. Объявить нерабочим праздничным днем на территории Брянской области 21 апреля 2026 года – Радоницу – день особого поминовения усопших.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 21
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-bry-2026-40.png
+      crops:
+      - rg-bry-2026-40.png
+      notes: 'сверено по вырезке 12.10.2026, исправлено распознавание: «поминовения усопших», лишние точка и апостроф'
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-bry-2026-40.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-3200202604130001
+  legal_review:
+    status: none
+  notes:
+- id: ru-da-2026-04-21
+  region_id: RU-DA
+  region_name: Республика Дагестан
+  region_in: в Республике Дагестан
+  date: 2026-04-21
+  title: Радоница, день особого поминовения усопших
+  eoNumber: '0500202604030007'
+  act:
+    eoNumber: '0500202604030007'
+    number: 64
+    doc_date: 2026-03-31
+    publish_date: 2026-04-03
+    title: Постановление Правительства Республики Дагестан от 31.03.2026 № 64  "О православном празднике - Светлом Христовом Воскресении (Пасхе) и дне особого поминовения усопших – Радонице"
+    authority: Правительство Республики Дагестан
+    url: http://publication.pravo.gov.ru/document/0500202604030007
+    pdf_sha256: a926aced2ad18e8d2eb724c567e6b101bb30be2ec272d391e073fa7bd1721c44
+  quote_ids:
+  - rg-da-2026-64
+  quote:
+    id: rg-da-2026-64
+    page: 1
+    text: Считать 13 и 21 апреля 2026 года нерабочими праздничными днями.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 0
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-da-2026-64.png
+      crops:
+      - rg-da-2026-64.png
+      notes: сверено по вырезке 12.10.2026
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-da-2026-64.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-0500202604030007
+  legal_review:
+    status: none
+  notes:
+- id: ru-kb-2026-04-21
+  region_id: RU-KB
+  region_name: Кабардино-Балкарская Республика
+  region_in: в Кабардино-Балкарской Республике
+  date: 2026-04-21
+  title: Радоница, день особого поминовения усопших
+  eoNumber: '0700202603190002'
+  act:
+    eoNumber: '0700202603190002'
+    number: 26-УГ
+    doc_date: 2026-03-18
+    publish_date: 2026-03-19
+    title: Указ Главы Кабардино-Балкарской Республики от 18.03.2026 № 26-УГ  "Об объявлении 21 апреля 2026 г. нерабочим днем"
+    authority: Глава Кабардино-Балкарской Республики
+    url: http://publication.pravo.gov.ru/document/0700202603190002
+    pdf_sha256: 8c5bb92f060b00e42ed5bfd625abbdf73e2dac3a658a5ba28104b1f32cd08fbf
+  quote_ids:
+  - rg-kb-2026-26
+  quote:
+    id: rg-kb-2026-26
+    page: 1
+    text: Объявить 21 апреля 2026 г. в Кабардино-Балкарской Республике нерабочим днем.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 0
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-kb-2026-26.png
+      crops:
+      - rg-kb-2026-26.png
+      notes: сверено по вырезке 12.10.2026
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-kb-2026-26.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-0700202603190002
+  legal_review:
+    status: none
+  notes:
+- id: ru-oms-2026-04-21
+  region_id: RU-OMS
+  region_name: Омская область
+  region_in: в Омской области
+  date: 2026-04-21
+  title: Радоница, день особого поминовения усопших
+  eoNumber: '5500202604170014'
+  act:
+    eoNumber: '5500202604170014'
+    number: 80
+    doc_date: 2026-04-17
+    publish_date: 2026-04-17
+    title: Указ Губернатора Омской области от 17.04.2026 № 80  "Об объявлении нерабочим праздничным днем на территории Омской области 21 апреля 2026 года"
+    authority: Губернатор Омской области
+    url: http://publication.pravo.gov.ru/document/5500202604170014
+    pdf_sha256: 03b9f1127683fb73336981b90601f45f9f93639b4867d1cb3cb1b91d7e5a2718
+  quote_ids:
+  - rg-oms-2026-80
+  quote:
+    id: rg-oms-2026-80
+    page: 1
+    text: Объявить нерабочим праздничным днем на территории Омской области 21 апреля 2026 года – Радоницу – день особого поминовения усопших.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 0
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-oms-2026-80.png
+      crops:
+      - rg-oms-2026-80.png
+      notes: сверено по вырезке 12.10.2026, слово «поминовения» под подписью дочитано по вырезке
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-oms-2026-80.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-5500202604170014
+  legal_review:
+    status: none
+  notes:
+- id: ru-sa-2026-04-27
+  region_id: RU-SA
+  region_name: Республика Саха (Якутия)
+  region_in: в Республике Саха (Якутия)
+  date: 2026-04-27
+  title: День Республики Саха (Якутия)
+  eoNumber: '1400201805150018'
+  act:
+    eoNumber: '1400201805150018'
+    number: 1993-З № 1545-V
+    doc_date: 2018-04-26
+    publish_date: 2018-05-15
+    title: Закон Республики Саха (Якутия) от 26.04.2018  1993-З № 1545-V  "О дополнительных нерабочих праздничных днях в Республике Саха (Якутия)"
+    authority: Республика Саха (Якутия)
+    url: http://publication.pravo.gov.ru/document/1400201805150018
+    pdf_sha256: 81b412aa27475e02df8aa3043300f45ca3b038d399738e83d1e016a35f8ee621
+  quote_ids:
+  - rg-sa-2018-19931545v
+  quote:
+    id: rg-sa-2018-19931545v
+    page: 3
+    text: |-
+      Статья 1
+      1. В Республике Саха (Якутия) устанавливаются следующие нерабочие праздничные дни:
+      27 апреля – День Республики Саха (Якутия);
+      21 июня – День национального праздника «Ысыах».
+      2. При совпадении выходного и нерабочего праздничного дней выходной день переносится на следующий после праздничного рабочий день.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 6
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-sa-2018-19931545v.png
+      crops:
+      - rg-sa-2018-19931545v.png
+      notes: 'сверено по вырезке стр. 3 PDF 12.10.2026, исправлено распознавание: лишняя скобка в «Саха (Якутия)»'
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-sa-2018-19931545v.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-1400201805150018
+  legal_review:
+    status: none
+  notes: По ст. 2 закона нерабочий день предоставляется работникам организаций, которые финансирует республиканский бюджет, остальные решают сами (ст. 3)
+- id: ru-ty-2026-05-08
+  region_id: RU-TY
+  region_name: Республика Тыва
+  region_in: в Республике Тыва
+  date: 2026-05-08
+  title: День Конституции Республики Тыва, перенесён со среды 6 мая
+  eoNumber: '1700202604170002'
+  act:
+    eoNumber: '1700202604170002'
+    number: 742 ПВХ-IV
+    doc_date: 2026-04-15
+    publish_date: 2026-04-17
+    title: Постановление Верховного Хурала (парламента) Республики Тыва от 15.04.2026 № 742 ПВХ-IV  "О переносе нерабочего праздничного дня"
+    authority: Верховный Хурал (парламент) Республики Тыва
+    url: http://publication.pravo.gov.ru/document/1700202604170002
+    pdf_sha256: 93042d533cbcf697aaf82a8f52a5ee8ba727d197358dac16203e4e1e7ed3e27c
+  quote_ids:
+  - rg-ty-2026-742iv
+  quote:
+    id: rg-ty-2026-742iv
+    page: 1
+    text: 1. Перенести нерабочий праздничный день, связанный с празднованием государственного праздника Республики Тыва - Дня Конституции Республики Тыва, со среды 6 мая 2026 года на пятницу 8 мая 2026 года.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 0
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-ty-2026-742iv.png
+      crops:
+      - rg-ty-2026-742iv.png
+      notes: сверено по вырезке 12.10.2026
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-ty-2026-742iv.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-1700202604170002
+  legal_review:
+    status: none
+  notes: Среда 6 мая 2026 года в регионе рабочая
+- id: ru-ad-2026-05-27
+  region_id: RU-AD
+  region_name: Республика Адыгея
+  region_in: в Республике Адыгея
+  date: 2026-05-27
+  title: Курбан-байрам
+  eoNumber: '0100202510140001'
+  act:
+    eoNumber: '0100202510140001'
+    number: 117
+    doc_date: 2025-10-13
+    publish_date: 2025-10-14
+    title: Указ Главы Республики Адыгея от 13.10.2025 № 117  "Об установлении дат проведения религиозных праздничных дней и переносе выходного дня в 2026 году"
+    authority: Глава Республики Адыгея
+    url: http://publication.pravo.gov.ru/document/0100202510140001
+    pdf_sha256: a8bbf4063da6563eeb71a80f8cf941f2a1398adf9eea46ca6b70228cb79f3aa7
+  quote_ids:
+  - rg-ad-2025-117
+  quote:
+    id: rg-ad-2025-117
+    page: 1
+    text: |-
+      1. Установить в 2026 году даты проведения религиозных праздничных дней:
+      1) Ураза-Байрам – 20 марта;
+      2) День поминовения усопших (Радоница) – 21 апреля;
+      3) Курбан-Байрам – 27 мая.
+      2. Перенести в 2026 году выходной день с субботы 25 апреля на понедельник 20 апреля.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 7
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-ad-2025-117.png
+      crops:
+      - rg-ad-2025-117.png
+      notes: 'сверено по вырезке 12.10.2026, исправлено распознавание: «1)» вместо «Г)», «Перенести», лишняя точка после «усопших»'
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-ad-2025-117.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: false
+  verified_at:
+  source_ref: pravo-0100202510140001
+  legal_review:
+    status: none
+  notes: Указ называет день религиозным праздничным днём и ссылается на закон Республики Адыгея от 14.02.1995 № 168-1. Что день нерабочий, следует из закона, его текст не сверен
+- id: ru-da-2026-05-27
+  region_id: RU-DA
+  region_name: Республика Дагестан
+  region_in: в Республике Дагестан
+  date: 2026-05-27
+  title: Курбан-байрам
+  eoNumber: '0500202605210003'
+  act:
+    eoNumber: '0500202605210003'
+    number: 104
+    doc_date: 2026-05-15
+    publish_date: 2026-05-21
+    title: Постановление Правительства Республики Дагестан от 15.05.2026 № 104  "О мусульманском празднике Курбан-байрам"
+    authority: Правительство Республики Дагестан
+    url: http://publication.pravo.gov.ru/document/0500202605210003
+    pdf_sha256: f715b6c5b3fdd5fda9a4eae333c92696aaac70e66683490bd399fed713aa51d7
+  quote_ids:
+  - rg-da-2026-104
+  quote:
+    id: rg-da-2026-104
+    page: 1
+    text: Считать 27, 28 и 29 мая 2026 года нерабочими праздничными днями.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 0
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-da-2026-104.png
+      crops:
+      - rg-da-2026-104.png
+      notes: сверено по вырезке 12.10.2026
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-da-2026-104.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-0500202605210003
+  legal_review:
+    status: none
+  notes:
+- id: ru-kb-2026-05-27
+  region_id: RU-KB
+  region_name: Кабардино-Балкарская Республика
+  region_in: в Кабардино-Балкарской Республике
+  date: 2026-05-27
+  title: Курбан-байрам
+  eoNumber: '0700202605200003'
+  act:
+    eoNumber: '0700202605200003'
+    number: 46-УГ
+    doc_date: 2026-05-19
+    publish_date: 2026-05-20
+    title: Указ Главы Кабардино-Балкарской Республики от 19.05.2026 № 46-УГ  "Об объявлении 27 мая 2026 г. нерабочим праздничным днем"
+    authority: Глава Кабардино-Балкарской Республики
+    url: http://publication.pravo.gov.ru/document/0700202605200003
+    pdf_sha256: 227df1be163863dc3d7c2e05c63028a1cab86477c6fcb31d410592e18ea3f0b8
+  quote_ids:
+  - rg-kb-2026-46
+  quote:
+    id: rg-kb-2026-46
+    page: 1
+    text: Объявить 27 мая 2026 г. в Кабардино-Балкарской Республике нерабочим праздничным днем.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 0
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-kb-2026-46.png
+      crops:
+      - rg-kb-2026-46.png
+      notes: сверено по вырезке 12.10.2026
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-kb-2026-46.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-0700202605200003
+  legal_review:
+    status: none
+  notes:
+- id: ru-ta-2026-05-27
+  region_id: RU-TA
+  region_name: Республика Татарстан
+  region_in: в Республике Татарстан
+  date: 2026-05-27
+  title: Курбан-байрам
+  eoNumber: '1600202601210002'
+  act:
+    eoNumber: '1600202601210002'
+    number: 17
+    doc_date: 2026-01-17
+    publish_date: 2026-01-21
+    title: Указ Раиса Республики Татарстан от 17.01.2026 № 17  "Об определении дней проведения праздников Ураза-байрам и Курбан-байрам в 2026 году"
+    authority: Раис Республики Татарстан
+    url: http://publication.pravo.gov.ru/document/1600202601210002
+    pdf_sha256: 0249480c9a54623ad97053acd62d72394d40b56cc65d2adb538b572f082ba7ef
+  quote_ids:
+  - rg-ta-2026-17
+  quote:
+    id: rg-ta-2026-17
+    page: 1
+    text: |-
+      1. Определить в Республике Татарстан:
+      20 марта 2026 года днем, на который в соответствии с лунным календарем и сложившимися традициями приходится начало проведения праздника Ураза-байрам;
+      27 мая 2026 года днем, на который в соответствии с лунным календарем и сложившимися традициями приходится начало проведения праздника Курбан-байрам.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 0
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-ta-2026-17.png
+      crops:
+      - rg-ta-2026-17.png
+      notes: сверено по вырезке 12.10.2026
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-ta-2026-17.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: false
+  verified_at:
+  source_ref: pravo-1600202601210002
+  legal_review:
+    status: none
+  notes: Указ определяет день праздника и ссылается на закон Республики Татарстан от 19.02.1992 № 1448-XII. Что день нерабочий, следует из закона, его текст на портале не сверен
+- id: ru-da-2026-05-28
+  region_id: RU-DA
+  region_name: Республика Дагестан
+  region_in: в Республике Дагестан
+  date: 2026-05-28
+  title: Курбан-байрам
+  eoNumber: '0500202605210003'
+  act:
+    eoNumber: '0500202605210003'
+    number: 104
+    doc_date: 2026-05-15
+    publish_date: 2026-05-21
+    title: Постановление Правительства Республики Дагестан от 15.05.2026 № 104  "О мусульманском празднике Курбан-байрам"
+    authority: Правительство Республики Дагестан
+    url: http://publication.pravo.gov.ru/document/0500202605210003
+    pdf_sha256: f715b6c5b3fdd5fda9a4eae333c92696aaac70e66683490bd399fed713aa51d7
+  quote_ids:
+  - rg-da-2026-104
+  quote:
+    id: rg-da-2026-104
+    page: 1
+    text: Считать 27, 28 и 29 мая 2026 года нерабочими праздничными днями.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 0
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-da-2026-104.png
+      crops:
+      - rg-da-2026-104.png
+      notes: сверено по вырезке 12.10.2026
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-da-2026-104.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-0500202605210003
+  legal_review:
+    status: none
+  notes:
+- id: ru-da-2026-05-29
+  region_id: RU-DA
+  region_name: Республика Дагестан
+  region_in: в Республике Дагестан
+  date: 2026-05-29
+  title: Курбан-байрам
+  eoNumber: '0500202605210003'
+  act:
+    eoNumber: '0500202605210003'
+    number: 104
+    doc_date: 2026-05-15
+    publish_date: 2026-05-21
+    title: Постановление Правительства Республики Дагестан от 15.05.2026 № 104  "О мусульманском празднике Курбан-байрам"
+    authority: Правительство Республики Дагестан
+    url: http://publication.pravo.gov.ru/document/0500202605210003
+    pdf_sha256: f715b6c5b3fdd5fda9a4eae333c92696aaac70e66683490bd399fed713aa51d7
+  quote_ids:
+  - rg-da-2026-104
+  quote:
+    id: rg-da-2026-104
+    page: 1
+    text: Считать 27, 28 и 29 мая 2026 года нерабочими праздничными днями.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 0
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-da-2026-104.png
+      crops:
+      - rg-da-2026-104.png
+      notes: сверено по вырезке 12.10.2026
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-da-2026-104.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-0500202605210003
+  legal_review:
+    status: none
+  notes:
+- id: ru-sa-2026-06-21
+  region_id: RU-SA
+  region_name: Республика Саха (Якутия)
+  region_in: в Республике Саха (Якутия)
+  date: 2026-06-21
+  title: Ысыах
+  eoNumber: '1400201805150018'
+  act:
+    eoNumber: '1400201805150018'
+    number: 1993-З № 1545-V
+    doc_date: 2018-04-26
+    publish_date: 2018-05-15
+    title: Закон Республики Саха (Якутия) от 26.04.2018  1993-З № 1545-V  "О дополнительных нерабочих праздничных днях в Республике Саха (Якутия)"
+    authority: Республика Саха (Якутия)
+    url: http://publication.pravo.gov.ru/document/1400201805150018
+    pdf_sha256: 81b412aa27475e02df8aa3043300f45ca3b038d399738e83d1e016a35f8ee621
+  quote_ids:
+  - rg-sa-2018-19931545v
+  quote:
+    id: rg-sa-2018-19931545v
+    page: 3
+    text: |-
+      Статья 1
+      1. В Республике Саха (Якутия) устанавливаются следующие нерабочие праздничные дни:
+      27 апреля – День Республики Саха (Якутия);
+      21 июня – День национального праздника «Ысыах».
+      2. При совпадении выходного и нерабочего праздничного дней выходной день переносится на следующий после праздничного рабочий день.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 6
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-sa-2018-19931545v.png
+      crops:
+      - rg-sa-2018-19931545v.png
+      notes: 'сверено по вырезке стр. 3 PDF 12.10.2026, исправлено распознавание: лишняя скобка в «Саха (Якутия)»'
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-sa-2018-19931545v.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-1400201805150018
+  legal_review:
+    status: none
+  notes: Воскресенье. По ст. 2 закона нерабочий день предоставляется работникам организаций, которые финансирует республиканский бюджет
+- id: ru-sa-2026-06-22
+  region_id: RU-SA
+  region_name: Республика Саха (Якутия)
+  region_in: в Республике Саха (Якутия)
+  date: 2026-06-22
+  title: 'Перенос выходного: 21 июня 2026 года - воскресенье'
+  eoNumber: '1400201805150018'
+  act:
+    eoNumber: '1400201805150018'
+    number: 1993-З № 1545-V
+    doc_date: 2018-04-26
+    publish_date: 2018-05-15
+    title: Закон Республики Саха (Якутия) от 26.04.2018  1993-З № 1545-V  "О дополнительных нерабочих праздничных днях в Республике Саха (Якутия)"
+    authority: Республика Саха (Якутия)
+    url: http://publication.pravo.gov.ru/document/1400201805150018
+    pdf_sha256: 81b412aa27475e02df8aa3043300f45ca3b038d399738e83d1e016a35f8ee621
+  quote_ids:
+  - rg-sa-2018-19931545v
+  quote:
+    id: rg-sa-2018-19931545v
+    page: 3
+    text: |-
+      Статья 1
+      1. В Республике Саха (Якутия) устанавливаются следующие нерабочие праздничные дни:
+      27 апреля – День Республики Саха (Якутия);
+      21 июня – День национального праздника «Ысыах».
+      2. При совпадении выходного и нерабочего праздничного дней выходной день переносится на следующий после праздничного рабочий день.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 6
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-sa-2018-19931545v.png
+      crops:
+      - rg-sa-2018-19931545v.png
+      notes: 'сверено по вырезке стр. 3 PDF 12.10.2026, исправлено распознавание: лишняя скобка в «Саха (Якутия)»'
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-sa-2018-19931545v.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: false
+  verified_at:
+  source_ref: pravo-1400201805150018
+  legal_review:
+    status: none
+  notes: 'Дату вывел проект по ч. 2 ст. 1 закона: выходной переносится на следующий рабочий день. Толкование не проверено юристом в РФ'
+- id: ru-al-2026-07-03
+  region_id: RU-AL
+  region_name: Республика Алтай
+  region_in: в Республике Алтай
+  date: 2026-07-03
+  title: День образования Республики Алтай
+  eoNumber: '0400202602170004'
+  act:
+    eoNumber: '0400202602170004'
+    number: 4-РЗ
+    doc_date: 2026-02-17
+    publish_date: 2026-02-17
+    title: Закон Республики Алтай от 17.02.2026 № 4-РЗ  "О внесении изменений в статьи 1 и 5-1 Закона Республики Алтай "О праздничных и памятных днях, юбилейных датах в Республике Алтай"
+    authority: Республика Алтай
+    url: http://publication.pravo.gov.ru/document/0400202602170004
+    pdf_sha256: aa22fdd63c6a068a038be736b198d23e01d2b5d6af61c8a2a2bbbfbf223d02b1
+  quote_ids:
+  - rg-al-2026-4
+  quote:
+    id: rg-al-2026-4
+    page: 1
+    text: |-
+      «Статья 1
+      Объявить 3 июля – День образования Республики Алтай нерабочим праздничным днем.
+      При совпадении выходного и нерабочего праздничного дней, выходной день переносится на следующий после нерабочего праздничного дня рабочий день.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 0
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-al-2026-4.png
+      crops:
+      - rg-al-2026-4.png
+      notes: сверено по вырезке 12.10.2026, текст новой редакции ст. 1 закона Республики Алтай в кавычках изменяющего закона
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-al-2026-4.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-0400202602170004
+  legal_review:
+    status: none
+  notes: Нерабочий день для органов власти республики, местного самоуправления и их организаций, остальные решают сами
+- id: ru-mo-2026-08-05
+  region_id: RU-MO
+  region_name: Республика Мордовия
+  region_in: в Республике Мордовия
+  date: 2026-08-05
+  title: День 25-летия канонизации святого праведного воина Феодора Ушакова
+  eoNumber: '1300202512090001'
+  act:
+    eoNumber: '1300202512090001'
+    number: 473-УГ
+    doc_date: 2025-12-08
+    publish_date: 2025-12-09
+    title: Указ Главы Республики Мордовия от 08.12.2025 № 473-УГ  "Об объявлении нерабочего (праздничного) дня на территории Республики Мордовия 5 августа 2026 года"
+    authority: Глава Республики Мордовия
+    url: http://publication.pravo.gov.ru/document/1300202512090001
+    pdf_sha256: c154d43c0bb9c8b5c2adde6df89fd1cbf997bb905c0f6b75d22ebfddcb15a958
+  quote_ids:
+  - rg-mo-2025-473
+  quote:
+    id: rg-mo-2025-473
+    page: 1
+    text: 1. Объявить нерабочим (праздничным) днем на территории Республики Мордовия 5 августа 2026 года – День 25-летия канонизации святого праведного воина Феодора Ушакова.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 0
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-mo-2025-473.png
+      crops:
+      - rg-mo-2025-473.png
+      notes: сверено по вырезке 12.10.2026, двойное тире из распознавания заменено одним
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-mo-2025-473.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-1300202512090001
+  legal_review:
+    status: none
+  notes:
+- id: ru-zab-2027-02-07
+  region_id: RU-ZAB
+  region_name: Забайкальский край
+  region_in: в Забайкальском крае
+  date: 2027-02-07
+  title: Сагаалган, праздник Белого месяца
+  eoNumber: '7500202608100002'
+  act:
+    eoNumber: '7500202608100002'
+    number: 95
+    doc_date: 2026-08-07
+    publish_date: 2026-08-10
+    title: Постановление Губернатора Забайкальского края от 07.08.2026 № 95  "Об объявлении даты праздника Белого месяца "Сагаалган" в 2027 году"
+    authority: Губернатор Забайкальского края
+    url: http://publication.pravo.gov.ru/document/7500202608100002
+    pdf_sha256: df8aba47e9daf215dc193a279a58bda4376e1d6448b0bf24ee96df6238a7c4f2
+  quote_ids:
+  - rg-zab-2026-95
+  quote:
+    id: rg-zab-2026-95
+    page: 1
+    text: Объявить 7 февраля 2027 года первым днем Нового года по лунному календарю – праздником Белого месяца «Сагаалган».
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 2
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-zab-2026-95.png
+      crops:
+      - rg-zab-2026-95.png
+      notes: сверено по вырезке 12.10.2026
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-zab-2026-95.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: false
+  verified_at:
+  source_ref: pravo-7500202608100002
+  legal_review:
+    status: none
+  notes: Постановление объявляет дату праздника, но не называет день нерабочим. Это зависит от закона Забайкальского края от 31.03.2015 № 1151-ЗЗК, его текст не сверен. 7 февраля 2027 года - воскресенье
+- id: ru-ad-2027-03-09
+  region_id: RU-AD
+  region_name: Республика Адыгея
+  region_in: в Республике Адыгея
+  date: 2027-03-09
+  title: Ураза-байрам
+  eoNumber: '0100202608170001'
+  act:
+    eoNumber: '0100202608170001'
+    number: 104
+    doc_date: 2026-08-14
+    publish_date: 2026-08-17
+    title: Указ Главы Республики Адыгея от 14.08.2026 № 104  "Об установлении дат проведения религиозных праздничных дней в 2027 году"
+    authority: Глава Республики Адыгея
+    url: http://publication.pravo.gov.ru/document/0100202608170001
+    pdf_sha256: 06861891371ccfcfc19980cb01752811653b0be3f315c03195f7a0d7c7262418
+  quote_ids:
+  - rg-ad-2026-104
+  quote:
+    id: rg-ad-2026-104
+    page: 1
+    text: |-
+      1. Установить в 2027 году даты проведения религиозных праздничных дней:
+      1) Ураза-Байрам – 9 марта;
+      2) День поминовения усопших (Радоница) – 11 мая;
+      3) Курбан-Байрам – 16 мая.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 2
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-ad-2026-104.png
+      crops:
+      - rg-ad-2026-104.png
+      notes: сверено по вырезке 12.10.2026, конец п. 1 («– 16 мая.») дочитан по вырезке
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-ad-2026-104.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: false
+  verified_at:
+  source_ref: pravo-0100202608170001
+  legal_review:
+    status: none
+  notes: Указ называет день религиозным праздничным днём и ссылается на закон Республики Адыгея от 14.02.1995 № 168-1. Что день нерабочий, следует из закона, его текст не сверен
+- id: ru-ba-2027-03-09
+  region_id: RU-BA
+  region_name: Республика Башкортостан
+  region_in: в Республике Башкортостан
+  date: 2027-03-09
+  title: Ураза-байрам
+  eoNumber: '0200202606230015'
+  act:
+    eoNumber: '0200202606230015'
+    number: 205
+    doc_date: 2026-06-16
+    publish_date: 2026-06-23
+    title: Постановление Правительства Республики Башкортостан от 16.06.2026 № 205  "О датах проведения в 2027 году праздников Ураза-байрам и Курбан-байрам в Республике Башкортостан"
+    authority: Правительство Республики Башкортостан
+    url: http://publication.pravo.gov.ru/document/0200202606230015
+    pdf_sha256: 79857c9956f9c993d73faf028154415be94ef2e9ee88a876e57aaf1717eae63b
+  quote_ids:
+  - rg-ba-2026-205
+  quote:
+    id: rg-ba-2026-205
+    page: 1
+    text: |-
+      В соответствии с частью 1 статьи 1 Закона Республики Башкортостан «О праздничных и памятных днях в Республике Башкортостан» объявить нерабочими праздничными днями в 2027 году:
+      9 марта – Ураза-байрам;
+      16 мая – Курбан-байрам.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 3
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-ba-2026-205.png
+      crops:
+      - rg-ba-2026-205.png
+      notes: 'сверено по вырезке 12.10.2026, исправлено распознавание: «статьи 1», лишние черты убраны'
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-ba-2026-205.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-0200202606230015
+  legal_review:
+    status: none
+  notes:
+- id: ru-sa-2027-04-27
+  region_id: RU-SA
+  region_name: Республика Саха (Якутия)
+  region_in: в Республике Саха (Якутия)
+  date: 2027-04-27
+  title: День Республики Саха (Якутия)
+  eoNumber: '1400201805150018'
+  act:
+    eoNumber: '1400201805150018'
+    number: 1993-З № 1545-V
+    doc_date: 2018-04-26
+    publish_date: 2018-05-15
+    title: Закон Республики Саха (Якутия) от 26.04.2018  1993-З № 1545-V  "О дополнительных нерабочих праздничных днях в Республике Саха (Якутия)"
+    authority: Республика Саха (Якутия)
+    url: http://publication.pravo.gov.ru/document/1400201805150018
+    pdf_sha256: 81b412aa27475e02df8aa3043300f45ca3b038d399738e83d1e016a35f8ee621
+  quote_ids:
+  - rg-sa-2018-19931545v
+  quote:
+    id: rg-sa-2018-19931545v
+    page: 3
+    text: |-
+      Статья 1
+      1. В Республике Саха (Якутия) устанавливаются следующие нерабочие праздничные дни:
+      27 апреля – День Республики Саха (Якутия);
+      21 июня – День национального праздника «Ысыах».
+      2. При совпадении выходного и нерабочего праздничного дней выходной день переносится на следующий после праздничного рабочий день.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 6
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-sa-2018-19931545v.png
+      crops:
+      - rg-sa-2018-19931545v.png
+      notes: 'сверено по вырезке стр. 3 PDF 12.10.2026, исправлено распознавание: лишняя скобка в «Саха (Якутия)»'
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-sa-2018-19931545v.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-1400201805150018
+  legal_review:
+    status: none
+  notes: По ст. 2 закона нерабочий день предоставляется работникам организаций, которые финансирует республиканский бюджет, остальные решают сами (ст. 3)
+- id: ru-ad-2027-05-11
+  region_id: RU-AD
+  region_name: Республика Адыгея
+  region_in: в Республике Адыгея
+  date: 2027-05-11
+  title: Радоница, день поминовения усопших
+  eoNumber: '0100202608170001'
+  act:
+    eoNumber: '0100202608170001'
+    number: 104
+    doc_date: 2026-08-14
+    publish_date: 2026-08-17
+    title: Указ Главы Республики Адыгея от 14.08.2026 № 104  "Об установлении дат проведения религиозных праздничных дней в 2027 году"
+    authority: Глава Республики Адыгея
+    url: http://publication.pravo.gov.ru/document/0100202608170001
+    pdf_sha256: 06861891371ccfcfc19980cb01752811653b0be3f315c03195f7a0d7c7262418
+  quote_ids:
+  - rg-ad-2026-104
+  quote:
+    id: rg-ad-2026-104
+    page: 1
+    text: |-
+      1. Установить в 2027 году даты проведения религиозных праздничных дней:
+      1) Ураза-Байрам – 9 марта;
+      2) День поминовения усопших (Радоница) – 11 мая;
+      3) Курбан-Байрам – 16 мая.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 2
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-ad-2026-104.png
+      crops:
+      - rg-ad-2026-104.png
+      notes: сверено по вырезке 12.10.2026, конец п. 1 («– 16 мая.») дочитан по вырезке
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-ad-2026-104.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: false
+  verified_at:
+  source_ref: pravo-0100202608170001
+  legal_review:
+    status: none
+  notes: Указ называет день религиозным праздничным днём и ссылается на закон Республики Адыгея от 14.02.1995 № 168-1. Что день нерабочий, следует из закона, его текст не сверен
+- id: ru-tam-2027-05-11
+  region_id: RU-TAM
+  region_name: Тамбовская область
+  region_in: в Тамбовской области
+  date: 2027-05-11
+  title: Радоница, день особого поминовения усопших
+  eoNumber: '6800202608100021'
+  act:
+    eoNumber: '6800202608100021'
+    number: 870-З
+    doc_date: 2026-08-04
+    publish_date: 2026-08-10
+    title: Закон Тамбовской области от 04.08.2026 № 870-З  "Об объявлении нерабочим (праздничным) днем на территории Тамбовской области дня особого поминовения усопших (Радоницы)"
+    authority: Тамбовская область
+    url: http://publication.pravo.gov.ru/document/6800202608100021
+    pdf_sha256: 3a4fc46bbfdaa4ff790731d944016693011e3e8a269b66907f379bd5c465fae2
+  quote_ids:
+  - rg-tam-2026-870
+  quote:
+    id: rg-tam-2026-870
+    page: 1
+    text: |-
+      Статья 1
+      В целях содействия сохранению традиций духовной культуры граждан и в соответствии с пунктом 7 статьи 4 Федерального закона от 26 сентября 1997 года № 125-ФЗ «О свободе совести и религиозных объединениях» объявить нерабочим (праздничным) днем на территории Тамбовской области единый день особого поминовения усопших (Радоницу) согласно приложению к настоящему Закону.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 2
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-tam-2026-870.png
+      crops:
+      - rg-tam-2026-870.png
+      - rg-tam-2026-870-2.png
+      notes: сверено по вырезкам стр. 1 и 2 PDF 12.10.2026; дата 2027 года из таблицы приложения на стр. 2 (вторая вырезка)
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-tam-2026-870.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-6800202608100021
+  legal_review:
+    status: none
+  notes: 'Дата из приложения к закону (стр. 2 PDF: «2027 11 мая»). Закон вступает в силу с 1 марта 2027 года'
+- id: ru-ad-2027-05-16
+  region_id: RU-AD
+  region_name: Республика Адыгея
+  region_in: в Республике Адыгея
+  date: 2027-05-16
+  title: Курбан-байрам
+  eoNumber: '0100202608170001'
+  act:
+    eoNumber: '0100202608170001'
+    number: 104
+    doc_date: 2026-08-14
+    publish_date: 2026-08-17
+    title: Указ Главы Республики Адыгея от 14.08.2026 № 104  "Об установлении дат проведения религиозных праздничных дней в 2027 году"
+    authority: Глава Республики Адыгея
+    url: http://publication.pravo.gov.ru/document/0100202608170001
+    pdf_sha256: 06861891371ccfcfc19980cb01752811653b0be3f315c03195f7a0d7c7262418
+  quote_ids:
+  - rg-ad-2026-104
+  quote:
+    id: rg-ad-2026-104
+    page: 1
+    text: |-
+      1. Установить в 2027 году даты проведения религиозных праздничных дней:
+      1) Ураза-Байрам – 9 марта;
+      2) День поминовения усопших (Радоница) – 11 мая;
+      3) Курбан-Байрам – 16 мая.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 2
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-ad-2026-104.png
+      crops:
+      - rg-ad-2026-104.png
+      notes: сверено по вырезке 12.10.2026, конец п. 1 («– 16 мая.») дочитан по вырезке
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-ad-2026-104.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: false
+  verified_at:
+  source_ref: pravo-0100202608170001
+  legal_review:
+    status: none
+  notes: Указ называет день религиозным праздничным днём и ссылается на закон Республики Адыгея от 14.02.1995 № 168-1. Что день нерабочий, следует из закона, его текст не сверен
+- id: ru-ba-2027-05-16
+  region_id: RU-BA
+  region_name: Республика Башкортостан
+  region_in: в Республике Башкортостан
+  date: 2027-05-16
+  title: Курбан-байрам
+  eoNumber: '0200202606230015'
+  act:
+    eoNumber: '0200202606230015'
+    number: 205
+    doc_date: 2026-06-16
+    publish_date: 2026-06-23
+    title: Постановление Правительства Республики Башкортостан от 16.06.2026 № 205  "О датах проведения в 2027 году праздников Ураза-байрам и Курбан-байрам в Республике Башкортостан"
+    authority: Правительство Республики Башкортостан
+    url: http://publication.pravo.gov.ru/document/0200202606230015
+    pdf_sha256: 79857c9956f9c993d73faf028154415be94ef2e9ee88a876e57aaf1717eae63b
+  quote_ids:
+  - rg-ba-2026-205
+  quote:
+    id: rg-ba-2026-205
+    page: 1
+    text: |-
+      В соответствии с частью 1 статьи 1 Закона Республики Башкортостан «О праздничных и памятных днях в Республике Башкортостан» объявить нерабочими праздничными днями в 2027 году:
+      9 марта – Ураза-байрам;
+      16 мая – Курбан-байрам.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 3
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-ba-2026-205.png
+      crops:
+      - rg-ba-2026-205.png
+      notes: 'сверено по вырезке 12.10.2026, исправлено распознавание: «статьи 1», лишние черты убраны'
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-ba-2026-205.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-0200202606230015
+  legal_review:
+    status: none
+  notes:
+- id: ru-sa-2027-06-21
+  region_id: RU-SA
+  region_name: Республика Саха (Якутия)
+  region_in: в Республике Саха (Якутия)
+  date: 2027-06-21
+  title: Ысыах
+  eoNumber: '1400201805150018'
+  act:
+    eoNumber: '1400201805150018'
+    number: 1993-З № 1545-V
+    doc_date: 2018-04-26
+    publish_date: 2018-05-15
+    title: Закон Республики Саха (Якутия) от 26.04.2018  1993-З № 1545-V  "О дополнительных нерабочих праздничных днях в Республике Саха (Якутия)"
+    authority: Республика Саха (Якутия)
+    url: http://publication.pravo.gov.ru/document/1400201805150018
+    pdf_sha256: 81b412aa27475e02df8aa3043300f45ca3b038d399738e83d1e016a35f8ee621
+  quote_ids:
+  - rg-sa-2018-19931545v
+  quote:
+    id: rg-sa-2018-19931545v
+    page: 3
+    text: |-
+      Статья 1
+      1. В Республике Саха (Якутия) устанавливаются следующие нерабочие праздничные дни:
+      27 апреля – День Республики Саха (Якутия);
+      21 июня – День национального праздника «Ысыах».
+      2. При совпадении выходного и нерабочего праздничного дней выходной день переносится на следующий после праздничного рабочий день.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 6
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-sa-2018-19931545v.png
+      crops:
+      - rg-sa-2018-19931545v.png
+      notes: 'сверено по вырезке стр. 3 PDF 12.10.2026, исправлено распознавание: лишняя скобка в «Саха (Якутия)»'
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-sa-2018-19931545v.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-1400201805150018
+  legal_review:
+    status: none
+  notes: По ст. 2 закона нерабочий день предоставляется работникам организаций, которые финансирует республиканский бюджет, остальные решают сами (ст. 3)
+- id: ru-al-2027-07-03
+  region_id: RU-AL
+  region_name: Республика Алтай
+  region_in: в Республике Алтай
+  date: 2027-07-03
+  title: День образования Республики Алтай
+  eoNumber: '0400202602170004'
+  act:
+    eoNumber: '0400202602170004'
+    number: 4-РЗ
+    doc_date: 2026-02-17
+    publish_date: 2026-02-17
+    title: Закон Республики Алтай от 17.02.2026 № 4-РЗ  "О внесении изменений в статьи 1 и 5-1 Закона Республики Алтай "О праздничных и памятных днях, юбилейных датах в Республике Алтай"
+    authority: Республика Алтай
+    url: http://publication.pravo.gov.ru/document/0400202602170004
+    pdf_sha256: aa22fdd63c6a068a038be736b198d23e01d2b5d6af61c8a2a2bbbfbf223d02b1
+  quote_ids:
+  - rg-al-2026-4
+  quote:
+    id: rg-al-2026-4
+    page: 1
+    text: |-
+      «Статья 1
+      Объявить 3 июля – День образования Республики Алтай нерабочим праздничным днем.
+      При совпадении выходного и нерабочего праздничного дней, выходной день переносится на следующий после нерабочего праздничного дня рабочий день.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 0
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-al-2026-4.png
+      crops:
+      - rg-al-2026-4.png
+      notes: сверено по вырезке 12.10.2026, текст новой редакции ст. 1 закона Республики Алтай в кавычках изменяющего закона
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-al-2026-4.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: true
+  verified_at: 2026-10-12
+  source_ref: pravo-0400202602170004
+  legal_review:
+    status: none
+  notes: Суббота. Нерабочий день для органов власти республики, местного самоуправления и их организаций, остальные решают сами
+- id: ru-al-2027-07-05
+  region_id: RU-AL
+  region_name: Республика Алтай
+  region_in: в Республике Алтай
+  date: 2027-07-05
+  title: 'Перенос выходного: 3 июля 2027 года - суббота'
+  eoNumber: '0400202602170004'
+  act:
+    eoNumber: '0400202602170004'
+    number: 4-РЗ
+    doc_date: 2026-02-17
+    publish_date: 2026-02-17
+    title: Закон Республики Алтай от 17.02.2026 № 4-РЗ  "О внесении изменений в статьи 1 и 5-1 Закона Республики Алтай "О праздничных и памятных днях, юбилейных датах в Республике Алтай"
+    authority: Республика Алтай
+    url: http://publication.pravo.gov.ru/document/0400202602170004
+    pdf_sha256: aa22fdd63c6a068a038be736b198d23e01d2b5d6af61c8a2a2bbbfbf223d02b1
+  quote_ids:
+  - rg-al-2026-4
+  quote:
+    id: rg-al-2026-4
+    page: 1
+    text: |-
+      «Статья 1
+      Объявить 3 июля – День образования Республики Алтай нерабочим праздничным днем.
+      При совпадении выходного и нерабочего праздничного дней, выходной день переносится на следующий после нерабочего праздничного дня рабочий день.
+    text_source: official_pdf
+    ocr:
+      passes: 2
+      diff_lines: 0
+      dpi:
+      - 300
+      - 400
+    scan_checked:
+      at: 2026-10-12
+      method: visual-crop
+      crop: rg-al-2026-4.png
+      crops:
+      - rg-al-2026-4.png
+      notes: сверено по вырезке 12.10.2026, текст новой редакции ст. 1 закона Республики Алтай в кавычках изменяющего закона
+      second:
+        at: 2026-10-12
+        method: ocr-pass-c
+        agrees: true
+        crop: rg-al-2026-4.png
+        notes: проход c (450 dpi, psm 3) сверен с текстом цитаты, расхождения только в распознавании, проверено по вырезке
+  verified: false
+  verified_at:
+  source_ref: pravo-0400202602170004
+  legal_review:
+    status: none
+  notes: 'Дату вывел проект по второму абзацу ст. 1 закона: выходной переносится на следующий рабочий день. Толкование не проверено юристом в РФ'

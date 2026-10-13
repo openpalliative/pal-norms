@@ -1,0 +1,26 @@
+{
+ "eoNumber": "0001202106110073",
+ "number": "211-ФЗ",
+ "documentDate": "2021-06-11T00:00:00",
+ "publishDateShort": "2021-06-11T00:00:00",
+ "name": "\"О внесении изменения в статью 358-17 части первой Гражданского кодекса Российской Федерации\"",
+ "complexName": "Федеральный закон от 11.06.2021 № 211-ФЗ\n \"О внесении изменения в статью 358-17 части первой Гражданского кодекса Российской Федерации\"",
+ "pagesCount": 2,
+ "pdfFileLength": 46190,
+ "signatoryAuthorities": [
+  {
+   "isMain": true,
+   "weight": 95000,
+   "name": "Президент Российской Федерации",
+   "id": "225698f1-cfbc-4e42-9caa-32f9f7403211"
+  }
+ ],
+ "signatoryAuthorityId": "225698f1-cfbc-4e42-9caa-32f9f7403211",
+ "documentType": {
+  "weight": 97,
+  "name": "Федеральный закон",
+  "id": "82a8bf1c-3bc7-47ed-827f-7affd43a7f27"
+ },
+ "jdRegNumber": null,
+ "jdRegDate": null
+}

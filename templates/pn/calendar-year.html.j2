@@ -1,0 +1,55 @@
+{% extends "op/base.html.j2" %}
+{% import "op/macros.html.j2" as op with context %}
+{% import "partials/pn.html.j2" as pnm with context %}
+{% block title %}Нерабочие дни в {{ y.year }} году{% endblock %}
+{% block description %}Праздники, переносы выходных и рабочие субботы в {{ y.year }} году по постановлению Правительства{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{ url('assets/css/pn-cal.css') }}"><link rel="stylesheet" href="{{ url('assets/css/pn-print.css') }}" media="print">{% endblock %}
+{% block main %}
+<div class="op-wrap op-page pn-cal pn-year">
+  {{ op.crumbs([("openpalliative", hub('')), (site.title, url('')), ("Праздники и выходные", url('calendar/')), (y.year ~ " год", "")]) }}
+  <h1>Нерабочие дни в {{ y.year }} году</h1>
+  {% if not y.approved %}
+  {% call pnm.status("unverified") %}Календарь на {{ y.year }} год ещё не утверждён. Правительство обычно публикует постановление о переносе выходных в сентябре предыдущего года. Пока показаны только праздники по <a href="#pn-yq">статье 112 Трудового кодекса</a> с переносом выходных, совпавших с праздником. Даты могут сдвинуться{% endcall %}
+  {% elif not y.verified %}
+  {{ pnm.status("unverified", "Текст постановления о переносах ещё не сверен со сканом официальной публикации") }}
+  {% endif %}
+  {% if y.decree_act_id %}
+  <p class="pn-year__src">Основание: {{ pnm.norm_link(y.decree_act_id) }}</p>
+  {% endif %}
+  <div class="pn-year__grid">
+    {% for m in y.months %}
+    <section class="pn-month" aria-labelledby="pn-m-{{ loop.index }}">
+      <h2 class="pn-month__title" id="pn-m-{{ loop.index }}">{{ m.month | capitalize }}</h2>
+      <ul class="pn-month__list">
+        {% for r in m.ranges %}<li><strong>{{ r.text }}</strong><span class="pn-month__days">{{ r.days_text }}</span></li>{% endfor %}
+      </ul>
+    </section>
+    {% endfor %}
+  </div>
+  {% if y.transfers %}
+  <section aria-labelledby="pn-tr">
+    <h2 id="pn-tr">Переносы выходных</h2>
+    <ul class="pn-plain">{% for t in y.transfers %}<li>{{ t.text }}</li>{% endfor %}</ul>
+  </section>
+  {% endif %}
+  <section aria-labelledby="pn-work">
+    <h2 id="pn-work">Рабочие субботы и воскресенья</h2>
+    {% if y.work_days %}
+    <ul class="pn-plain">{% for w in y.work_days %}<li>{{ w.text | capitalize }}</li>{% endfor %}</ul>
+    {% elif y.approved %}<p>В этом году нет</p>{% else %}<p>Станет известно, когда Правительство опубликует постановление о переносе выходных на {{ y.year }} год</p>{% endif %}
+  </section>
+  {% if y.quote_ids %}
+  <section class="pn-year__quotes" aria-labelledby="pn-yq">
+    <h2 id="pn-yq">{{ "Что сказано в постановлении" if y.approved else "Что сказано в законе об изменении статьи 112 Трудового кодекса" }}</h2>
+    {{ pnm.quotes(y.quote_ids) }}
+  </section>
+  {% endif %}
+  <div class="pn-printrow">{{ op.print_btn() }}</div>
+  <p class="op-no-print"><a href="{{ url('calendar/') }}">Все годы</a></p>
+  {{ pnm.back() }}
+  {{ op.sheet_footer(site.pn.data_date, site.pn.sheet_until, "openpalliative.github.io" ~ site.base ~ (page_out | replace("index.html", "")), "none") }}
+</div>
+{% endblock %}
+{% block scripts %}
+<script type="module" src="{{ url('assets/js/pn-page.js') }}"></script>
+{% endblock %}

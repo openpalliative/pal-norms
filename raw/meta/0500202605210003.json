@@ -1,0 +1,26 @@
+{
+ "eoNumber": "0500202605210003",
+ "number": "104",
+ "documentDate": "2026-05-15T00:00:00",
+ "publishDateShort": "2026-05-21T00:00:00",
+ "name": "О мусульманском празднике Курбан-байрам",
+ "complexName": "Постановление Правительства Республики Дагестан от 15.05.2026 № 104\n \"О мусульманском празднике Курбан-байрам\"",
+ "pagesCount": 1,
+ "pdfFileLength": 41097,
+ "signatoryAuthorities": [
+  {
+   "isMain": true,
+   "weight": 78970,
+   "name": "Правительство Республики Дагестан",
+   "id": "d94c46ee-f068-403c-b856-41f247ce5e25"
+  }
+ ],
+ "signatoryAuthorityId": "d94c46ee-f068-403c-b856-41f247ce5e25",
+ "documentType": {
+  "weight": 95,
+  "name": "Постановление",
+  "id": "fd5a8766-f6fd-4ac2-8fd9-66f414d314ac"
+ },
+ "jdRegNumber": null,
+ "jdRegDate": null
+}

@@ -1,0 +1,114 @@
+{
+  "format": "openpalliative-dataset/1",
+  "dataset": "quotes",
+  "repo": "pal-norms",
+  "schema_version": "1.0.0",
+  "version": "2026.10.11",
+  "generated_at": "2026-10-11T12:00:00Z",
+  "data_date": "2026-10-11",
+  "stale_after_days": 90,
+  "license": "CC-BY-4.0",
+  "source": [
+    {
+      "id": "demo-source",
+      "title": "Пример источника для разработки сайта, не настоящий документ"
+    }
+  ],
+  "content_sha256": "6e41a338a621b1eda7e2bf890fbbf70789bc1533634909323f777033327dc24c",
+  "counts": {
+    "items": 4,
+    "unverified": 1,
+    "excluded": 0
+  },
+  "items": [
+    {
+      "id": "demo-polozhenie-p2",
+      "verified": true,
+      "verified_at": "2026-10-11",
+      "source_ref": "demo-source",
+      "act_id": "demo-polozhenie",
+      "point": "п. 2",
+      "anchor": "p-2",
+      "page": 1,
+      "text": "Пример: признать утратившим силу пример старого положения.",
+      "text_source": "official_pdf",
+      "ocr": {
+        "passes": 2,
+        "diff_lines": 0,
+        "dpi": [
+          300,
+          400
+        ]
+      },
+      "scan_checked": {
+        "at": "2026-10-11",
+        "method": "visual-crop",
+        "crop": "raw/crops/demo-polozhenie-p2.png"
+      }
+    },
+    {
+      "id": "demo-polozhenie-p23",
+      "verified": true,
+      "verified_at": "2026-10-11",
+      "source_ref": "demo-source",
+      "act_id": "demo-polozhenie",
+      "point": "п. 23",
+      "anchor": "p-23",
+      "page": 8,
+      "text": "Пример: передача сведений не менее чем за 90 рабочих дней до события.",
+      "text_source": "official_pdf",
+      "ocr": {
+        "passes": 2,
+        "diff_lines": 0,
+        "dpi": [
+          300,
+          400
+        ]
+      },
+      "scan_checked": {
+        "at": "2026-10-11",
+        "method": "visual-crop",
+        "crop": "raw/crops/demo-polozhenie-p23.png"
+      }
+    },
+    {
+      "id": "demo-polozhenie-p25",
+      "verified": true,
+      "verified_at": "2026-10-11",
+      "source_ref": "demo-source",
+      "act_id": "demo-polozhenie",
+      "point": "п. 25",
+      "anchor": "p-25",
+      "page": 8,
+      "text": "Пример: по перечню, утвержденному примером старого акта.",
+      "text_source": "official_pdf",
+      "ocr": {
+        "passes": 2,
+        "diff_lines": 0,
+        "dpi": [
+          300,
+          400
+        ]
+      },
+      "scan_checked": {
+        "at": "2026-10-11",
+        "method": "visual-crop",
+        "crop": "raw/crops/demo-polozhenie-p25.png"
+      }
+    },
+    {
+      "id": "demo-law-p12",
+      "verified": false,
+      "verified_at": null,
+      "source_ref": "demo-source",
+      "act_id": "demo-law",
+      "point": "ч. 1 ст. 12",
+      "anchor": "p-12-1",
+      "page": null,
+      "text": "Пример: обращение рассматривается в течение 30 дней со дня регистрации.",
+      "text_source": "ips_archive",
+      "ocr": null,
+      "scan_checked": null
+    }
+  ]
+}
